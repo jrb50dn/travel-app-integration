@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon travefy_mapping"
+    "mapping": "nodemon travefy_mapping.js",
+    "start travefy_xml_json": "node travefy_xml_json.py"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
