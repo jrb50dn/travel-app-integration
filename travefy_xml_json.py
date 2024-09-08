@@ -8,7 +8,16 @@ import xml.etree.ElementTree as ET
 import json
 import re
 
-xml_string = input_data.get('xml', '');
+
+xml_file = 'tour_plan_data.xml'
+
+# Open the file and read the contents as a string
+with open(xml_file, 'r', encoding='utf-8') as file:
+    xml_string = file.read()
+
+#uncomment the below line and copy from this line to zapier
+# xml_string = input_data.get('xml', '');
+
 # Function to remove invalid tags and comments
 
 # Function to remove invalid tags and comments
