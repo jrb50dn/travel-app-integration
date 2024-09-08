@@ -1,0 +1,136 @@
+<EMAIL_CMD_START>
+To:e4jmjn1m@robot.zapier.com
+Bcc:jrb@fiftydegreesnorth.com
+From: <ue>
+Subject: XML Export: <bn>
+<EMAIL_CMD_END>
+<DATEFORMAT:YYYY-MM-DD>
+<?xml version="1.0"?>
+<Trip xmlns:nts="notes" xmlns:start="start" xmlns:end="end" xmlns:ex="extra">
+<!--Itinerary Details-->
+<Name><br> - <bn></Name>
+<Active>true</Active>
+<IsChatDisabled>false</IsChatDisabled>
+<IsPdfEnabled>true</IsPdfEnabled>
+<IsAppEnabled>true</IsAppEnabled>
+<Status>active</Status>
+<IsArchived>false</IsArchived>
+<Currency>USD</Currency>
+<SalesLocation>US</SalesLocation>
+<!--BOOKING NOTES-->
+<!--Travellers -->
+<Travellers>
+<<Names:start>>
+<Traveller>
+<Title><Title:XML></Title>
+<FullName><forename> <surname></FullName>
+<Type><PaxType:XML></Type>
+<Email><notes2></Email>
+<DietaryRequirements><notes4></DietaryRequirements>
+<MedicalConditions><notes5></MedicalConditions>
+</Traveller>
+<<Names:end>>
+</Travellers>
+<!--Rooms-->
+<RoomConfigs>
+<<ROOMS:start>>
+<RoomConfig>
+<RoomType><RoomType:d:xml></RoomType>
+<TravellerAssignment>
+<<Names:start>>
+<FullName><forename> <surname></FullName>
+<<Names:end>>
+</TravellerAssignment>
+</RoomConfig>
+<<Rooms:end>>
+</RoomConfigs>
+<!--Days-->
+<TripDays>
+<<services:start>>
+<<default>>
+<TripDay><Date:XML></TripDay>
+<<services:end>>
+</TripDays>
+<!--TripEvents-->
+<TripEvents>
+<<services:start>>
+<<default>>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<ServiceLineId><VN></ServiceLineId>
+<SegmentProviderName><sn></SegmentProviderName>
+<Name><optn></Name>
+<LocationCode><nts:loc></LocationCode>
+<Description>
+<ServiceRemarks><rm></ServiceRemarks>
+<ServiceNote><nts:nte></ServiceNote>
+<InfoNote><nts:inf></InfoNote>
+<ShortItineraryNote><nts:sit></ShortItineraryNote>
+<ItineraryNote><nts:vou></ItineraryNote>
+<OptionContent><optc></OptionContent>
+<TravelInformation><nts:tin></TravelInformation>
+</Description>
+<!-- Service Category -->
+<EventType><SRV></EventType>
+<!-- Service Status -->
+<SegmentIdentifier><scf></SegmentIdentifier>
+<TourplanServiceStatus><std></TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode><LOC></LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address><sa1> <sa2> <sa3>, <sa4> <sa5> <spc></Address>
+<Phone><spp></Phone>
+<!--Service Date-->
+<Date><Date:XML></Date>
+<!--Service Pickup Details -->
+<Pickup_Date><pud></Pickup_Date>
+<puTime><put></puTime>
+<puPlace><pu><locd></puPlace>
+<!--Service DropOff Details -->
+<Dropoff_Date><dpd></Dropoff_Date>
+<doTime><dpt></doTime>
+<doPlace><dp><vt1></doPlace>
+<!--Service Duration -->
+<SCU><SCU:XML></SCU>
+<SCUqty><qty2></SCUqty>
+<SequenceNumber><seq></SequenceNumber>
+<!--Service Options-->
+<Opt><optd></Opt>
+<Included><ex:1></Included>
+<Included><ex:2></Included>
+<Included><ex:3></Included>
+<Included><ex:4></Included>
+<Included><ex:5></Included>
+<Included><nts:RIN/></Included>
+<!--Service Assignment -->
+<TravellerAssignment>
+<<Names:start>>
+<FullName><forename> <surname></FullName>
+<<Names:end>>
+</TravellerAssignment>
+<Adults><pax></Adults>
+<Children><chd></Children>
+<Infants><inf></Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<<ROOMS:start>>
+<RoomConfig>
+<RoomType><RoomType:d:xml></RoomType>
+<TravellerAssignment>
+<<Names:start>>
+<FullName><forename> <surname></FullName>
+<<Names:end>>
+</TravellerAssignment>
+</RoomConfig>
+<<Rooms:end>>
+</RoomConfigs>
+</TripEvent>
+<<services:end>>
+</TripEvents>
+<!--Optionals (Copy Service Tags here)-->
+<<Optionals:start>>
+<<optionalservices:start>>
+<<default>>
+<<optionalservices:end>>
+<<Optionals:end>>
+</Trip>
