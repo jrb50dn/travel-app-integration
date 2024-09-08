@@ -36,11 +36,13 @@ Subject: XML Export: <bn>
 <<ROOMS:start>>
 <RoomConfig>
 <RoomType><RoomType:d:xml></RoomType>
-<TravellerAssignment>
+<TravellerAssignments>
 <<Names:start>>
+<TravellerAssignment>
 <FullName><forename> <surname></FullName>
-<<Names:end>>
 </TravellerAssignment>
+<<Names:end>>
+</TravellerAssignments>
 </RoomConfig>
 <<Rooms:end>>
 </RoomConfigs>
@@ -96,18 +98,22 @@ Subject: XML Export: <bn>
 <SequenceNumber><seq></SequenceNumber>
 <!--Service Options-->
 <Opt><optd></Opt>
+<Inclusions>
 <Included><ex:1></Included>
 <Included><ex:2></Included>
 <Included><ex:3></Included>
 <Included><ex:4></Included>
 <Included><ex:5></Included>
 <Included><nts:RIN/></Included>
+</Inclusions>
 <!--Service Assignment -->
-<TravellerAssignment>
+<TravellerAssignments>
 <<Names:start>>
+<TravellerAssignment>
 <FullName><forename> <surname></FullName>
-<<Names:end>>
 </TravellerAssignment>
+<<Names:end>>
+</TravellerAssignments>
 <Adults><pax></Adults>
 <Children><chd></Children>
 <Infants><inf></Infants>
@@ -116,11 +122,13 @@ Subject: XML Export: <bn>
 <<ROOMS:start>>
 <RoomConfig>
 <RoomType><RoomType:d:xml></RoomType>
-<TravellerAssignment>
+<TravellerAssignments>
 <<Names:start>>
+<TravellerAssignment>
 <FullName><forename> <surname></FullName>
-<<Names:end>>
 </TravellerAssignment>
+<<Names:end>>
+</TravellerAssignments>
 </RoomConfig>
 <<Rooms:end>>
 </RoomConfigs>
@@ -134,3 +142,4 @@ Subject: XML Export: <bn>
 <<optionalservices:end>>
 <<Optionals:end>>
 </Trip>
+

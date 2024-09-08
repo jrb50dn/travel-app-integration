@@ -7,6 +7,7 @@ const inputData = { trip: JSON.stringify(require("./tour_plan_data.json")) };
 // Parse the JSON string to a JavaScript object
 const tourPlanData = JSON.parse(inputData.trip);
 
+// Map TourPlan codes to Travefy product types
 const tourPlanToTravefyMap = {
   FL: 0,
   RC: 1,
@@ -66,7 +67,7 @@ const createInclusionsList = (inclusions) =>
 
 // Function to generate event description based on common fields
 const generateCommonDescription = (event) => `
-  ${createInclusionsList(event.Included)}
+  ${createInclusionsList(event.Inclusions)}
   ${event.Description.ShortItineraryNote ? `<p>${event.Description.ShortItineraryNote}</p>` : ""}
   ${event.Description.ItineraryNote ? `<p>${event.Description.ItineraryNote}</p>` : ""}
   ${event.Description.InfoNote ? `<p>${event.Description.InfoNote}</p>` : ""}
@@ -75,6 +76,13 @@ const generateCommonDescription = (event) => `
   ${event.Description.ServiceRemarks ? `<p>${event.Description.ServiceRemarks}</p>` : ""}
   ${event.Description.OptionContent ? `<p style="background-color: rgba(255, 254, 145, 1)">${event.Description.OptionContent}</p>` : ""}
 `;
+
+const mapTravellersToTripUsers = (travellers) => travellers.map(traveller => ({
+    title: traveller.Title,
+    email: traveller.Email,
+    fullName: traveller.FullName,
+    role: "4"
+  }));
 
 // Function to map each trip event to Travefy format
 const mapTripEvent = (event) => {
@@ -191,8 +199,8 @@ const mapDay = (day, events) => ({
 });
 
 // Generate the trip days and map the events
-const tripDays = [...new Set(tourPlanData.TripDays.TripDay)].map((day) =>
-  mapDay(day, tourPlanData.TripEvents.TripEvent)
+const tripDays = [...new Set(tourPlanData.TripDays)].map((day) =>
+  mapDay(day, tourPlanData.TripEvents)
 );
 
 // Prepare the final output for Zapier
@@ -207,9 +215,8 @@ const travefyTrip = {
   IsArchived: false,
   Currency: tourPlanData.Currency,
   TripDays: tripDays,
+  TripUsers: mapTravellersToTripUsers(tourPlanData.Travellers),
 };
 
-console.log(tourPlanData.Travellers.Traveller);
-
 // Export the result as a JSON string for Zapier
-output = { travefyTrip: JSON.stringify(travefyTrip) };
+output = { travefyTrip: JSON.stringify(travefyTrip), tripUsers: JSON.stringify({ tripUsers:travefyTrip.TripUsers}) };

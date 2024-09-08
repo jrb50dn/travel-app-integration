@@ -49,46 +49,61 @@ except ET.ParseError as e:
     exit(1)
 
 # Helper function to handle mixed content (text + children) and attributes
+# Helper function to handle mixed content (text + children) and attributes
 def xml_to_dict(element):
     # If the element has no children and no attributes, just return its text
     if len(element) == 0 and not element.attrib:
         return element.text.strip().replace('"', '&quot;') if element.text else None
     
     data = {}
-    
+
     # Handle element attributes
     if element.attrib:
         data['@attributes'] = element.attrib
-    
+
     # Mixed content handling (text + children)
     if element.text and element.text.strip():
         data['#text'] = element.text.strip().replace('"', '&quot;')
-    
+
     # Handle child elements
     children = list(element)
     if children:
         child_data = {}
         for child in children:
             child_dict = xml_to_dict(child)
-            # Handle multiple children with the same tag (e.g., a list of items)
-            if child.tag not in child_data:
-                child_data[child.tag] = child_dict
+
+            # Handle lists that need to be flattened
+            if child.tag in ['Travellers', 'RoomConfigs', 'TripDays', 'TripEvents', 'Inclusions', 'TravellerAssignments']:
+                if child.tag not in data:
+                    data[child.tag] = []
+
+                # If the child itself has child elements (e.g., RoomConfig, TripDay), append them directly
+                if isinstance(child_dict, dict) and len(child_dict) == 1 and list(child_dict.keys())[0] in ['RoomConfig', 'TripDay', 'Traveller', 'TripEvent', 'Included', 'TravellerAssignment']:
+                    # Directly append inner list elements to the parent array
+                    list_items = child_dict[list(child_dict.keys())[0]]
+                    if isinstance(list_items, list):
+                        data[child.tag].extend(list_items)
+                    else:
+                        data[child.tag].append(list_items)
+                else:
+                    data[child.tag].append(child_dict)
             else:
-                # Convert to list if there are multiple children with the same tag
-                if not isinstance(child_data[child.tag], list):
-                    child_data[child.tag] = [child_data[child.tag]]
-                child_data[child.tag].append(child_dict)
+                # Handle multiple children with the same tag (e.g., a list of items)
+                if child.tag not in child_data:
+                    child_data[child.tag] = child_dict
+                else:
+                    # Convert to list if there are multiple children with the same tag
+                    if not isinstance(child_data[child.tag], list):
+                        child_data[child.tag] = [child_data[child.tag]]
+                    child_data[child.tag].append(child_dict)
         data.update(child_data)
     
     return data
 
+
 # Convert XML to dictionary
 xml_dict = xml_to_dict(root)
 
-
-
-# Convert dictionary to JSON format for better readability (optional)
-json_data = json.dumps(xml_dict, indent=4)
 # Convert dictionary to JSON format for better readability (optional)
 try:
     # Attempt to validate the JSON
