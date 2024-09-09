@@ -1,96 +1,33 @@
 {
     "Travellers": [
         {
-            "Title": "Ms.",
-            "FullName": "AnnikaAbrahamson",
+            "Title": null,
+            "FullName": "Lynn&nbsp;McNally",
             "Type": "Adult",
-            "Email": null,
-            "DietaryRequirements": "No onion, garlic or sugars",
-            "MedicalConditions": null
-        },
-        {
-            "Title": "Ms.",
-            "FullName": "ArlyceAbrahamson",
-            "Type": "Adult",
-            "Email": null,
-            "DietaryRequirements": null,
-            "MedicalConditions": null
-        },
-        {
-            "Title": "Mr.",
-            "FullName": "KeithAbrahamson",
-            "Type": "Adult",
-            "Email": "smiles4k2@gmail.com",
-            "DietaryRequirements": null,
-            "MedicalConditions": null
-        },
-        {
-            "Title": "Ms.",
-            "FullName": "KarleneJohnson",
-            "Type": "Adult",
-            "Email": "smiles4k2@gmail.com",
-            "DietaryRequirements": null,
-            "MedicalConditions": null
+            "Email": "lynnmcnally@bigpond.com",
+            "DietaryRequirements": "None",
+            "MedicalConditions": "None"
         }
     ],
     "RoomConfigs": [
         {
             "TravellerAssignments": [
                 {
-                    "FullName": "AnnikaAbrahamson"
-                }
-            ],
-            "RoomType": "Single"
-        },
-        {
-            "TravellerAssignments": [
-                {
-                    "FullName": "ArlyceAbrahamson"
-                }
-            ],
-            "RoomType": "Single"
-        },
-        {
-            "TravellerAssignments": [
-                {
-                    "FullName": "KeithAbrahamson"
-                }
-            ],
-            "RoomType": "Single"
-        },
-        {
-            "TravellerAssignments": [
-                {
-                    "FullName": "KarleneJohnson"
+                    "FullName": "LynnMcNally"
                 }
             ],
             "RoomType": "Single"
         }
     ],
     "TripDays": [
-        "2024-09-20",
-        "2024-09-20",
-        "2024-09-21",
-        "2024-09-22",
-        "2024-09-23",
-        "2024-09-23",
-        "2024-09-24",
-        "2024-09-24",
-        "2024-09-24",
-        "2024-09-27",
-        "2024-09-27",
-        "2024-09-27",
-        "2024-09-28",
-        "2024-09-29",
-        "2024-09-29",
-        "2024-09-30",
-        "2024-10-01"
+        "2024-06-21",
+        "2024-06-22"
     ],
     "TripEvents": [
         {
             "Inclusions": [
-                "1 x Toll road",
-                "1 x Airport parking",
+                null,
+                null,
                 null,
                 null,
                 null,
@@ -98,1148 +35,54 @@
             ],
             "TravellerAssignments": [
                 {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
+                    "FullName": "LynnMcNally"
                 }
             ],
             "RoomConfigs": [
                 {
                     "TravellerAssignments": [
                         {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
+                            "FullName": "LynnMcNally"
                         }
                     ],
                     "RoomType": "Single"
                 }
             ],
-            "ServiceLineId": "494814",
-            "SegmentProviderName": "Bislet Limousine AS",
-            "Name": "Private transfer Oslo Gardermoen Airport to City",
-            "LocationCode": [
-                null,
-                "OSL"
-            ],
-            "Description": {
-                "ServiceRemarks": "DL9594 arrives OSL 16:20",
-                "ServiceNote": "\u200bFlight DL9594 arrives OSL 16:20 (Not arranged by 50DN)",
-                "InfoNote": null,
-                "ShortItineraryNote": "Transfers include one suitcase and one carry on per person. Any additional luggage must be pre-booked.",
-                "ItineraryNote": "Bislet Limousineservice Emergency number: + 47 900 29 085Your driver will meet you holding a name sign.",
-                "OptionContent": "PRIORITY",
-                "TravelInformation": null
-            },
-            "EventType": "PT",
-            "SegmentIdentifier": "402634",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Ringnesveien 7Oslo,Norway0978",
-            "Phone": "+47 22 80 25 20",
-            "Date": "2024-09-20",
-            "Pickup_Date": "2024-09-20",
-            "puTime": "16:30",
-            "puPlace": "Oslo",
-            "Dropoff_Date": "2024-09-20",
-            "doTime": null,
-            "doPlace": "Hotel ContinentalOslo",
-            "SCU": "car",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "OSLPTBIS001PT001",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Double"
-                },
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        }
-                    ],
-                    "RoomType": "Twin"
-                }
-            ],
-            "ServiceLineId": "494815",
-            "SegmentProviderName": "Hotel Continental",
-            "Name": "Superior room including breakfast",
-            "LocationCode": [
-                "Approximate distance from Nationaltheatret station:",
-                "OSL"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": null,
-                "InfoNote": "This historical hotel enjoys a central position between Aker Brygge, the Royal Palace, Nationaltheatret and Norway\u2019s parliament, the Storting. Each of the 155 rooms and suites has its own unique character, with decor, soft furnishings and art all hand-selected and juxtaposed with the greatest of care. Hotel Continental gives its guests plenty to feast their eyes on, whilst preserving the quality, attention to detail and the cosmopolitan atmosphere that have always been Hotel Continental\u2019s trademarks.",
-                "ShortItineraryNote": "The spacious Superior Rooms are 24sqm and have king-size beds or twin beds. Room amenities include 1 x king-size bed (180 x 200 cm) or 2 x twin beds (90 x 200 cm), LED flat-screen and movies on demand, AppleTV and Chromecast, Nespresso coffee machine, minibar with a good selection of drinks and snacks, safe, iron and ironing board.The private bathroom has a bathtub or shower, bathrobes, slippers, hairdryer and Molton Brown toiletries. Free entry to the fitness facilities and free internet access are included.",
-                "ItineraryNote": null,
-                "OptionContent": "Priority Virtuoso, 25% BAR, BOOK ONLINE",
-                "TravelInformation": null
-            },
-            "EventType": "AC",
-            "SegmentIdentifier": "6741SE070420 &amp; 6741SE070421",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Stortingsgaten 24/26Oslo,Norway0117",
-            "Phone": "+47 22 82 40 00",
-            "Date": "2024-09-20",
-            "Pickup_Date": "2024-09-20",
-            "puTime": null,
-            "puPlace": "Oslo",
-            "Dropoff_Date": "2024-09-24",
-            "doTime": null,
-            "doPlace": null,
-            "SCU": "nights",
-            "SCUqty": "4",
-            "SequenceNumber": "20",
-            "Opt": "OSLACCON002AC01C",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                "1 x Public transport",
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494816",
-            "SegmentProviderName": "Norditours",
-            "Name": "Discover Oslo - Private City Tour",
-            "LocationCode": [
-                null,
-                "OSL"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": null,
-                "InfoNote": null,
-                "ShortItineraryNote": "Discover the must-sees of beautiful Oslo including the Royal Palace and Vigeland Park \u00a0on a private walking tour.Enjoy all the landmarks of Oslo's city centre on a private 3-hour walking tour with a local guide. Get a taste of the life in this vibrant capital through its famous sights, and enjoy its architectural and cultural diversity. See the Royal Palace, the Norwegian Parliament, and the University of Oslo, and stroll the bustling Karl Johan pedestrian shopping area. Take the tram to the iconic Vigeland Park and explore the incredible and unique works of sculptor Gustav Vigeland. A perfect introduction to the Norwegian capital! Duration: 3 hours Inclusions: Private English speaking guide, visit to Vigeland Park, public transportationExclusions: Food and drinkActivity Level: ModerateAccessible: Yes",
-                "ItineraryNote": "Your guide, tel +47 95094363, will meet you in hotel reception. Please be ready in good time. \u200b",
-                "OptionContent": "3 hours PRIORITY (max 10)",
-                "TravelInformation": null
-            },
-            "EventType": "TD",
-            "SegmentIdentifier": "5USA121310 / Victoria",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "c/o Ekonomernas HusStortingsgata 8Oslo,Norway0161",
-            "Phone": "+47 95094363",
-            "Date": "2024-09-21",
-            "Pickup_Date": "2024-09-21",
-            "puTime": "10:00",
-            "puPlace": "Hotel ContinentalOslo",
-            "Dropoff_Date": "2024-09-21",
-            "doTime": null,
-            "doPlace": "Oslo",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "OSLTDNORDITTD001",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494817",
             "SegmentProviderName": "50 Degrees North",
-            "Name": "Day at leisure - Oslo",
-            "LocationCode": [
-                null,
-                "OSL"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": "\u200bSome of our favourite restaurants in Oslo:Engebret Cafe: Charming historic restaurant with great foodStatholdergaarden: table reservations is needed, but they also offer a more informal Food & Wine cellar.Maaemo: Michelin star restaurant in Oslo. Ekeberg Restaurant: lovely location with views of Oslo - also great for lunch combined with a walk in the Ekeberg Sculpture Park Castello: located on the waterfront at S\u00f8renga near the Opera and Munch Museum. Sommerro has a great rooftop restaurant TAK (roof). You can find all on-site restaurant in this link. Breakfast is served in the Ekspedisjonshallen. Rest: The name means \u201cleftovers\u201d and Chef Jimmy \u00d8ien and his team are working towards a zero-waste philosophy that also involves using ingredients that no one else wants and turn it into a beautiful high-class manu. Kontrast: Swedish chef Mikael Svensson is cooking New Nordic food his own way and that has earned the restaurant a Michelin star three years in a row. Smalhans: a neighbourhood restaurant open from lunch to dinner and the only restaurant in Norway with a Bib Gourmand rating in the Michelin guide. Sentralen: Norwegian brasserie-style food: simple and modern and using local ingredient, also home of Hitchhiker Restaurant and the rooftop terrace Mynt. Two great international options: Ling Ling Oslo, a Cantonese restaurant with a rooftop terrace and Plah, a modern Thai cuisine & airy, upscale bar for street food, plus leafy terrace.For more suggestions, please see our attractions page: https://www.fiftydegreesnorth.com/eu/attractions/restaurant-options-in-oslo",
-                "InfoNote": null,
-                "ShortItineraryNote": "Enjoy your day at leisure in Oslo. Visit highlights such as the Natural History Museum, Akershus Fortress, The Norwegian National Opera & ballet or the Fram Museum.",
-                "ItineraryNote": null,
-                "OptionContent": null,
-                "TravelInformation": null
-            },
-            "EventType": "OT",
-            "SegmentIdentifier": null,
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Lillehammer,Norway",
-            "Phone": null,
-            "Date": "2024-09-22",
-            "Pickup_Date": "2024-09-22",
-            "puTime": null,
-            "puPlace": "Oslo",
-            "Dropoff_Date": "2024-09-22",
-            "doTime": null,
-            "doPlace": "Oslo",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "OSLOT50DN01OT005",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                "1 x Lunch guide",
-                "1 x Entry fees",
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494818",
-            "SegmentProviderName": "Norditours",
-            "Name": "Day trip to Hadeland Glassworks &amp; Kistefos Museum",
-            "LocationCode": [
-                null,
-                "OSL"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": null,
-                "InfoNote": null,
-                "ShortItineraryNote": "Enjoy a private guided day trip to Hadeland Glassworks & Kistefos Museum.In scenic surroundings one hour from Oslo you find Hadeland Glassworks, a tourist attraction and shopping destination founded on history, art, culture and handicraft traditions. The glassworks were founded in 1762 and is the oldest industrial company in Norway with continuous operation. The glass museum is the largest in Scandinavia, and displays Hadeland creations from the last 250 years. Enjoy lunch in one of the charming cafes or restaurant at Hadeland (payable locally). After the visit the tour continues to the amazing Kistefos Museum, Northern Europe`s largest sculpture park for contemporary art. Famous architecture alongside historical industry and art exhibitions, set in a stunning sculpture park. Driving time one way from Oslo: 1.5 hoursTotal duration including transfer: Ca 6 hours totalInclusions: Guide, entry to Hadeland Glassworks and Kistefoss Museum \u00a0Not included: Lunch (paid locally), private guided tour of the exhibition in The Twist at the Kistefoss Museum is an additional cost and must be pre booked.",
-                "ItineraryNote": "\u200bYour guide, tel +47 95094363, will meet you in hotel reception. Please be ready in good time. \u200b",
-                "OptionContent": "ADD car &amp; driver W/Bislet",
-                "TravelInformation": null
-            },
-            "EventType": "TD",
-            "SegmentIdentifier": "5USA121310 / Victoria",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "c/o Ekonomernas HusStortingsgata 8Oslo,Norway0161",
-            "Phone": "+47 95094363",
-            "Date": "2024-09-23",
-            "Pickup_Date": "2024-09-23",
-            "puTime": "10:00",
-            "puPlace": "Hotel ContinentalOslo",
-            "Dropoff_Date": "2024-09-23",
-            "doTime": "16:00",
-            "doPlace": "Hotel ContinentalOslo",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "OSLTDNORDITTD007",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494819",
-            "SegmentProviderName": "Bislet Limousine AS",
-            "Name": "Car &amp; driver for Hadeland &amp; Kistefoss daytrip",
-            "LocationCode": [
-                null,
-                "OSL"
-            ],
-            "Description": {
-                "ServiceRemarks": "Norditours guide",
-                "ServiceNote": null,
-                "InfoNote": null,
-                "ShortItineraryNote": null,
-                "ItineraryNote": "Bislet Limousineservice Emergency number: + 47 900 29 085Your driver will meet you holding a name sign",
-                "OptionContent": "Add to guided daytrip from OSL",
-                "TravelInformation": null
-            },
-            "EventType": "TD",
-            "SegmentIdentifier": "132407",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Ringnesveien 7Oslo,Norway0978",
-            "Phone": "+47 22 80 25 20",
-            "Date": "2024-09-23",
-            "Pickup_Date": "2024-09-23",
-            "puTime": "10:00",
-            "puPlace": "Hotel ContinentalOslo",
-            "Dropoff_Date": "2024-09-23",
-            "doTime": "16:00",
-            "doPlace": "Hotel ContinentalOslo",
-            "SCU": "car",
-            "SCUqty": "1",
-            "SequenceNumber": "20",
-            "Opt": "OSLTDBIS001PT010",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494820",
-            "SegmentProviderName": "Vy - Vygruppen",
-            "Name": "Rail Journey from Oslo to Fl\u00e5m including Fl\u00e5msbana",
-            "LocationCode": [
-                null,
-                "OSL"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": "\u200bYour hotel can assist you in arranging transportation. https://maps.app.goo.gl/mYjWSgkTg3FeYbF8A",
-                "InfoNote": null,
-                "ShortItineraryNote": "The train journey from Oslo to Fl\u00e5m takes you over the Hardangervidda plateau to the small station of Myrdal, from where you will continue with the world-renown Fl\u00e5msbana, i.e. the Fl\u00e5m Railway all the way to Fl\u00e5m. In the span of a brief hour, the train takes you from sea level at the Sognefjord in Fl\u00e5m to the Myrdal mountain station at 867 metres above sea level. The Fl\u00e5m Railway is one of the steepest standard-gauge railway lines in the world, with 80% of the journey at a gradient of 5.5%. The train runs through spectacular scenery, alongside the Rallar Road, vertiginous mountainsides, foaming waterfalls, through 20 tunnels and offers so many viewpoints that, for many people, a single trip up and down is not enough. National Geographic Traveler Magazine calls the Fl\u00e5m Railway one of the top 10 train journeys in Europe while in 2014 Lonely Planet Traveller went even further, and named it the best train journeys in the world.",
-                "ItineraryNote": "Please find your tickets with the travel documents. On board the train, please present the ticket on your mobile phone or as a printed copy.Seats on the train have been automatically assigned by VY and seating map is not available.NOTE: We recommend getting a lunch pack from your hotel or buying something at the station to bring with you on the train. The restaurant carriage onboard have a small selection of food, good tea and coffee.",
-                "OptionContent": "Indicative pricing",
-                "TravelInformation": null
-            },
-            "EventType": "RA",
-            "SegmentIdentifier": "LUF-Q4Y-IFS",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Bergen,Norway0",
-            "Phone": "+47 23621111",
-            "Date": "2024-09-24",
-            "Pickup_Date": "2024-09-24",
-            "puTime": "08:25",
-            "puPlace": "Oslo",
-            "Dropoff_Date": "2024-09-24",
-            "doTime": "14:22",
-            "doPlace": "Fl\u00e5m",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "OSLRANSB001RA003",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                "1 x Grandfather Suite",
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        }
-                    ],
-                    "RoomType": "Double"
-                }
-            ],
-            "ServiceLineId": "494822",
-            "SegmentProviderName": "29I2 Aurland",
-            "Name": "Go High in Aurland - 3 nights: Activities &amp; Transfers",
-            "LocationCode": [
-                null,
-                "AUR"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": null,
-                "InfoNote": "Nestled in the heart of Aurland, 29/2 Aurland Hotel is a charming retreat amidst Norway's majestic fjords. With its picturesque location, this family owned boutique hotel offers a cozy haven for travellers seeking tranquility and natural beauty. The hotel features a variety of accommodations, each uniquely decorated and designed to provide comfort and relaxation.Guests can unwind in the inviting communal areas, such as the lounge with a crackling fireplace, or step outside to soak in the stunning mountain vistas. Whether enjoying a homemade breakfast made from local ingredients or embarking on outdoor adventures in the surrounding wilderness, 29/2 Aurland Hotel provides an unforgettable stay immersed in the breathtaking landscapes of Norway.",
-                "ShortItineraryNote": "29/2 Aurland is a boutique hotel in the heart of the Norwegian fjords, perfectly located near Flam. The hotel\u2019s d\u00e9cor is unique with old and traditional colours, recycled materials, antiques and new design furniture. Guests can relax in the communal lounge, spend time in the beautiful gardens or relax in the wood-fired hot tub.A homemade breakfast is served each morning. Itinerary for 3 people:24SEP: \u00a0Arrive with your private transfer to the lodge. Enjoy a bowl of hot soup with fresh bread or quiche and fresh apple juice at ETE Restaurant which is a converted Smokehouse.To top it up and to get you ready for the hiking adventure, enjoy a homemade dessert. \u00a0After dessert, we head off on a lovely waterfall hike, alongside the Turlid Waterfall to Stegastein Viewpoint. Your guide will give you an introduction to the area, its history and folklore. During the hike, enjoy a cup of warm coffee or tea and a cinnamon roll while admiring the view. Remember your camera, because this is one you will want to remember. After the hike, relax in the calm and quiet garden before dinner is served at the cosy lodge. 25SEP: \u00a0The day starts out with a breakfast of champions, giving you a taste of the magic that is local, organic ingredients. After breakfast, set out on Stegastein viewpoint visit and hike to Prest. This is a half day activity (4hrs). Full day activity on request.26SEP: \u00a0 Today you will visit to a traditional pasture farm high up in the mountains with fantastic views. On summer farms, Norwegians have been spending their summers producing cheese and taking care of livestock for generations. The tradition continues through hard-working farmers and their love for natural and ecological produce. On the summer farm, enjoy lunch in rustic surroundings, whilst enjoying the fantastic view. After the adventure, we head back down to the lodge. Enjoy the garden before sitting down to dinner at ETE Restaurant. \u00a0 27SEP: \u00a0Before you leave, enjoy your last breakfast at 29|2 Aurland, remember to breathe in the fresh air. If your departure is later in the afternoon, choose an activity fromthe optional activities menu.Included:\u2022 \u00a0Private return transfer between Fl\u00e5m and Aurland\u2022 \u00a03 x lunches\u2022 \u00a0Waterfall hike and Stegastein drive\u2022 \u00a02 x hiking (level of difficulty based on your preferences)\u2022 \u00a0Hot tub Please note that no drinks/alcohol is included.Activity level: 3 (suitable for experienced hikers with a high level of fitness) * The hot tub is guaranteed but could be available on a different day due to high demand.",
-                "ItineraryNote": "\u200bIf your tour includes a pick up from Fl\u00e5m Railway Station or Ferry pier, your driver will meet you with a name sign at the end of the platform.Good to know: 29I2 Aurland does not have a full bar. Wine, Beer and Gin are available for purchase.",
-                "OptionContent": "Active package, ADD ACCOMMODATION, Activity level 3",
-                "TravelInformation": null
-            },
-            "EventType": "TO",
-            "SegmentIdentifier": "1367",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Tokvamsvegen 12Aurland,Norway5745",
-            "Phone": "+4748994913",
-            "Date": "2024-09-24",
-            "Pickup_Date": "2024-09-24",
-            "puTime": null,
-            "puPlace": "Aurland",
-            "Dropoff_Date": "2024-09-27",
-            "doTime": null,
-            "doPlace": "Aurland",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "20",
-            "Opt": "AURTO292AURTO010",
-            "Adults": "2",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                "1 x Theresa Suite",
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Double"
-                }
-            ],
-            "ServiceLineId": "494823",
-            "SegmentProviderName": "29I2 Aurland",
-            "Name": "Go Traditional - 3 nights : Activities &amp; transfers",
-            "LocationCode": [
-                null,
-                "AUR"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": null,
-                "InfoNote": "Nestled in the heart of Aurland, 29/2 Aurland Hotel is a charming retreat amidst Norway's majestic fjords. With its picturesque location, this family owned boutique hotel offers a cozy haven for travellers seeking tranquility and natural beauty. The hotel features a variety of accommodations, each uniquely decorated and designed to provide comfort and relaxation.Guests can unwind in the inviting communal areas, such as the lounge with a crackling fireplace, or step outside to soak in the stunning mountain vistas. Whether enjoying a homemade breakfast made from local ingredients or embarking on outdoor adventures in the surrounding wilderness, 29/2 Aurland Hotel provides an unforgettable stay immersed in the breathtaking landscapes of Norway.",
-                "ShortItineraryNote": "29/2 Aurland is a boutique hotel in the heart of the Norwegian fjords, perfectly located near Flam. The hotel\u2019s d\u00e9cor is unique with old and traditional colours, recycled materials, antiques and new design furniture. Guests can relax in the communal lounge, spend time in the beautiful gardens or relax in the wood-fired hot tub.A homemade breakfast is served each morning. Itinerary for 1 adult24SEP: \u00a0Welcome to 292 Aurland. Enjoy a bowl of hot soup with fresh bread or quiche and fresh apple juice at ETE Restaurant which is a converted Smokehouse. To top it off and to get you ready for the awaiting adventure, enjoy a homemade dessert. After dessert, head off on a lovely, low-key hike through the organic fields towards Turlid Waterfall while listening to local myths related by your guide. By the waterfall, enjoy a cup of warm coffee or tea and a cinnamon roll while taking in the view. After the hike, relax in the calm and quiet garden before dinner is served at the cosy lodge. 25SEP: \u00a0A full day relaxing at the lodge. In the evening time to relax in the wood-fired hot tub (we can guarantee the hot tub experience, but due to high demand the day it is available can change between the 1st and 2nd day).Sit back, relax and enjoy your surroundings with a glass of local drink before sitting down at ETE Restaurant for dinner.26SEP: \u00a0Transfer to and from Aurland village.27SEP: \u00a0Before you leave, enjoy your last breakfast at 29|2 Aurland, remember to breathe in the fresh air. If your departure is later in the afternoon, choose an activity from our optional activities menu. Included:\u2022 \u00a0Private return transfer between Fl\u00e5m and Aurland (15 mins 1-way)\u2022 \u00a03 x lunches\u2022 \u00a0Waterfall hike, Stegastein, Borgund Stave Church \u2022 \u00a0Full day of activity to pasture farm, and stroll among the handcrafters in Aurland\u2022 \u00a0Hot tub Please note that no drinks/alcohol is included. Actvity level: 2 (moderate level of fitness required. There is a walk up a steep hill to access the pasture farm)",
-                "ItineraryNote": "\u200bIf your tour includes a pick up from Fl\u00e5m Railway Station or Ferry pier, your driver will meet you with a name sign at the end of the platform.Good to know: 29I2 Aurland does not have a full bar. Wine, Beer and Gin are available for purchase.",
-                "OptionContent": "Cultural package, ADD ACCOMMODATION, activity level 2",
-                "TravelInformation": null
-            },
-            "EventType": "TO",
-            "SegmentIdentifier": "1367",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Tokvamsvegen 12Aurland,Norway5745",
-            "Phone": "+4748994913",
-            "Date": "2024-09-24",
-            "Pickup_Date": "2024-09-24",
-            "puTime": null,
-            "puPlace": "Aurland",
-            "Dropoff_Date": "2024-09-27",
-            "doTime": null,
-            "doPlace": "Aurland",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "30",
-            "Opt": "AURTO292AURTO011",
-            "Adults": "2",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494824",
-            "SegmentProviderName": "Norway&apos;s Best AS",
-            "Name": "Fjord Cruise Aurland-Gudvangen one way",
-            "LocationCode": [
-                null,
-                "AUR"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": null,
-                "InfoNote": null,
-                "ShortItineraryNote": "\u200bEmbark the fjord cruise in Aurland and enjoy its journey sailing through the idyllic Aurlandsfjord, which is also inscribed on the UNESCO World Heritage List. Furthermore, the boat continues through the narrow N\u00e6r\u00f8yfjord before arriving Gudvangen, innermost in the N\u00e6r\u00f8yfjord. The trip takes around two hours one way.",
-                "ItineraryNote": "\u200bPlease find your voucher with the travel documents. Please be ready at the pier in good time before departure. \u200b",
-                "OptionContent": "Book in Citybreak / Premium Vessel suppl. summer only",
-                "TravelInformation": null
-            },
-            "EventType": "TD",
-            "SegmentIdentifier": "QQLA34",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Fl\u00e5m,Norway5742",
-            "Phone": "+47 57631400",
-            "Date": "2024-09-27",
-            "Pickup_Date": "2024-09-27",
-            "puTime": "11:50",
-            "puPlace": "Aurland",
-            "Dropoff_Date": "2024-09-27",
-            "doTime": "13:30",
-            "doPlace": "Gudvangen",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "AURTDFLAMASTD100",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                "1 x Luggage pu Aurl/Fl\u00e5m",
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494825",
-            "SegmentProviderName": "Ring - Limousinservice",
-            "Name": "Private transfer Gudvangen to Bergen",
-            "LocationCode": [
-                null,
-                "GUD"
-            ],
-            "Description": {
-                "ServiceRemarks": "Ferry arrives 13:30",
-                "ServiceNote": null,
-                "InfoNote": null,
-                "ShortItineraryNote": "Private transfer from Gudvangen to Bergen. \u200bTransfers include one suitcase and one carry-on per person.",
-                "ItineraryNote": "Your driver will meet you holding a name signIn case you need to call the transfer company ''Ring Limousineservice&quot; their Emergency number is \u00a0+47 411 606 30",
-                "OptionContent": "PRIORITY",
-                "TravelInformation": null
-            },
-            "EventType": "PT",
-            "SegmentIdentifier": "5USA121310 / Susanne",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Nattlandsfjellet 64Bergen,Norway5098",
-            "Phone": "+47 4116 0630",
-            "Date": "2024-09-27",
-            "Pickup_Date": "2024-09-27",
-            "puTime": "13:40",
-            "puPlace": "Gudvangen PierGudvangen",
-            "Dropoff_Date": "2024-09-27",
-            "doTime": null,
-            "doPlace": "Opus XVIBergen",
-            "SCU": "car",
-            "SCUqty": "1",
-            "SequenceNumber": "20",
-            "Opt": "GUDPTRLS001PT006",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Double"
-                },
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        }
-                    ],
-                    "RoomType": "Twin"
-                }
-            ],
-            "ServiceLineId": "494840",
-            "SegmentProviderName": "Opus XVI",
-            "Name": "Superior room including breakfast",
-            "LocationCode": [
-                "Approximate distance to/from Bergen Railway Station:",
-                "BGO"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": null,
-                "InfoNote": "Opus XVI offers you 65 unique and luxurious rooms in the very heart of Bergen. Bryggen, the popular Fish Market and the Fl\u00f8yen funicular are all nearby.The hotel is housed in a historic building dating from 1876, originally designed and built for Bergen\u2019s largest bank. Each room is individually designed with classic yet modern interiors. Enjoy the view towards Mount Fl\u00f8yen or stay in a room overlooking the quiet plaza of V\u00e5gsallmenningen.",
-                "ShortItineraryNote": "All Superior rooms are individually furnished and have dedicated seating areas and work desks. Superior rooms provide everything you need for a pleasant and comfortable stay. Rooms have in-room Nespresso coffee machine and tea making facilities, TV with Chromecast, free Wifi and tablet for personal use. Bathroom is equipped with Molton Brown toiletries, walk-in shower and heated floors.",
-                "ItineraryNote": null,
-                "OptionContent": "Priority, BOOK ONLINE",
-                "TravelInformation": null
-            },
-            "EventType": "AC",
-            "SegmentIdentifier": "64436",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "V\u00e5gsallmenningen 16Bergen,Norway5014",
-            "Phone": "+47 53 01 22 00",
-            "Date": "2024-09-27",
-            "Pickup_Date": "2024-09-27",
-            "puTime": null,
-            "puPlace": "Bergen",
-            "Dropoff_Date": "2024-10-01",
-            "doTime": null,
-            "doPlace": null,
-            "SCU": "nights",
-            "SCUqty": "4",
-            "SequenceNumber": "40",
-            "Opt": "BGOACOXVI01AC01B",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                "1 x Funicular",
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494827",
-            "SegmentProviderName": "Sue Lindelid - Bergen Guide",
-            "Name": "Discover Bergen - 3h Private City Tour",
-            "LocationCode": [
-                null,
-                "BGO"
-            ],
-            "Description": {
-                "ServiceRemarks": "Guide for this tour will be Lise, mobile +4741617906",
-                "ServiceNote": "\u200bGuide for this tour will be Lise, mobile +4741617906",
-                "InfoNote": null,
-                "ShortItineraryNote": "Discover the sights of historic Bergen and enjoy a ride on the funicular to Mt. Fl\u00f8ien from where you can admire the panoramic views of the town from 1050 feet above sea level.Bergen's centre is very compact, with much to see and hear about within a very short walking distance. Stroll around Bryggen, a World Heritage Site, where you will hear of life in times gone by. Hear about life in this area from the founding of Bergen in 1070, through the Middle Ages and World War 2 to the present day. Learn about dried cod fish, Hanseatic merchants, fires, Norwegian resistance fighters and present-day life at the wharf. Pass by the lively waterside Fish Market and explore the Bergen Fortress area, where you will find H\u00e5kons Hall from 1261 and the Rosenkrantz Tower from 1560s, or wander down the old cobblestone alleyways in the heart of Bergen and see typical, quaint Bergen houses and chimney houses while hearing about life in Bergen past and present.Then take a short ride on the funicular railway up Mt Fl\u00f8ien. Enjoy great views, weather permitting, from the funicular and at the summit where you can also find a cafe and cashmere goats in summer. Duration: 3 hoursMeeting point: At your hotel lobby Inclusions: English speaking guide, entry to funicularActivity Level: Light-ModerateAccessible: Yes though some areas have cobblestones",
-                "ItineraryNote": "Your guide will meet you at your hotel in the reception area. Please be ready 10 minutes before the scheduled tour start time",
-                "OptionContent": "3 hours",
-                "TravelInformation": null
-            },
-            "EventType": "TD",
-            "SegmentIdentifier": "5USA121310 / Sue",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Bergen,Norway",
-            "Phone": "+47 90 78 59 52",
-            "Date": "2024-09-28",
-            "Pickup_Date": "2024-09-28",
-            "puTime": "10:00",
-            "puPlace": "Opus XVIBergen",
-            "Dropoff_Date": "2024-09-28",
-            "doTime": null,
-            "doPlace": "Bergen",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "BGOTDSLBG01TD001",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "570729",
-            "SegmentProviderName": "50 Degrees North",
-            "Name": "Day at leisure - Bergen",
-            "LocationCode": [
-                null,
-                "BGO"
-            ],
-            "Description": {
-                "ServiceRemarks": null,
-                "ServiceNote": "\u200bSome of our favourite restaurants in Bergen:BARE - Michelin Star, local, organic, western Norway foodEnhj\u00f8rningen - Fish and seafood restaurant. Pre booking recommendedCornelius - Fish and seafood restaurant on an island in the fjord. Pre booking recommended, as you transfer with boat to the islandFrescohallen - part of spectacular historical building of Bergen B\u00f8rs Hotel. Local and fresh, with focus on seafood, grill and signature dishes based on sharing. Enjoy dining while listening to DJ sets that create a relaxed and fun atmosphere",
-                "InfoNote": null,
-                "ShortItineraryNote": "Bergen, the old Hanseatic capital on the west coast of Norway is a delight, and famous for its history as a trading town and fishing community. Surrounded by seven mountains, Bergen is ideal for enjoying the beauties of nature. A few minutes\u2019 ride on the Fl\u00f8ibanen funicular will take you to the top of Mt. Fl\u00f8yen, while a cable car takes you to the summit of Mt. Ulriken.Sample the delicacies on offer at the Fish Market, or spend hours among the fish, penguins and seals at Bergen Aquarium. Bergen\u2019s old Hanseatic wharf Bryggen, is on the UNESCO's World Heritage List. Explore the wonderful wooden houses and alleyways between the storefronts and get a feel of what Bergen must have been like in the middle ages.",
-                "ItineraryNote": null,
-                "OptionContent": null,
-                "TravelInformation": null
-            },
-            "EventType": "OT",
-            "SegmentIdentifier": null,
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Lillehammer,Norway",
-            "Phone": null,
-            "Date": "2024-09-29",
-            "Pickup_Date": "2024-09-29",
-            "puTime": null,
-            "puPlace": "Bergen",
-            "Dropoff_Date": "2024-09-29",
-            "doTime": null,
-            "doPlace": "Bergen",
-            "SCU": "tour",
-            "SCUqty": "1",
-            "SequenceNumber": "20",
-            "Opt": "BGOOT50DN01OT001",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "570731",
-            "SegmentProviderName": "50 Degrees North",
-            "Name": "General sales",
+            "Name": "Own Arrangements",
             "LocationCode": [
                 null,
                 "AUS"
             ],
             "Description": {
                 "ServiceRemarks": null,
-                "ServiceNote": null,
+                "ServiceNote": "Pre Night at the Hub, Lyn McNally and Charles Capito REF 51652862 (Not Arranged by 50 Degrees North) We have requested continuous stay to group booking 1036GR037847 Norway in Depth / Best of Norway from 22 June until check out on 24 June.",
                 "InfoNote": null,
                 "ShortItineraryNote": null,
                 "ItineraryNote": null,
-                "OptionContent": "USD",
                 "TravelInformation": null
             },
+            "PartnerIdentifier": "itinerary_service_id_AUSOT50DN01ARNK",
             "EventType": "OT",
             "SegmentIdentifier": null,
             "TourplanServiceStatus": "Pending",
             "Address": "Lillehammer,Norway",
             "Phone": null,
-            "Date": "2024-09-29",
-            "Pickup_Date": "2024-09-29",
-            "puTime": null,
-            "puPlace": "Australia",
-            "Dropoff_Date": "2024-09-29",
-            "doTime": null,
-            "doPlace": null,
-            "SCU": "servic",
+            "Date": "2024-06-21",
+            "StartDate": "2024-06-21",
+            "StartTime": null,
+            "StartPlace": "Australia",
+            "EndDate": "2024-06-21",
+            "EndTime": null,
+            "EndPlace": null,
+            "SCU": "tour",
             "SCUqty": "1",
-            "SequenceNumber": "30",
-            "Opt": "AUSOT50DN01OT030",
-            "Adults": "4",
+            "SequenceNumber": "20",
+            "Vessel": "50 Degrees North",
+            "VehicleType": null,
+            "CabinType": null,
+            "RoomType": "Own Arrangements",
+            "Adults": "1",
             "Children": "0",
             "Infants": "0"
         },
@@ -1254,153 +97,61 @@
             ],
             "TravellerAssignments": [
                 {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
+                    "FullName": "LynnMcNally"
                 }
             ],
             "RoomConfigs": [
                 {
                     "TravellerAssignments": [
                         {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
+                            "FullName": "LynnMcNally"
                         }
                     ],
                     "RoomType": "Single"
                 }
             ],
-            "ServiceLineId": "494829",
-            "SegmentProviderName": "Baroniet Rosendal",
-            "Name": "Fjordcruise to Rosendal including lunch",
+            "SegmentProviderName": "50 Degrees North",
+            "Name": "*Best of Norway - Escorted 2024",
             "LocationCode": [
                 null,
-                "BGO"
+                "OSL"
             ],
             "Description": {
                 "ServiceRemarks": null,
-                "ServiceNote": "\u200bhttps://maps.app.goo.gl/rVYrx276x4UpxHqt6",
+                "ServiceNote": null,
                 "InfoNote": null,
-                "ShortItineraryNote": "A lovely fjordcruise from Bergen / Os to Rosendal across the fjords south of Bergen to the Hardangerfjord \u2013 the queen of the fjords. The boat is the fastest and most comfortable means of transport between Bergen and Rosendal, also stopping at Flesland airport (buy tickets from Bergen, they are also valid from Flesland harbor). The tickets include a nice experience, lovely food and scenery ready to take your breath away.Included:\u2022 \u00a0Fjordcruise to/from Bergen \u2013 Rosendal included an 3 1/2 hour stop in Rosendal.\u2022 \u00a0Guided tour at the Manor from 1665\u2022 \u00a0Delicious 2-course hot lunch and coffee/tea with fresh ingredients from the kitchen and herb garden in Rosendal Gardens Caf\u00e9 included!\u2022 \u00a0Exploring the romantic Rosendal Gardens with an abundance of rosesMonday \u2013 Friday guided tour at 12.00, lunch at 13.00Saturday and Sunday: lunch at 14.00 and guided tour at 15.00Lunch menu: A variety of local salmon, baked potatoes and fresh salad from our garden. Rhubarb cake with rhubarb from our garden and coffee/tea. (Alternative menu: local sausage instead of salmon, please let the waiter know).",
+                "ShortItineraryNote": "8 days - Escorted summer tour of Norwegian FjordsThis incredible guided 8-day summer journey traverses the stunning landscape of Norway. Join our exclusive 50 Degrees North escorted tour, travelling from Oslo to Bergen. Visit the traditional Stave Church of Lom and the magnificent Luster and Sognefjord region. Experience the valley of Gudbrandsdalen, surrounded by national parks, an abundance of locally produced food, old architecture, and great hiking trails.Board the classic Norway in a nutshell train journey from Fl\u00e5m and catch the express boat along the Norwegian fjords to Bergen. Feast on fresh seafood at the Bergen Fish Markets for your final dinner with your group. Day 1 - Arrive Oslo; meet your escort & group for the welcome dinnerArrive Oslo and make your own way to your central hotel in the heart of Oslo. The Norwegian capital has a great deal to offer the discerning traveller. If you arrive early, we can recommend a walk around the centre of town to view the Parliament, the Castle & the Harbour area. Check in will be between 10am - 3pm. Close to the hotel, climb the new Opera House for a chance to orient yourself to this small capital. Within 20 metres of the hotel reception is the super helpful Oslo tourist information booth with maps and information for your exploration. If you have a few hours, we suggest heading to close by beautiful peninsula of Bygd\u00f8y by ferry to visit the Viking Museum and Fram Museum this afternoon.Your escort will meet you this evening in the hotel lobby at 6pm and then enjoy a welcome dinner at Ekebergrestauranten, a special modernist, 1920s hillside restaurant, with your group.MEALS 1 Dinner Day 2 - Train to Lillehammer, visit the Norwegian Olympic Museum (ski jump), and do not miss the impressive Garmo Stave ChurchAfter breakfast, board your train at the Oslo Central Station and head towards Lillehammer, the small town that rose to international fame when it hosted the Winter Olympics in 1994. Check into your central hotel. Spend the day at your leisure: Browse the local shops, visit the Norwegian Olympic Museum(ski jump), and do not miss the impressive Garmo Stave Church.MEALS 1 Breakfast Day 3 - Private minibus to travel to Lom, a small town encapsulating the very essence of the Norwegian countrysideAfter breakfast, take a private minibus to Lom, a 3-hour scenic drive from Lillehammer. This bus trip takes you through some of Norway\u2019s most beautiful highlands and lush valleys. Experience the valley of Gudbrandsdalen surrounded by the national parks, an abundance of locally produced food, old architecture, and good hiking.Lom is a small town encapsulating the very essence of the Norwegian countryside. Situated in the famous Jotunheimen National Park, Lom is surrounded by majestic nature. Check into your charming historic hotel. Dinner is included this evening.MEALS 1 Breakfast 1 Dinner Day 4 - Day tour to Geiranger and join a fjord cruise before returning to Lom to visit its famous Stave ChurchDay tour to Geiranger, which is 1.5 hours\u2019 drive away from Lom. On arrival, join a fjord cruise and experience the Geirangerfjord UNESCO World Heritage site. The scenery here is absolutely breathtaking. Take a closer look at the \u201cSeven Sisters\u201d, \u201cBridal Veil\u201d and \u201cSuitor\u201d waterfalls, the majestic fjord cliffs and abandoned mountain farms. Perhaps you\u2019ll be lucky enough to see porpoises playing in the fjord.Travelling back from Geiranger, the minibus can stop at the famous Lom Stave Church, constructed in Norman-style in 1170. It still operates as the local church today.Please note that the Geirangerfjord visit is subject to change due to weather and snow conditions. The mountain road from Lom to Geiranger normally opens from end of May. Alternatively, enjoy the day in Lom, visiting Brimi Bue, a popular Lom hot-spot for fresh local produce and traditional Nordic flavours, owned by renowned chef Arne Brimi. Indulge yourselves in the historic atmosphere of Lom open-air museum and its houses dating from the early 1600s and experience the old farmer culture. The Norwegian Mountain Centre is also worth a visit.MEALS 1 Breakfast 1 Dinner \u00a0Day 5 - Continue your journey together to the heart of the Norwegian fjordsDepart Lom for another scenic journey through the spectacular mountain and fjord country of Breheimen and Jostedalsheimen. Stop at Sognefjellshytta (approx. 1 hr drive) for a coffee/tea break, then sit back and enjoy the scenery until your next stop at the cubist stone at Mefjellet. The final stop before descending down the mountain is at Nedre Oscarshaug \u2013 another fantastic spot for photos and great views.After lunch at Skjolden Hotel, drive approx. 20-30 mins to Feigumfossen and continue to the charming Urnes Stave Church (a UNESCO World Heritage Site and the oldest church in Norway). Catch a ferry to Solvorn and continue over Aurlandsfjellet. Lastly, enjoy a stop at Stegastein before arriving to the peaceful village of Aurland.MEALS 1 Breakfast 1 Lunch 1 Dinner \u00a0Day 6 - Enjoy a fjord cruise journey sailing through Aurlandsfjord and N\u00e6r\u00f8yfjordAfter breakfast, embark the fjord cruise in Aurland and enjoy its journey sailing through the idyllic Aurlandsfjord, which is also inscribed on the UNESCO World Heritage List. Furthermore, the boat continues through the narrow N\u00e6r\u00f8yfjord before arriving Gudvangen, innermost in the N\u00e6r\u00f8yfjord.MEALS 1 BreakfastDay 7 - Aurland to Fl\u00e5m, and step aboard the world famous Fl\u00e5m Railway to Myrdal Station with several stunning lookout points along the way, then express boat to Bergen.Short transfer from Aurland to Fl\u00e5m, and step aboard the world famous Fl\u00e5m Railway to Myrdal Station with several stunning lookout points along the way. Thanks to its steep incline (from sea level to almost 900 meters above sea level in a short hour), the train-ride is rated as one of Europe\u2019s best rail journeys and has become a real highlight for visitors in Norway.Return to Fl\u00e5m to board the express ferry to Bergen. Take in the fresh air on Norway\u2019s longest fjord, the Sognefjord, during this 5-hour ferry-ride towards Bergen. Check into your centrally located hotel at the end of the day.This evening, you will be arriving a little late for a formal group dinner so just head out with the group for a wander around the fish markets (metres from your hotel) for a casual dinner and a celebratory drink to enjoy the long summer night!MEALS 1 Breakfast Day 8 - Departure DayBergen is the perfect strolling town so enjoy any extra time you have before your departure to explore the historical centre of Bergen, being transported back to a time when Bergen was the centre of political power and trade for the entire North Atlantic. It was the Capital of the Kingdom of Norway for a short period, before the capital was moved to Oslo in 1299, and the town grew to become the largest in Scandinavia.The Hanseatic League established itself here in 1350 and had a trade monopoly that lasted 200 years. While in Bergen you might wish to visit the UNESCO heritage listed historical area around the harbour known as the Bryggen district, and the home of Edvard Grieg, Troldhaugen, Norway's internationally famous composer. Enjoy lunch at the new Bergen Fish Market - a fantastic modern architectural designed building with a great outdoor and indoor dining area.MEALS 1 BreakfastIncluded:7 nights\u2019 hotel accommodation in shared double/twin rooms with private facilities50 Degrees North Scandinavian escort for the first seven days7 breakfasts, 1 lunch and 4 dinnersAll transport between destinations by buses, trains and boats50 Degrees North minibus (or similar) between Lom and Aurland. Stop along the way for unexpected photo opportunities, National Tourist Route monuments or quick rest stops.Geiranger day tour with RIB safari. (Subject to change due to weather/snow conditions on the mountain).Fl\u00e5m Railway excursionDay tour to Maihaugen and walking forest tour (weather dependent)24-hour emergency serviceFjordcruise through Aurlandsfjord and N\u00e6r\u00f8yfjordNot included:International flights, travel insurance, luggage handling, lunches and dinners that have not been detailed in the program, and items of personal nature. A small tip for the bus driver will be appreciated - your escort will advise you with details about this.",
                 "ItineraryNote": null,
-                "OptionContent": "**Manual** Closed Monday May and June",
                 "TravelInformation": null
             },
-            "EventType": "TD",
-            "SegmentIdentifier": "TYRO04",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Postboks 235,Norway5486",
-            "Phone": "+47053 48 29 99",
-            "Date": "2024-09-30",
-            "Pickup_Date": "2024-09-30",
-            "puTime": "08:50",
-            "puPlace": "Strandkaiterminalen, BergenBergen",
-            "Dropoff_Date": "2024-09-30",
-            "doTime": "14:25",
-            "doPlace": "Strandkaiterminalen, BergenBergen",
+            "PartnerIdentifier": "itinerary_service_id_OSLPK50DN01BON001",
+            "EventType": "PK",
+            "SegmentIdentifier": null,
+            "TourplanServiceStatus": "Confirmed - A",
+            "Address": "Lillehammer,Norway",
+            "Phone": null,
+            "Date": "2024-06-22",
+            "StartDate": "2024-06-22",
+            "StartTime": null,
+            "StartPlace": "Oslo",
+            "EndDate": "2024-06-29",
+            "EndTime": null,
+            "EndPlace": "Bergen",
             "SCU": "tour",
             "SCUqty": "1",
             "SequenceNumber": "10",
-            "Opt": "BGOTDBARROSTD005",
-            "Adults": "4",
-            "Children": "0",
-            "Infants": "0"
-        },
-        {
-            "Inclusions": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-            ],
-            "TravellerAssignments": [
-                {
-                    "FullName": "AnnikaAbrahamson"
-                },
-                {
-                    "FullName": "ArlyceAbrahamson"
-                },
-                {
-                    "FullName": "KeithAbrahamson"
-                },
-                {
-                    "FullName": "KarleneJohnson"
-                }
-            ],
-            "RoomConfigs": [
-                {
-                    "TravellerAssignments": [
-                        {
-                            "FullName": "AnnikaAbrahamson"
-                        },
-                        {
-                            "FullName": "ArlyceAbrahamson"
-                        },
-                        {
-                            "FullName": "KeithAbrahamson"
-                        },
-                        {
-                            "FullName": "KarleneJohnson"
-                        }
-                    ],
-                    "RoomType": "Single"
-                }
-            ],
-            "ServiceLineId": "494830",
-            "SegmentProviderName": "Ring - Limousinservice",
-            "Name": "Private transfer city to Bergen Airport",
-            "LocationCode": [
-                null,
-                "BGO"
-            ],
-            "Description": {
-                "ServiceRemarks": "DL9466 departs BGO 10:45",
-                "ServiceNote": "\u200bFlight DL9466 departs BGO 10:45 (Not arranged by 50DN)",
-                "InfoNote": null,
-                "ShortItineraryNote": "Transfers include one suitcase and one carry-on per person. Any additional luggage must be pre-booked.\u200b",
-                "ItineraryNote": "Please be ready at the Hotel lobby in good time before departureIn case you need to call the transfer company ''Ring Limousineservice&quot; their Emergency number is \u00a0+47 411 606 30",
-                "OptionContent": "Max 16 pax, PRIORITY",
-                "TravelInformation": null
-            },
-            "EventType": "PT",
-            "SegmentIdentifier": "5USA121310 / Susanne",
-            "TourplanServiceStatus": "Confirmed",
-            "Address": "Nattlandsfjellet 64Bergen,Norway5098",
-            "Phone": "+47 4116 0630",
-            "Date": "2024-10-01",
-            "Pickup_Date": "2024-10-01",
-            "puTime": "07:45",
-            "puPlace": "Opus XVIBergen",
-            "Dropoff_Date": "2024-10-01",
-            "doTime": null,
-            "doPlace": "Bergen Airport",
-            "SCU": "car",
-            "SCUqty": "1",
-            "SequenceNumber": "10",
-            "Opt": "BGOPTRLS001PT002",
-            "Adults": "4",
+            "Vessel": "50 Degrees North",
+            "VehicleType": "01JUN24, 22JUN24, 13JUL24, 10AUG24",
+            "CabinType": "01JUN24, 22JUN24, 13JUL24, 10AUG24",
+            "RoomType": "*Best of Norway - Escorted 2024",
+            "Adults": "1",
             "Children": "0",
             "Infants": "0"
         }
     ],
-    "Name": "5USA121310- Abrahamson x 4",
+    "BookingId": "23146",
+    "Ref": "5MFT122000",
+    "Name": "5MFT122000- Lynn McNally x 1",
     "Active": "true",
     "IsChatDisabled": "false",
     "IsPdfEnabled": "true",
@@ -1408,5 +159,11 @@
     "Status": "active",
     "IsArchived": "false",
     "Currency": "USD",
-    "SalesLocation": "US"
+    "SalesLocation": "US",
+    "TourplanConsultant": "Vivien Balogh",
+    "Consultant": null,
+    "AgentID": "5MRETL",
+    "AgentRef": null,
+    "Email": "technology@fiftydegreesnorth.com",
+    "TermsAndConditions": null
 }

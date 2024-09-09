@@ -23,7 +23,7 @@ with open(xml_file, 'r', encoding='utf-8') as file:
 # Function to remove invalid tags and comments
 def remove_invalid_tags_and_comments(input_string):
     # Define a pattern that matches the specified tags (opening tags, even if not closed)
-    tag_pattern = r'<nts:(gea|inf|tin|sit|nte|loc|vou|RIN)[^>]*>'
+    tag_pattern = r'<nts:(gea|inf|tin|sit|nte|loc|vou|RIN|TC)[^>]*>'
     
     # Define a pattern to match HTML comments <!-- ... -->
     comment_pattern = r'<!--.*?-->'
@@ -114,3 +114,4 @@ except ValueError as e:
     print(f"Invalid JSON data: {e}")
     # Handle invalid JSON (e.g., log the error, set an error message in output)
     output['json'] = None
+

@@ -4,7 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mapping": "nodemon travefy_mapping.js",
-    "xml2Json": "python3 travefy_xml_json.py"
+    "xml2Json": "python3 travefy_xml_json.py",
+    "chatgpt":"nodemon chatgpt.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

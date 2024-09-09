@@ -7,6 +7,8 @@ Subject: XML Export: <bn>
 <DATEFORMAT:YYYY-MM-DD>
 <?xml version="1.0"?>
 <Trip xmlns:nts="notes" xmlns:start="start" xmlns:end="end" xmlns:ex="extra">
+<BookingId><bhd></BookingId>
+<Ref><br></Ref>
 <!--Itinerary Details-->
 <Name><br> - <bn></Name>
 <Active>true</Active>
@@ -17,13 +19,19 @@ Subject: XML Export: <bn>
 <IsArchived>false</IsArchived>
 <Currency>USD</Currency>
 <SalesLocation>US</SalesLocation>
+<TourplanConsultant><cn></TourplanConsultant>
+<Consultant><ct></Consultant>
+<AgentID><ac></AgentID>
+<AgentRef><ar></AgentRef>
+<Email><ue></Email>
+<TermsAndConditions><nts:TC></TermsAndConditions>
 <!--BOOKING NOTES-->
 <!--Travellers -->
 <Travellers>
 <<Names:start>>
 <Traveller>
 <Title><Title:XML></Title>
-<FullName><forename> <surname></FullName>
+<FullName><forename>&nbsp;<surname></FullName>
 <Type><PaxType:XML></Type>
 <Email><notes2></Email>
 <DietaryRequirements><notes4></DietaryRequirements>
@@ -59,7 +67,6 @@ Subject: XML Export: <bn>
 <<default>>
 <TripEvent>
 <!--TripEvent Details/Description-->
-<ServiceLineId><VN></ServiceLineId>
 <SegmentProviderName><sn></SegmentProviderName>
 <Name><optn></Name>
 <LocationCode><nts:loc></LocationCode>
@@ -69,9 +76,10 @@ Subject: XML Export: <bn>
 <InfoNote><nts:inf></InfoNote>
 <ShortItineraryNote><nts:sit></ShortItineraryNote>
 <ItineraryNote><nts:vou></ItineraryNote>
-<OptionContent><optc></OptionContent>
 <TravelInformation><nts:tin></TravelInformation>
 </Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_<optd></PartnerIdentifier>
 <!-- Service Category -->
 <EventType><SRV></EventType>
 <!-- Service Status -->
@@ -85,19 +93,23 @@ Subject: XML Export: <bn>
 <!--Service Date-->
 <Date><Date:XML></Date>
 <!--Service Pickup Details -->
-<Pickup_Date><pud></Pickup_Date>
-<puTime><put></puTime>
-<puPlace><pu><locd></puPlace>
+<StartDate><pud></StartDate>
+<StartTime><put></StartTime>
+<StartPlace><pu><locd></StartPlace>
 <!--Service DropOff Details -->
-<Dropoff_Date><dpd></Dropoff_Date>
-<doTime><dpt></doTime>
-<doPlace><dp><vt1></doPlace>
+<EndDate><dpd></EndDate>
+<EndTime><dpt></EndTime>
+<EndPlace><dp><vt1></EndPlace>
 <!--Service Duration -->
 <SCU><SCU:XML></SCU>
 <SCUqty><qty2></SCUqty>
 <SequenceNumber><seq></SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel><sn> <rm></Vessel>
+<VehicleType><optc></VehicleType>
+<CabinType><optc></CabinType>
+<RoomType><optn></RoomType>
 <!--Service Options-->
-<Opt><optd></Opt>
 <Inclusions>
 <Included><ex:1></Included>
 <Included><ex:2></Included>

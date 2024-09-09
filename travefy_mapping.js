@@ -5,6 +5,7 @@ const inputData = { trip: JSON.stringify(require("./tour_plan_data.json")) };
 // COPY TO ZAPIER FROM THIS LINE
 
 // Parse the JSON string to a JavaScript object
+// Parse the JSON string to a JavaScript object
 const tourPlanData = JSON.parse(inputData.trip);
 
 // Map TourPlan codes to Travefy product types
@@ -70,35 +71,33 @@ const createInclusionsList = (inclusions) =>
 // Function to generate event description based on common fields
 const generateCommonDescription = (event) => `
   ${createInclusionsList(event.Inclusions)}
+  <br/>
+  <div>
   ${
     event.Description.ShortItineraryNote
-      ? `<p>${event.Description.ShortItineraryNote}</p>`
+      ? `<p>${event.Description.ShortItineraryNote}</p><br/>`
       : ""
   }
   ${
     event.Description.ItineraryNote
-      ? `<p>${event.Description.ItineraryNote}</p>`
+      ? `<p>${event.Description.ItineraryNote}</p> <br>`
       : ""
   }
-  ${event.Description.InfoNote ? `<p>${event.Description.InfoNote}</p>` : ""}
+  ${event.Description.InfoNote ? `<p>${event.Description.InfoNote}</p> <br/>` : ""}
   ${
     event.Description.TravelInformation
-      ? `<p>${event.Description.TravelInformation}</p>`
+      ? `<p>${event.Description.TravelInformation}</p> <br/>`
       : ""
   }
+    </div>
   ${
     event.Description.ServiceNote
-      ? `<p>${event.Description.ServiceNote}</p>`
+      ? `<p style='background-color: rgba(255, 145, 254, 1)'>${event.Description.ServiceNote}</p> <br/>`
       : ""
   }
   ${
     event.Description.ServiceRemarks
-      ? `<p>${event.Description.ServiceRemarks}</p>`
-      : ""
-  }
-  ${
-    event.Description.OptionContent
-      ? `<p style="background-color: rgba(255, 254, 145, 1)">${event.Description.OptionContent}</p>`
+      ? `<p style='background-color: rgba(255, 254, 145, 1)'>${event.Description.ServiceRemarks}</p>`
       : ""
   }
 `;
@@ -107,7 +106,7 @@ const prependInfoSections = (event) => {
   let travellerDetails = tourPlanData.Travellers
     .map(
       (traveller) => `
-        <p><strong><span>${traveller.Title} ${traveller.FullName}:&nbsp;</span></strong></p>
+        <p><strong><span>${traveller.Title || ''} ${traveller.FullName}:&nbsp;</span></strong></p>
         <p><span>Dietary Requirements: ${traveller.DietaryRequirements}</span></p>
         <p><span>Medical Requirements: ${traveller.MedicalConditions}</span></p>
       `
@@ -130,9 +129,9 @@ const prependInfoSections = (event) => {
             <p><span ><strong>Date:</strong>${formatDate(
               tourPlanData.TripDays[0]
             )}</span></p>
-            <p><span ><strong>Consultant:</strong>!! need data</span></p>
-            <p><span ><strong>Agent:&nbsp;</strong>!! need data </span></p>
-            <p><span ><strong>E-mail:</strong> !! need data</span></p>
+            <p><span ><strong>Consultant:</strong>${tourPlanData?.TourplanConsultant}</span></p>
+            ${tourPlanData.Consultant? `<p><span ><strong>Agent:&nbsp;</strong>${tourPlanData?.Consultant}</span></p>` : ''}
+            <p><span ><strong>E-mail:</strong> ${tourPlanData?.SalesLocation === 'AU'? 'info@fiftydegreesnorth.com' : 'nordic@fiftydegreesnorth.com'}</span></p>
             `,
           EventType: 12,
           IsEndingEvent: false,
@@ -218,8 +217,9 @@ const mapTripEvent = (event) => {
     SegmentProviderName: event.SegmentProviderName,
     SegmentIdentifier: `${event.TourplanServiceStatus} ${event.SegmentIdentifier}`,
     EventType: mapTourPlanCodeToProductType(event.EventType),
-    StartTimeInMinutes: timeToMinutes(event.puTime),
+    StartTimeInMinutes: timeToMinutes(event.StartTime),
     DurationInMinutes: event.SCUqty * 1440, // 1440 minutes = 1 day
+    PartnerIdentifier: event.PartnerIdentifier,
   };
 
   // Switch case to handle different event types
@@ -228,13 +228,13 @@ const mapTripEvent = (event) => {
       mappedEvent.Description = `
         <ul>
             <li><strong>Departure Date:</strong> ${formatDate(
-              event.Pickup_Date
-            )} at ${event.puTime || ""}</li>
-            <li><strong>Departure Location:</strong> ${event.puPlace || ""}</li>
+              event.StartDate
+            )} at ${event.StartTime || ""}</li>
+            <li><strong>Departure Location:</strong> ${event.StartPlace || ""}</li>
             <li><strong>Arrival Date:</strong> ${formatDate(
-              event.Dropoff_Date
-            )} at ${event.doTime || ""}</li>
-            <li><strong>Arrival Location:</strong> ${event.doPlace || ""}</li>
+              event.EndDate
+            )} at ${event.EndTime || ""}</li>
+            <li><strong>Arrival Location:</strong> ${event.EndPlace || ""}</li>
             ${mappedEvent.Description}
         </ul>`;
       break;
@@ -243,15 +243,15 @@ const mapTripEvent = (event) => {
       mappedEvent.Description = `
         <ul>
             <li><strong>Pick-up Date:</strong> ${formatDate(
-              event.Pickup_Date
-            )} at ${event.puTime || ""}</li>
-            <li><strong>Pick-up Location:</strong> ${event.puPlace || ""}</li>
+              event.StartDate
+            )} at ${event.StartTime || ""}</li>
+            <li><strong>Pick-up Location:</strong> ${event.StartPlace || ""}</li>
             <li><strong>Drop-off Date:</strong> ${formatDate(
-              event.Dropoff_Date
-            )} at ${event.doTime || ""}</li>
-            <li><strong>Drop-off Location:</strong> ${event.doPlace || ""}</li>
-            <li><strong>Rental Duration:</strong> !!missing need another Tag</li>
-            <li><strong>Vehicle Type:</strong> !!missing need another Tag</li>
+              event.EndDate
+            )} at ${event.EndTime || ""}</li>
+            <li><strong>Drop-off Location:</strong> ${event.EndPlace || ""}</li>
+            <li><strong>Rental Duration:</strong> ${event.SCUqty} ${event.SCU}</li>
+            <li><strong>Vehicle Type:</strong> ${event.VehicleType}</li>
             ${mappedEvent.Description}
         </ul>`;
       break;
@@ -260,13 +260,13 @@ const mapTripEvent = (event) => {
       mappedEvent.Description = `
         <ul>
             <li><strong>Departure Date:</strong> ${formatDate(
-              event.Pickup_Date
-            )} at ${event.puTime || ""}</li>
-            <li><strong>Departure Location:</strong> ${event.puPlace || ""}</li>
+              event.StartDate
+            )} at ${event.StartTime || ""}</li>
+            <li><strong>Departure Location:</strong> ${event.StartPlace || ""}</li>
             <li><strong>Arrival Date:</strong> ${formatDate(
-              event.Dropoff_Date
-            )} at ${event.doTime || ""}</li>
-            <li><strong>Arrival Location:</strong> ${event.doPlace || ""}</li>
+              event.EndDate
+            )} at ${event.EndTime || ""}</li>
+            <li><strong>Arrival Location:</strong> ${event.EndPlace || ""}</li>
             ${mappedEvent.Description}
         </ul>`;
       break;
@@ -275,16 +275,16 @@ const mapTripEvent = (event) => {
       mappedEvent.Description = `
         <ul>
             <li><strong>Departure Date:</strong> ${formatDate(
-              event.Pickup_Date
-            )} at ${event.puTime || ""}</li>
-            <li><strong>Departure Location:</strong> ${event.puPlace || ""}</li>
+              event.StartDate
+            )} at ${event.StartTime || ""}</li>
+            <li><strong>Departure Location:</strong> ${event.StartPlace || ""}</li>
             <li><strong>Arrival Date:</strong> ${formatDate(
-              event.Dropoff_Date
-            )} at ${event.doTime || ""}</li>
-            <li><strong>Arrival Location:</strong> ${event.doPlace || ""}</li>
-            <li><strong>Vessel:</strong> !!get Vessel</li>
-            <li><strong>Cabin Type:</strong> !!get Cabin</li>
-            <li><strong>Cabin Number:</strong> !!get CabinNO</li>
+              event.EndDate
+            )} at ${event.EndTime || ""}</li>
+            <li><strong>Arrival Location:</strong> ${event.EndPlace || ""}</li>
+            <li><strong>Vessel:</strong>${event.Vessel || ''}</li>
+            <li><strong>Cabin Type:</strong> ${event.CabinType || ''}</li>
+            <li><strong>Cabin Number:</strong></li>
             ${mappedEvent.Description}
         </ul>`;
       break;
@@ -294,13 +294,13 @@ const mapTripEvent = (event) => {
         <ul>
             <li><strong>Phone:</strong> ${event.phone || ""}</li>
             <li><strong>Pick-up Date:</strong> ${formatDate(
-              event.Pickup_Date
-            )} at ${event.puTime || ""}</li>
-            <li><strong>Pick-up Location:</strong> ${event.puPlace || ""}</li>
+              event.StartDate
+            )} at ${event.StartTime || ""}</li>
+            <li><strong>Pick-up Location:</strong> ${event.StartPlace || ""}</li>
             <li><strong>Drop-off Date:</strong> ${formatDate(
-              event.Dropoff_Date
-            )} at ${event.doTime || ""}</li>
-            <li><strong>Drop-off Location:</strong> ${event.doPlace || ""}</li>
+              event.EndDate
+            )} at ${event.EndTime || ""}</li>
+            <li><strong>Drop-off Location:</strong> ${event.EndPlace || ""}</li>
             ${mappedEvent.Description}
         </ul>`;
       break;
@@ -308,13 +308,14 @@ const mapTripEvent = (event) => {
     case 6: // Hotel
       mappedEvent.Description = `
         <ul>
+            <li><strong>Room Types:</strong> ${event.RoomConfigs.map((room) => {  return `${room.RoomType} <br>` })}</li>
             <li><strong>Phone:</strong> ${event.phone || ""}</li>
             <li><strong>Check-in Date:</strong> ${formatDate(
-              event.Pickup_Date
-            )} at ${event.puTime || ""}</li>
+              event.StartDate
+            )} at ${event.StartTime || ""}</li>
             <li><strong>Check-out Date:</strong> ${formatDate(
-              event.Dropoff_Date
-            )} at ${event.doTime || ""}</li>
+              event.EndDate
+            )} at ${event.EndTime || ""}</li>
             <li><strong>Location:</strong> ${event.Address || ""}</li>
             ${mappedEvent.Description}
         </ul>`;
@@ -325,13 +326,13 @@ const mapTripEvent = (event) => {
         <ul>
             <li><strong>Phone:</strong> ${event.phone || ""}</li>
             <li><strong>Start Date:</strong> ${formatDate(
-              event.Pickup_Date
-            )} at ${event.puTime || ""}</li>
-            <li><strong>Start Location:</strong> ${event.puPlace || ""}</li>
+              event.StartDate
+            )} at ${event.StartTime || ""}</li>
+            <li><strong>Start Location:</strong> ${event.StartPlace || ""}</li>
             <li><strong>End Date:</strong> ${formatDate(
-              event.Dropoff_Date
-            )} at ${event.doTime || ""}</li>
-            <li><strong>End Location:</strong> ${event.doPlace || ""}</li>
+              event.EndDate
+            )} at ${event.EndTime || ""}</li>
+            <li><strong>End Location:</strong> ${event.EndPlace || ""}</li>
             ${mappedEvent.Description}
         </ul>`;
       break;
@@ -373,8 +374,10 @@ const travefyTrip = {
 };
 
 
+
 // Export the result as a JSON string for Zapier
 output = {
   travefyTrip: JSON.stringify(travefyTrip),
   tripUsers: JSON.stringify({ tripUsers: travefyTrip.TripUsers }),
+  tripDays: JSON.stringify({ tripDays:  [...tripDays] }),
 };
