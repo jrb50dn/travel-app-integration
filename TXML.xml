@@ -10,7 +10,7 @@ Subject: XML Export: <bn>
 <BookingId><bhd></BookingId>
 <Ref><br></Ref>
 <!--Itinerary Details-->
-<Name><br> - <bn></Name>
+<Name><br>:<bn></Name>
 <Active>true</Active>
 <IsChatDisabled>false</IsChatDisabled>
 <IsPdfEnabled>true</IsPdfEnabled>
@@ -95,11 +95,11 @@ Subject: XML Export: <bn>
 <!--Service Pickup Details -->
 <StartDate><pud></StartDate>
 <StartTime><put></StartTime>
-<StartPlace><pu><locd></StartPlace>
+<StartLocation><pu>&nbsp;<locd></StartLocation>
 <!--Service DropOff Details -->
 <EndDate><dpd></EndDate>
 <EndTime><dpt></EndTime>
-<EndPlace><dp><vt1></EndPlace>
+<EndLocation><dp>&nbsp;<vt1></EndLocation>
 <!--Service Duration -->
 <SCU><SCU:XML></SCU>
 <SCUqty><qty2></SCUqty>
