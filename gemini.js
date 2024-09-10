@@ -41,7 +41,7 @@ async function processEventNotes() {
 
 // Gemini API call implementation
 async function rewriteNotesWithGemini(notes) {
-  const geminiApiKey = "AIzaSyCXfYQIsRjxDDX4CJVu8RwPqvJAn1OifYc"; // Replace with your Gemini API key
+// Replace with your Gemini API key
   const geminiApiEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${geminiApiKey}`;
 
   const prompt = `Transform the following supplier list of notes in JSON format to align with the tour operator guidelines below. 
