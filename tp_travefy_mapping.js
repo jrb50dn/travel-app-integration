@@ -644,7 +644,7 @@ const getLibraryEvents = async () => {
 
   const myHeaders = {
     "X-USER-TOKEN": "74c40c6b6d1b4afc8da395b49b9270fe",
-
+    "X-API-PUBLIC-KEY": "edcef4e472e04d0fa656ff2de2d6f676",
   };
 
   const requestOptions = {
