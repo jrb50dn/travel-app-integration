@@ -1,0 +1,11 @@
+old Transform the Description Field ONLY of the following supplier list of notes  by following these steps:Step  1 = Summarise the information below the list without repeating info in the bullet points.Ensure the tone is:Friendly and approachable: Warm and welcoming.Informative and clear: Straightforward, no jargon.Engaging and enthusiastic: Show positivity.Reassuring and supportive: Build confidence.Concise and focused: Under 150 words, with no headings.  Use the third-person perspective, and avoid promotional content.                                                                                    Step 2 = Create a HTML bullet-point list of key details to go at the bottom of the description:Identify important information that can be described in less than six words (e.g., places, times, emergency phone numbers).IMPORTANT: Format each bullet point exactly like this:"<ul> <li> <strong>Label: </strong>Value </li> </ul>"                                                                    Make sure List items  are contained within a UL.                                                                                                                      YOU MUST COMPLETE ALL STEPS. DO NOT MODIFY THE  PARTNER IDENTIFIER FIELD. JSONData
+
+
+Rewrite the Description field of the following supplier notes by completing these tasks:
+
+Step 1: Summarize the content Use a friendly and approachable tone that's warm and welcoming. Keep the language clear and informative—avoid technical jargon. Maintain an engaging, enthusiastic attitude that instills positivity and reassures the reader with supportive language. The summary should be concise, focused, and written in the third-person perspective without including any promotional content. Limit the description to under 150 words and omit any headings.
+Reserve any content that would better serve the traveller as a list until step 2. 
+
+Step 2: Generate an bullet-point list of key information for the end of the description. Ensure that all essential details are captured in fewer than six words (e.g., locations, times, emergency contacts). Structure each bullet point like this:
+
+Make sure all items are properly enclosed in a UL. Complete all steps without altering the Partner Identifier field.  List of notes as JSONData:

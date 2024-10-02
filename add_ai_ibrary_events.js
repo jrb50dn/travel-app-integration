@@ -1,7 +1,7 @@
 const store = StoreClient('ee4b3a19-486b-4b56-a69c-79f13f38e429');
 
 
-const getMergedDescriptions = async(store, totalChunks) => {
+const getMergedAIContent = async(store, totalChunks) => {
     const iterations = Array.from({ length: totalChunks }, (_, i) => i);
 
     try {
@@ -28,22 +28,19 @@ const getMergedDescriptions = async(store, totalChunks) => {
             .filter(result => result.status === "fulfilled" && Array.isArray(result.value) && result.value.length > 0)
             .map(result => result.value);
 
-        const mergedDescriptions = storedChunks.flat();
+        const mergedContent = storedChunks.flat();
 
-        console.log(`Merged Descriptions Length: ${mergedDescriptions.length}`);
+        console.log(`Merged Content Length: ${mergedContent.length}`);
 
-        if (mergedDescriptions.length === 0) {
+        if (mergedContent.length === 0) {
             throw new Error("No descriptions found to merge.");
         }
 
-        return mergedDescriptions;
+        return mergedContent;
     } catch (error) {
         throw new Error(`Failed to retrieve and merge chunks: ${error.message}`);
     }
 };
-
-
-
 
 const replaceContentAfterLastUl = (description, newContent) => {
   if (!description) return null; // Early return if no description
@@ -52,58 +49,59 @@ const replaceContentAfterLastUl = (description, newContent) => {
   return description.replace(/<\/ul>(?![\s\S]*<\/ul>)[\s\S]*/, `<br> <div style=\"background-color: rgba(255, 254, 145, 1)\">${newContent}</div>`);
 };
 
-
-const replaceDescriptions = (
-  initialData,
-  items
+const replaceContent = (
+  travefyTrip,
+  rewrittenEventContent
 ) => {
-  if (!initialData || !items) return initialData; // Return initialData if libraryEvents are missing
+  if (!travefyTrip || !rewrittenEventContent) return travefyTrip; // Return travefyTrip if libraryEvents are missing
 
-  initialData.TripDays.forEach((tripDay) => {
+  travefyTrip.TripDays.forEach((tripDay) => {
     tripDay.TripEvents.forEach((event) => {
       // Find the matching event in libraryEvents by SegmentIdentifier
-      const matchingEvent = items.find(
+      const matchingEvent = rewrittenEventContent.find(
         (e) => e.PartnerIdentifier === event.PartnerIdentifier
       );
       if (matchingEvent) {
         event.Description = replaceContentAfterLastUl(
-          event.Description,
-          matchingEvent.Description
+            event.Description,
+            matchingEvent.Description
         );
-      }
+        if (event.TripIdeas && event.TripIdeas.length > 0) {
+            event.TripIdeas[0].Name = 'Replaced With AI Content - ' + event.TripIdeas[0].Name;
+        }
+    } else {
+        if (event.TripIdeas && event.TripIdeas.length > 0 && event.TripIdeas[0].Name && event.TripIdeas[0].Name.startsWith('Original')) {
+            event.TripIdeas.shift();
+        }
+        console.error(rewrittenEventContent.map((event) => event.PartnerIdentifier), event.PartnerIdentifier);
+    }
     });
   });
 
-  return initialData;
+  return travefyTrip;
 };
 
 const generateEnhancedItinerary = async () => {
   // Fetch input data from Zapier
   const travefyTrip = JSON.parse(inputData.travefyTrip);
-  const libraryEvents = JSON.parse(inputData.libraryEvents);
-  const reWrittenDescriptions = await getMergedDescriptions(store,Number(inputData.totalChunks));
+  const reWrittenEventContent = await getMergedAIContent(store,Number(inputData.totalChunks));
 
-  const itineraryWithAIDescriptions =
-    replaceDescriptions(
+  const itineraryWithAIContent =
+    replaceContent(
       travefyTrip,
-      reWrittenDescriptions
+      reWrittenEventContent
     );
 
-  // Replace descriptions with library event descriptions
-  const itineraryWithLibraryItems =
-    replaceDescriptions(
-      itineraryWithAIDescriptions,
-      libraryEvents
-    );
+  itineraryWithAIContent.Name =  itineraryWithAIContent.Name + " (Enhanced)"
 
   // Return the final enhanced itinerary
-  return JSON.stringify(itineraryWithLibraryItems);
+  return JSON.stringify(itineraryWithAIContent);
 };
 
 
 // Execute and return the result
 return (output = {
-  travefyTrip: await generateEnhancedItinerary(),
+  travefyTrip: await generateEnhancedItinerary()
 });
 
 await store.clear();

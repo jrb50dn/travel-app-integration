@@ -1,2315 +1,978 @@
 {
-  "Travellers": [
-      {
-          "Title": null,
-          "FullName": "AnaCarter",
-          "Type": "Adult",
-          "Email": "a9cart@comcast.net",
-          "DietaryRequirements": "None",
-          "MedicalConditions": "None"
-      },
-      {
-          "Title": "Mrs.",
-          "FullName": "LuzWhitehead",
-          "Type": "Adult",
-          "Email": "luzrn3@hotmail.com",
-          "DietaryRequirements": "Mild allergy to shellfish",
-          "MedicalConditions": "None"
-      },
-      {
-          "Title": null,
-          "FullName": "RobertWhitehead",
-          "Type": "Adult",
-          "Email": "robertwhitehead-3272184@inbound.zicasso.com",
-          "DietaryRequirements": "None",
-          "MedicalConditions": "None"
-      }
-  ],
-  "RoomConfigs": [
-      {
-          "RoomType": "Single",
-          "TravellerAssignment": {
-              "FullName": "AnaCarter"
-          }
-      },
-      {
-          "RoomType": "Single",
-          "TravellerAssignment": {
-              "FullName": "LuzWhitehead"
-          }
-      },
-      {
-          "RoomType": "Single",
-          "TravellerAssignment": {
-              "FullName": "RobertWhitehead"
-          }
-      }
-  ],
-  "TripDays": [
-      "2024-09-16",
-      "2024-09-16",
-      "2024-09-16",
-      "2024-09-16",
-      "2024-09-16",
-      "2024-09-17",
-      "2024-09-18",
-      "2024-09-18",
-      "2024-09-18",
-      "2024-09-18",
-      "2024-09-19",
-      "2024-09-19",
-      "2024-09-19",
-      "2024-09-19",
-      "2024-09-20",
-      "2024-09-20",
-      "2024-09-20",
-      "2024-09-21",
-      "2024-09-21",
-      "2024-09-21",
-      "2024-09-22",
-      "2024-09-22",
-      "2024-09-22",
-      "2024-09-22",
-      "2024-09-23",
-      "2024-09-23",
-      "2024-09-24",
-      "2024-09-24",
-      "2024-09-24",
-      "2024-09-25",
-      "2024-09-25",
-      "2024-09-25",
-      "2024-09-26",
-      "2024-09-26",
-      "2024-09-26",
-      "2024-09-27",
-      "2024-09-27",
-      "2024-09-28",
-      "2024-09-28",
-      "2024-09-28",
-      "2024-09-29"
-  ],
-  "TripEvents": [
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545476",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Arrival day",
-          "Description": "\u200bFlight DL0246 arrives 09:30 (Not arranged by 50DN)",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Pending",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-16",
-          "Pickup_Date": "2024-09-16",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-16",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01ARK2",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545477",
-          "SegmentProviderName": "Iceland Highlights",
-          "Name": "Private transfer Keflavik Airport via Blue Lagoon to Hotel",
-          "Description": "DL0246 arrives 09:30 \u00a0Blue Lagoon booked for 11-143 hours wait at blue lagoon with luggage\u200bYour driver will meet you holding a name sign. Luggage: 1 suitcase and 1 carry on per personA 3 hour stop at Blue Lagoon is included. Luggage can be left in the car while visiting the Lagoon.\u200bIf you are experiencing any issues with the transfer, please call Iceland Highlights on +354 415 0263Waiting time at the Airport is 45 minutes",
-          "EventType": "PT",
-          "SegmentIdentifier": "19834",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "KEF",
-          "Address": "\u00dalfarsbraut 113Reykjavik,Iceland",
-          "Phone": "+354 415 0263",
-          "Date": "2024-09-16",
-          "Pickup_Date": "2024-09-16",
-          "puTime": "09:30",
-          "puPlace": "Keflavik",
-          "Dropoff_Date": "2024-09-16",
-          "doTime": null,
-          "doPlace": "Exeter Hotel",
-          "SCU": "trsf",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "KEFPTICEH01PT009",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "552735",
-          "SegmentProviderName": "Blue Lagoon",
-          "Name": "Blue Lagoon - comfort",
-          "Description": "ISK (Dynamic rates)Blue Lagoon is approximately 45 minutes\u2019 drive from Reykjavik City centre and 20 minutes\u2019 drive from Keflav\u00edk International Airport. There are frequent scheduled bus transfers to Blue Lagoon from Reykjavik and the airport, throughout the year.If you have your own car, you will need to find your way to road nr. 41, leading southwest from Reykjavik towards the Reykjanes peninsula. Turn left on road nr. 43 and drive for about 10 minutes, then make a right turn to the Blue Lagoon area.Experience the wonders of the Blue Lagoon enhanced with the prime elements of hospitality and wellbeing. \u00a0 Includes:Entrance to the Blue LagoonSilica mud maskUse of towel1st drink of your choiceUse of shampoo, conditioner and moisturizerPlease find your voucher with the travel documents.\u200b",
-          "EventType": "TD",
-          "SegmentIdentifier": "WBL02667817",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "GRD",
-          "Address": "GPS: 63.879, -22,434Grindavik,Iceland240",
-          "Phone": "+354 420 8800",
-          "Date": "2024-09-16",
-          "Pickup_Date": "2024-09-16",
-          "puTime": "11:00",
-          "puPlace": "Blue LagoonGrindavik",
-          "Dropoff_Date": "2024-09-16",
-          "doTime": "14:00",
-          "doPlace": "Blue LagoonGrindavik, Blue Lagoon",
-          "SCU": "ticket",
-          "SCUqty": "1",
-          "SequenceNumber": "25",
-          "Opt": "GRDTDBLUE01TD007",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "545478",
-          "SegmentProviderName": "Exeter Hotel",
-          "Name": "Deluxe room including breakfast",
-          "Description": "Exeter Hotel is a contemporary design hotel by the old Reykjav\u00edk harbour that offers local experience with all the perks of a hotel stay. The hotel\u2019s main building is a restoration of a house originally built in 1904 as a storage and later used as a house of residence and trade. Now renovated and linked to new and modern buildings the hotel\u2018s exterior is a tribute both to contemporary architecture and times when fishing and trade where the area\u2019s main industry.Embark on an adventure of luxury at the Exeter Hotel's Deluxe Rooms, where en suite bathrooms, modern amenities, and chic embellishments await. Perfect for unwinding, plotting your Icelandic escapades, or working on your next daring endeavour. Whether you crave a double or twin arrangement, these rooms offer easy access to upper floors via elevator, alongside thrilling extras like a flat-screen TV, Bluetooth speaker, and prompt wake-up service. Elevate your Exeter Hotel stay and embrace the adventure!",
-          "EventType": "AC",
-          "SegmentIdentifier": "55517259",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "REK",
-          "Address": "Tryggvagata 12Reykjavik,Iceland101",
-          "Phone": null,
-          "Date": "2024-09-16",
-          "Pickup_Date": "2024-09-16",
-          "puTime": null,
-          "puPlace": "Reykjavik",
-          "Dropoff_Date": "2024-09-18",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "nights",
-          "SCUqty": "2",
-          "SequenceNumber": "30",
-          "Opt": "REKACEXE001AC003",
-          "Included": [
-              "2 x Luggage service",
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545479",
-          "SegmentProviderName": "City Walk Reykjavik",
-          "Name": "Private Guided Food Walk with sightseeing",
-          "Description": "DL0246 arrives 09:30 \u00a0Blue Lagoon booked for 11-14, transfer to hotel after(Priority) 3 hours, Book Gourmet tastings for dinnerEnjoy a private food tasting tour through Reykjavik together with a passionate local guide. This walking tour covers Reykjavik's highlights. Along the way, you visit small, local restaurants and taste Icelandic delicacies ranging from traditional food to modern kitchen in street style to fine dining - a tasting journey you will remember! Please inform your guide of any dietary restrictions. Departure from: Your hotel in ReykjavikDuration: 3 hoursIncluded: Fully guided walking tour of Reykjavik including food tastings \u00a0Activity level: Easy Tour Style: PrivateYour guide is Marteinn Briem. Please meet him at your hotel lobby.Kindly let him know if you are running late or wish to have the meeting earlier. His direct contact number is +354 823 0760",
-          "EventType": "TD",
-          "SegmentIdentifier": "5USA123422 / Marteinn",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "REK",
-          "Address": "Reykjavik,Iceland101",
-          "Phone": "+354 787 7779",
-          "Date": "2024-09-16",
-          "Pickup_Date": "2024-09-16",
-          "puTime": "16:00",
-          "puPlace": "Exeter HotelReykjavik",
-          "Dropoff_Date": "2024-09-16",
-          "doTime": "19:00",
-          "doPlace": "Reykjavik",
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "40",
-          "Opt": "REKTDCWREK1TD003",
-          "Included": [
-              "1 x Food Tastings Lunch",
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545480",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Day at leisure - Reykjavik",
-          "Description": "Enjoy your day at leisure in Reykjavik. Visit highlights such as Perlan, Church of Hallgr\u00edmur (Hallgr\u00edmskirkja), \u00a0Videy Island, the waterfront area & Sun Voyager. For an Icelandic Culinary experience visit Hlemmur Food Hall or Grandi Food Hall.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Pending",
-          "LocationCode": "REK",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-17",
-          "Pickup_Date": "2024-09-17",
-          "puTime": null,
-          "puPlace": "Reykjavik",
-          "Dropoff_Date": "2024-09-17",
-          "doTime": null,
-          "doPlace": "Reykjavik",
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "REKOT50DN01REK001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "551643",
-          "SegmentProviderName": "Iceland Highlights",
-          "Name": "Private transfer Reykjavik Hotel to Reykjavik Airport",
-          "Description": "City transfer \u00a0- RKV AirportPlease be ready at the Hotel lobby 10 minutes before departure.Luggage: 1 suitcase and 1 carry on per person\u200bIf you are experiencing any issues with the transfer, please call Iceland Highlights on +354 415 0263",
-          "EventType": "PT",
-          "SegmentIdentifier": "19066",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "REK",
-          "Address": "\u00dalfarsbraut 113Reykjavik,Iceland",
-          "Phone": "+354 415 0263",
-          "Date": "2024-09-18",
-          "Pickup_Date": "2024-09-18",
-          "puTime": "08:45",
-          "puPlace": "Exeter HotelReykjavik",
-          "Dropoff_Date": "2024-09-18",
-          "doTime": null,
-          "doPlace": "Europcar Flugg\u00f6r\u00f0um sk\u00fdli 23, 102 Reykjav\u00edk, Iceland",
-          "SCU": "trsf",
-          "SCUqty": "1",
-          "SequenceNumber": "5",
-          "Opt": "REKPTICEH01PT006",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545481",
-          "SegmentProviderName": "Holdur",
-          "Name": "Car hire - Iceland - Category GG",
-          "Description": "IFBN - Category GG - (4x4) Kia Sportage/Toyota RAV4/similarReykjavik office hours are as below:Sk\u00fatuvogur 8, IS-104 ReykjavikTel (+354) 568 6915Open: Mon-Fri. 08:00-17:00, Sat 08:00-16:00, Sun: 09:00-16:00Njar\u00f0argata, IS-101 ReykjavikTel (+354) 461 6100Open: Mon-Fri. 08:00-18:00, Sat & Sun: 09:00-17:00 After hours emergency phone for Holdur is \u00a0(+354) 840 6010At the airport, pick up your vehicle from the Europcar/Holdur desk. \u00a0When dropping the vehicle off in Reykjavik, clients will get a courtesy shuttle transfer to their city hotel. The last shuttle will depart about 60 min prior to office closure. When dropping the vehicle off at Akureyri airport, please note that the airport depot opens ca. 1 hour before the morning flights.You will be picked up from your hotel and taken to Holdur office. Please be patient, your pick up may take up to 30 minutes to arrive.Please note, drive times in this document are approximate, and do not take into account road conditions. Always reserve extra time when driving.Please check today\u2019s conditions at https://safetravel.is/Car hire with Holdur in Iceland includes:Collision Damage Waiver (CDW), Personal Accident Insurance (PAI) , Theft Protection (TP), unlimited mileage, airport charges and taxes, GPS navigational system and VIP Service at KEF airport for pick-up. The VIP service includes; Privileged line and a rental agreement ready for you to sign and the car will be in our VIP parking place just outside the airport.Please note a complimentary hotel pick-up can be arranged on request. A representative from the car rental company will meet you at your hotel lobby and drive you to the nearby rental location where your car is located.NOTE:Additional charges apply for; extra driver, one way fees, young driver damage waiver (for all drivers under 26 years), excess reduction, additional equipment such as child seats, etc.Holdur will charge a pre-authorisation on your Credit Card when you pick up your vehicle for any extra cost that might occur during your rental period. If no charges apply, the pre-authorization is released from the CC after your rental period.\u2028\u2028The amount of the pre-authorization depends on the insurance / Collision Damage Waiver (CDW) level included in your booking.\u2028Standard level is 75.000 ISK and you can lower this amount by choosing another insurance level when picking up your car.After-hours contact number:In case of emergency regarding your rental car outside opening hours please call (+354) 840 6010",
-          "EventType": "RC",
-          "SegmentIdentifier": "664532",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "ICE",
-          "Address": "Tryggvabraut 12Akureyri,Iceland600",
-          "Phone": "+354 461 6000",
-          "Date": "2024-09-18",
-          "Pickup_Date": "2024-09-18",
-          "puTime": "09:00",
-          "puPlace": "Europcar Flugg\u00f6r\u00f0um sk\u00fdli 23, 102 Reykjav\u00edk, IcelandIceland",
-          "Dropoff_Date": "2024-09-29",
-          "doTime": "16:00",
-          "doPlace": "Keflavik Airport",
-          "SCU": "days",
-          "SCUqty": "11",
-          "SequenceNumber": "10",
-          "Opt": "ICERCHOLDURRC007",
-          "Included": [
-              null,
-              null,
-              "11 x GPS",
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545482",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing Day 1Tour the highlights of the Golden Circle and the start of the South Coast on your way to V\u00edk:https://maps.app.goo.gl/Wn7LMuod3cVnz3NWANORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-18",
-          "Pickup_Date": "2024-09-18",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-18",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "545483",
-          "SegmentProviderName": "Hotel Kr\u00eda",
-          "Name": "Standard room w/mountain view including breakfast",
-          "Description": "BOOK VIA TRAVIAH\u00f3tel Kr\u00eda is situated in V\u00edk. Among the various facilities are a garden, a bar and a restaurant. The black sand beaches begin about 5 minutes' walk from the hotel and it features beautifully decorated rooms in a prime location on the South Coast of Iceland. The hotel has 72 rooms and 1 suite.The Mountain View rooms are designed for double occupancy but can accommodate up to three guests with the option to add an extra bed. Positioned on both the first and second floors of the hotel, these rooms offer stunning views of the mountains. Each room is equipped with WiFi access, a TV, and complimentary tea and coffee amenities.",
-          "EventType": "AC",
-          "SegmentIdentifier": "55517494",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "VIK",
-          "Address": "Sl\u00e9ttuvegur 12-14V\u00edk,Iceland870",
-          "Phone": "+354 4162100",
-          "Date": "2024-09-18",
-          "Pickup_Date": "2024-09-18",
-          "puTime": null,
-          "puPlace": "Vik",
-          "Dropoff_Date": "2024-09-19",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "VIKACHKR002AC00B",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545484",
-          "SegmentProviderName": "Southcoast Adventure",
-          "Name": "The Ice cave in Katla - Meet at Vik",
-          "Description": "10:00 already fully bookedDaily / 3 hours / 10.00 \u00a0or 13.30Looking for something off the typical tourist track? This is the tour for you!It\u2019s time to jump into a Super Jeep, strap on your crampons and step into the mighty Myrdalsjokull glacier.Mother Nature has really outdone herself with this one, the movie-like surroundings and glaciers everywhere you look and grand ice walls you walk amongst to enter the magical blue and black ice dome of the outlet glacier named after the powerful volcano Katla. Prepare to be amazed! Included: Helmets and crampons if condition requires.Bring with you: Warm outdoor clothing, waterproof jacket and trousers, head-wear, gloves and lunch. Appropriate hiking boots/shoes are requiredDuration of trip: approx. 3 hours Minimum age: 10 YearsOperates: Daily. All yearSkill level: EasyTour guide will meet you outside the Ice Cave Bistro/Restaurant in V\u00edk. By the entrance at the back of the building, you will be able to find the guide standing by a Super Jeep marked with Southcoast Adventure.",
-          "EventType": "TD",
-          "SegmentIdentifier": "Ana//5USA123422",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "HVL",
-          "Address": "Ormsv\u00f6llur 23Hvolsv\u00f6llur,Iceland860",
-          "Phone": null,
-          "Date": "2024-09-19",
-          "Pickup_Date": "2024-09-19",
-          "puTime": "11:30",
-          "puPlace": "https://maps.app.goo.gl/7XV93crGMQp5un2BAHvolsv\u00f6llur",
-          "Dropoff_Date": "2024-09-19",
-          "doTime": null,
-          "doPlace": "Hvolsv\u00f6llur",
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "HVLTDSCA003TD004",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545485",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing Day 2After your morning tour to the Katla Ice Cave, continue East to the Glacier Lagoon for your Zodiac Boat tour and finishing your day at the Fossh\u00f3tel Vatnaj\u00f6kull:https://maps.app.goo.gl/oPGToQZUyWfDUbPWANORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-19",
-          "Pickup_Date": "2024-09-19",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-19",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545487",
-          "SegmentProviderName": "J\u00f6kuls\u00e1rl\u00f3n fer\u00f0a\u00fej\u00f3nusta ehf. (Glacier Lagoon)",
-          "Name": "J\u00f6kuls\u00e1rl\u00f3n Glacier Lagoon Zodiac Adventure Tour",
-          "Description": "Check-in is 30 minutes before departure on the Zodiac tour. Hotel Kria - J\u00f6kuls\u00e1rl\u00f3n: 2h20 J\u00f6kuls\u00e1rl\u00f3n - Fosshotel Vatnaj\u00f6kull: 0h55Book in Bokun - Operates 1 May- 31Oct12% commissionno voucher needed, confirmation reference number is enoughJ\u00f6kuls\u00e1rl\u00f3n will send us invoice after travelOn the Zodiac we are able to cover large areas of the lagoon and get closer to the icebergs than on the amphibian. When possible the Zodiac goes almost all the way up to the glacier (as close as safe). Included:\u2022 \u00a01 hour guided Zodiac boat tour\u2022 \u00a0Flotation suits and life jackets Please note: Passengers must be 10 years old or older or at least 130 cm tall to go on the Zodiac tour.Check-in is 30 minutes before departure at the ticket office. The location is JO\u0308KULSA\u0301RLO\u0301N (Glacier Lagoon).Please find your voucher with the travel documents.",
-          "EventType": "TD",
-          "SegmentIdentifier": "JOK-T72938625",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "JOU",
-          "Address": "Coordinates: \u00a064.048001, -16.178615Reyniv\u00f6llum 3HORNAFJ\u00d6R\u00d0UR,Iceland781",
-          "Phone": "+354 4782222",
-          "Date": "2024-09-19",
-          "Pickup_Date": "2024-09-19",
-          "puTime": "17:50",
-          "puPlace": "J\u00f6kuls\u00e1rl\u00f3n Glacier Lagoon Boat Tours and Cafe, J\u00f6kuls\u00e1rl\u00f3n, 781 H\u00f6fn \u00ed Hornafir\u00f0i, IcelandJ\u00f6kuls\u00e1rl\u00f3n",
-          "Dropoff_Date": "2024-09-19",
-          "doTime": null,
-          "doPlace": "J\u00f6kuls\u00e1rl\u00f3n",
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "JOUTDJGL001TD001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "545488",
-          "SegmentProviderName": "Fossh\u00f3tel Vatnaj\u00f6kull",
-          "Name": "Standard room including breakfast",
-          "Description": "BOOK IN TRAVIAFosshotel Vatnaj\u00f6kull is an attractive hotel in the southeast of Iceland with a spellbinding view of the magnificent glacier Vatnaj\u00f6kull. In beautiful surroundings, the hotel has been designed to make sure your stay is as peaceful and relaxing as possible.Experience charming rooms with captivating views, featuring sleek contemporary design and essential amenities such as a TV, mini fridge, coffee and tea maker, telephone, and complimentary WiFi. Refresh in the well-appointed bathroom before immersing yourself in the serene surroundings just beyond the window.",
-          "EventType": "AC",
-          "SegmentIdentifier": "77434437 / 77513531",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "HFN",
-          "Address": "LindarbakkiHofn,Iceland781",
-          "Phone": null,
-          "Date": "2024-09-19",
-          "Pickup_Date": "2024-09-19",
-          "puTime": null,
-          "puPlace": "H\u00f6fn",
-          "Dropoff_Date": "2024-09-20",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "40",
-          "Opt": "HFNACFHV001AC01B",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545497",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing Day 3Take your time driving through Iceland's East Fjords finishing the day in Egilssta\u00f0ir with a visit to the V\u00f6k Baths in the evening:https://maps.app.goo.gl/hgZPGPx8NommGLrAANORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-20",
-          "Pickup_Date": "2024-09-20",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-20",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "545499",
-          "SegmentProviderName": "Gistih\u00fasi\u00f0 - Lake Hotel Egilsstadir",
-          "Name": "Superior room with mountain view including breakfast",
-          "Description": "access to spa includedThis property is 1 minute walk from the beach. Set in a renovated farmhouse, this guest house is located by Lake Lagarflj\u00f3t in Eglisstadir village. It offers bright and modern rooms with a flat-screen TV, free Wi-Fi and a private bathroom with shower.The Superior Double with Mountain view is 25sqm in size and has a private entrance and an expansive view of the mountains. Facilities in the room include wooden floor, seating area, bathroom with shower, free Wi-Fi, satellite TV, telephone, tea and coffee making facilities, iron with ironing board and hair dryer.",
-          "EventType": "AC",
-          "SegmentIdentifier": "FIAJ-4642902-A",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "EGS",
-          "Address": "Egilsstadir 1-2Egilsstadir,,Iceland700",
-          "Phone": "+354 471 1114",
-          "Date": "2024-09-20",
-          "Pickup_Date": "2024-09-20",
-          "puTime": null,
-          "puPlace": "Egilsstadir",
-          "Dropoff_Date": "2024-09-21",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "EGSACGLHE01AC01B",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545504",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Admission (unspecified admission)",
-          "Description": "??V\u00f6k Baths***ISK***\u200bV\u00f6k BathsIceland\u2019s only floating infinity poolsExperience the age-old Icelandic tradition of bathing in a natural geothermal pool. V\u00f6k Baths is located on the bank of Urri\u00f0avatn lake, only a few minutes from the town of Egilssta\u00f0ir.At V\u00f6k Baths you will find, floating geothermal pools with infinity view, two on shore hot pools, a sauna, cold water spray tunnel, tea bar, an in-water pool bar, and the on-site restaurant, V\u00f6k Bistro.Water is lifeIceland is famous for its geothermal activity. However, East Iceland is normally not associated with geothermal heat and considered a cold spot. This makes V\u00f6k Baths an even more unique attraction. Throughout the centuries, people living around Lake Urri\u00f0avatn noticed certain spots on the lake that curiously did not freeze during winter. The Icelandic name given to these ice-free patches is \u201cV\u00f6k\u201d (plural Vakir).The warm water flowing from the ground at Urri\u00f0avatn lake is so pure that it is the only geothermal water in Iceland certified as drinkable. You can taste the water and refresh your body at our complimentary tea bar.\u200bhttps://maps.app.goo.gl/nbLW2FcqGpkLjgHt9",
-          "EventType": "OT",
-          "SegmentIdentifier": "VOK-T73116362",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "ICE",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-20",
-          "Pickup_Date": "2024-09-20",
-          "puTime": "15:00",
-          "puPlace": "??V\u00f6k BathsIceland",
-          "Dropoff_Date": "2024-09-20",
-          "doTime": null,
-          "doPlace": "??V\u00f6k Baths",
-          "SCU": "servic",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "ICEOT50DN01ADM",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545505",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing Day 4Drive through the highlands of Northeast Iceland, stopping at sights along the way before ending in H\u00fasav\u00edk for the night:https://maps.app.goo.gl/CUMk1ab4enw2Z8qeANORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-21",
-          "Pickup_Date": "2024-09-21",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-21",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "545506",
-          "SegmentProviderName": "Fosshotel H\u00fasav\u00edk",
-          "Name": "Standard room including breakfast",
-          "Description": "BOOK VIA TRAVIA, Hotel open Feb-DecFosshotel H\u00fasav\u00edk is a well-equipped hotel in the heart of H\u00fasav\u00edk, just walking distance from the harbor. H\u00fasav\u00edk\u2019s main attraction are the sensational whale watching tours. H\u00fasav\u00edk is called the &quot;Whale Watching Capital of Europe&quot; and therefore Fosshotel H\u00fasav\u00edk has a whale-themed bistro & bar named after the famous Moby Dick.These standard rooms measure approximately 23 square-meters in size and amenities feature a satellite TV, hairdryer, telephone, mini-fridge, radio, private bathroom and free WiFi.",
-          "EventType": "AC",
-          "SegmentIdentifier": "77435738",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "HZK",
-          "Address": "Ketilsbraut 22H\u00fasav\u00edk,Iceland640",
-          "Phone": null,
-          "Date": "2024-09-21",
-          "Pickup_Date": "2024-09-21",
-          "puTime": null,
-          "puPlace": "Husavik",
-          "Dropoff_Date": "2024-09-22",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "HZKACFHHI01AC01A",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545519",
-          "SegmentProviderName": "Geosea",
-          "Name": "GeoSea Entrance ticket",
-          "Description": "Gistih\u00fasi\u00f0 Lake Hotel Egilsstadir - Geosea: 2h45 Geosea - Fosshotel Husavik: 0h005ISK - Book in BOKUNThe GeoSea sea baths i located on the H\u00fasav\u00edkurh\u00f6f\u00f0i cape in North-Iceland. Thanks to the underground heat, the seawater in the baths is warm and comfortable and the mineral-rich water will caress your skin. While the warm sea works its miracles, you can enjoy the view of the mountain range to the west, Skjalfandi Bay beneath the cliffs and the Arctic Circle itself on the horizon.The GeoSea sea baths i located on the H\u00fasav\u00edkurh\u00f6f\u00f0i cape in North-Iceland. Thanks to the underground heat, the seawater in the baths is warm and comfortable and the mineral-rich water will caress your skin. While the warm sea works its miracles, you can enjoy the view of the mountain range to the west, Skjalfandi Bay beneath the cliffs and the Arctic Circle itself on the horizon.StorageYou may put your belongings and valuables into your locker or leave your valuables in the reception.VendorIn the baths guests can purchase a number of beverages like beer, wine and non-alcoholic drinks.HygieneAll guests are asked to take a shower and wash thoroughly before entering the baths. Geosea provides soap, shampoo and conditioner from the Icelandic natural skincare company, \u00a0S\u00f3ley Organics. \u00a0How to Get here: Follow the yellow Lighthouse. \u200bLocated on the town's northern edge, GeoSea sits at the base of the bright yellow H\u00fasav\u00edkurviti lighthouse.Vitasl\u00f3\u00f0 1, 640 H\u00fasav\u00edk, IcelandPlease find your voucher with the travel documents",
-          "EventType": "AD",
-          "SegmentIdentifier": "GEO-T72938892",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "HZK",
-          "Address": "Vitasl\u00f3\u00f0 1Husavik,Iceland640",
-          "Phone": "+354 464 1210",
-          "Date": "2024-09-21",
-          "Pickup_Date": "2024-09-21",
-          "puTime": "14:30",
-          "puPlace": "Geosea - Geothermal Sea Baths, Vitasl\u00f3\u00f0 1, 640, H\u00fasav\u00edk, IcelandHusavik",
-          "Dropoff_Date": "2024-09-21",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "ticket",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "HZKADGEOSEAAD001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545517",
-          "SegmentProviderName": "North Sailing",
-          "Name": "H\u00fasav\u00edk Original Whale Watching",
-          "Description": "Husavik - Akureyri: 1h00(Priority) 3 hours - Book in BOKUN, 1 Mar - 30 NovExperience the Original H\u00fasav\u00edk Whale Watching tour that has built a reputation for the town of H\u00fasav\u00edk as the capital of whale watching in Iceland. Discover the magnificent nature of Skjalfandi bay observing whales, dolphins and sea birds in their natural habitat. Enjoy the smooth, safe sailing of a traditional Icelandic oak boat and treat your self to a cup of hot cocoa and traditional Icelandic scones. Recommended by thousands of satisfied travellers worldwide the Original Husavik Whale Watching tour is an authentic wildlife adventure by the pioneers of whale watching in Iceland. Includes: Hot chocolate and cinnamon buns, expert whale watching guide, warm overalls and raincoats if needed.Duration: 3hrsBring with you: Warm clothesMeeting Point: Whale Watching Centre, Hafnarst\u00e9tt 9, H\u00fasav\u00edk 640, ISTour starts at the harbour in H\u00fasav\u00edk. The Ticket Centre is located above the harbour across the street from the church. Please arrive at the ticket office in H\u00fasav\u00edk no later than 30 minutes before departure to collect your boarding pass.Please find your voucher with the travel documents.",
-          "EventType": "TD",
-          "SegmentIdentifier": "NOS-T72939278",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "HZK",
-          "Address": "Hafnarstett 11, HusavikIceland640",
-          "Phone": "+354 464 7272",
-          "Date": "2024-09-22",
-          "Pickup_Date": "2024-09-22",
-          "puTime": "10:00",
-          "puPlace": "North Sailing - H\u00fasav\u00edk Whale Watching, Gar\u00f0arsbraut, 640 H\u00fasav\u00edk, IcelandHusavik",
-          "Dropoff_Date": "2024-09-22",
-          "doTime": "13:00",
-          "doPlace": "Husavik",
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "HZKTDNS001 TD001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545556",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing Day 6Head East from H\u00fasavik towards the Northern city of Akureyri. Optional stop at the new Forest Lagoon for a quick dip is highly recommended, then continue into Akureyri for the evening:https://maps.app.goo.gl/qg9EsHoAUZfCbzRM6NORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-22",
-          "Pickup_Date": "2024-09-22",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-22",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "545571",
-          "SegmentProviderName": "Hotel Kea, Akureyri",
-          "Name": "Superior room including breakfast",
-          "Description": "BOOK VIA TRAVIAHotel Kea is located in the very heart of town, next to the iconic church of Akureyri and the town central. Hotel Kea is the only four star hotel in town offering rooms that range from standard to a suite, room service, in house restaurant, bar, conference and meeting halls. The breakfast at Hotel Kea is included in your stay, a fantastic start in the morning.The superior rooms are spacious and neatly decorated in a classic style. They are equipped with modern amenities to ensure a pleasant stay.",
-          "EventType": "AC",
-          "SegmentIdentifier": "55518212",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AEY",
-          "Address": "Hafnarstr\u00e6ti 87-89Akureyri,Iceland600",
-          "Phone": "+354 460 2000",
-          "Date": "2024-09-22",
-          "Pickup_Date": "2024-09-22",
-          "puTime": null,
-          "puPlace": "Akureyri",
-          "Dropoff_Date": "2024-09-23",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "40",
-          "Opt": "AEYACHKEA01AC01B",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545572",
-          "SegmentProviderName": "Imagine Iceland Travel",
-          "Name": "Northern Lights Classic Tour",
-          "Description": "Pick-up starts 30 minute(s) before departure.Book in BokunThis wonderful tour takes you hunting for Northern lights with an expert top rated Northern Lights guide through the winter night. The hunt takes you out of town to the countryside, away from the bright lights of the city so that the Northern Lights can be seen in all their beauty and colours. The local guide will share Icelandic tales during the journey on this magical tour. Please note the Northern Lights are a natural phenomenon and are also dependant on weather conditions therefore it is not possible to guarantee they will be sighted however if the guide confirms no lights were seen, you will be offered a free retry the next day if the tour is running. \u00a0Departure from: Akureryi HotelDeparture time: 21:30Duration: 2-3 hoursIncluded: Northern Lights guide, transport in a mini bus, Hotel pick up & drop off, Icelandic talesBring with you: Warm clothing and extra layers, gloves",
-          "EventType": "TD",
-          "SegmentIdentifier": "IMA-T72939558",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AEY",
-          "Address": "Sk\u00e0lateigur 1Akureyri,Iceland600",
-          "Phone": "+3548335800",
-          "Date": "2024-09-22",
-          "Pickup_Date": "2024-09-22",
-          "puTime": "21:30",
-          "puPlace": "Hotel KeaAkureyri",
-          "Dropoff_Date": "2024-09-22",
-          "doTime": null,
-          "doPlace": "Akureyri",
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "50",
-          "Opt": "AEYTDIIT001TD005",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545573",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing Day 7Spend the day exploring the remote Northern Peninsulas at your leisure, ending the day at the Brimsl\u00f3\u00f0 Guesthouse:https://maps.app.goo.gl/Zy3YAzkzsJJ9Mkdz6NORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-23",
-          "Pickup_Date": "2024-09-23",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-23",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "545574",
-          "SegmentProviderName": "Brimsl\u00f3\u00f0 Atelier Guesthouse",
-          "Name": "Standard room including breakfast",
-          "Description": "Private facilitiesBrimsl\u00f3\u00f0 Atelier Guesthouse is situated right beside the sea in the oldest part of the village of Bl\u00f6ndu\u00f3s. Enjoy cosy accommodation with magnificent views across the open North Atlantic Ocean to the Westfjords peninsula, delicious home-cooked meals and authentic Icelandic hospitality.The property offers a garden, sun terrace, shared lounge, restaurant and an outdoor fireplace. Guests have the use of free WiFi and free private parking.The standard room is featured with either double or twin beds. It has a private bathroom, free wifi and includes a continental breakfast.\u200b\u200b*if your dinner has been included; The dinner starts at 19:30 for all of our guests. Please advise if you are arriving later by calling the reception + 354 820 0998",
-          "EventType": "AC",
-          "SegmentIdentifier": "5USA123422 / Inga Elsa",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "BL\u00d6",
-          "Address": "Brimsl\u00f3\u00f0 10ABl\u00f6ndu\u00f3s,Iceland540",
-          "Phone": "+ 354 820 0998",
-          "Date": "2024-09-23",
-          "Pickup_Date": "2024-09-23",
-          "puTime": null,
-          "puPlace": "Bl\u00f6ndu\u00f3s",
-          "Dropoff_Date": "2024-09-24",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "BL\u00d6ACBRIMSAAC01A",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545921",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing day 8Head into the remote West Fjords of Iceland:https://maps.app.goo.gl/PJpSQ6wpqUt9CYny7NORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-24",
-          "Pickup_Date": "2024-09-24",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-24",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "551648",
-          "SegmentProviderName": "Hotel Horn",
-          "Name": "Standard room including \u00a0breakfast",
-          "Description": "Book in TraviaHotel Horn is located in the scenic Westfjords village of Isafjordur. This modern hotel offers free parking and brightly decorated rooms with flat-screen TVs and free WiFi access. The rooms have d\u00e9cor inspired by the surrounding nature and include a work desk and a private bathroom with shower.",
-          "EventType": "AC",
-          "SegmentIdentifier": "TVA-785806",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "IFJ",
-          "Address": "Austurvegi 2\u00cdsafj\u00f6r\u00f0ur,Iceland400",
-          "Phone": "+354 456 4611",
-          "Date": "2024-09-24",
-          "Pickup_Date": "2024-09-24",
-          "puTime": null,
-          "puPlace": "Isafjordur",
-          "Dropoff_Date": "2024-09-25",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "IFJACHHORN AC01A",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": "AnaCarter"
-          },
-          "Adults": "1",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "551649",
-          "SegmentProviderName": "Hotel Horn",
-          "Name": "Superior room including \u00a0breakfast",
-          "Description": "Book in TraviaHotel Horn is located in the scenic Westfjords village of Isafjordur. This modern hotel offers free parking and brightly decorated rooms with flat-screen TVs and free WiFi access. The rooms have d\u00e9cor inspired by the surrounding nature and include a work desk and a private bathroom with shower.The superior rooms offer comfort and plenty of space. The rooms are furnished in clean lines inspired by nature around the Westfjords. The room accommodates two people in a double bed. Room facilities include a seating area, bathroom with shower, hair dryer, wireless internet, coffee tray, and 32-42 inch TV.\u200b",
-          "EventType": "AC",
-          "SegmentIdentifier": "TVA-785806",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "IFJ",
-          "Address": "Austurvegi 2\u00cdsafj\u00f6r\u00f0ur,Iceland400",
-          "Phone": "+354 456 4611",
-          "Date": "2024-09-24",
-          "Pickup_Date": "2024-09-24",
-          "puTime": null,
-          "puPlace": "Isafjordur",
-          "Dropoff_Date": "2024-09-25",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "IFJACHHORN ACO1B",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "2",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "551651",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Continue your sightseeing drive through the West Fjords, getting to the Brj\u00e1nsl\u00e6kur ferry int time for the 18:00 departure for Stykkish\u00f3lmur:https://maps.app.goo.gl/LzxvzfFowctYmEQq8NORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-25",
-          "Pickup_Date": "2024-09-25",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-25",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "551652",
-          "SegmentProviderName": "Seatours",
-          "Name": "Ferry one way Brj\u00e1nsl\u00e6kur - Stykkisholmur",
-          "Description": "Book in BokunFerry Baldur operates all year round*. The journey time from Brj\u00e1nsl\u00e6kur - Stykkisholmur is about 2 hours and 30 minutes. Services on board: Located underneath ferry Baldur's vehicle deck, the restaurant B\u00e1ra offers an assortment of refreshments, including hot and cold meals, drinks and sweets. Free Wi-Fi is available on board.*The ferry does not operate on -Christmas 24 & 25 DecNew year 31 Dec & 1 JanGood Friday & Easter Sunday Seamans holiday: 2 June 2024",
-          "EventType": "FR",
-          "SegmentIdentifier": "EIM-T72940843",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "BRJ",
-          "Address": "Smidjustigur 3, StykkisholmurIceland340",
-          "Phone": null,
-          "Date": "2024-09-25",
-          "Pickup_Date": "2024-09-25",
-          "puTime": "18:00",
-          "puPlace": "FERRY, Brj\u00e1nsl\u00e6kurBrj\u00e1nsl\u00e6kur",
-          "Dropoff_Date": "2024-09-25",
-          "doTime": "20:30",
-          "doPlace": "FERRY, StykkisholmurStykkisholmur",
-          "SCU": "ticket",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "BRJFRSEAT01FR001",
-          "Included": [
-              "1 x Car upto 5M",
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "546356",
-          "SegmentProviderName": "H\u00f3tel Egilsen",
-          "Name": "Standard room including breakfast",
-          "Description": "Ask about Hotel Karolina in the booking requestStanding next to the harbor, Hotel Egilsen is set in a newly converted historic house in the heart of Stykkisholmur, The small hotel preserves its classic heritage while enhancing it with the best of modern design. Providing intimate lodging, healthy food, small library and the renowed COCO-MAT beds.The rooms are small but very bright and comfortable. Each room has a private bathroom with overhead power shower.There is one room on the first floor and two that are located on the third floor with one of them having a view towards the harbour. The rooms on the third floor have sloped ceiling but are very comfortable with the all natural COCO-Mat beds, goose-down duvets and pillows with ecological cotton bedcovers. There is also a power shower in the bathroom and L'Occitane amenities.",
-          "EventType": "AC",
-          "SegmentIdentifier": "FAEI-4709003-A / 5USA123422",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "SNE",
-          "Address": "A\u00f0algata 2Stykkish\u00f3lmur,Iceland340",
-          "Phone": "+354 554 7700",
-          "Date": "2024-09-25",
-          "Pickup_Date": "2024-09-25",
-          "puTime": null,
-          "puPlace": "Sn\u00e6fellsnes",
-          "Dropoff_Date": "2024-09-26",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "SNEACHEG001AC01A",
-          "Included": [
-              null,
-              "1 x Breakfast",
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545923",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Driving and Sightseeing day 9Head out early for a day of sightseeing in the Snaefellsness Peninsula, including a whale watching tour, ending in Reykholt for the evening:https://maps.app.goo.gl/8JZydu5PRhZE9y678NORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-26",
-          "Pickup_Date": "2024-09-26",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-26",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545924",
-          "SegmentProviderName": "Laki Tours Iceland",
-          "Name": "Whale Watching from \u00d3lafsv\u00edk",
-          "Description": "(10am was already filled in) Please arrive 30 min before departure to \u00d3lafsv\u00edk harbor. \u00a0Hotel Egilsen - \u00d3lafsv\u00edk harbour: 1h00 \u00d3lafsv\u00edk harbour - Fosshotel Reykholt: 2h0001 Apr - 15 Sep Book in BOKUNNowhere else in Iceland is there a better chance to see the Ocean's Big Animals than along the Sn\u00e6fellsnes Peninsula coastline: Sprem, Fin, Humpback, Minke and Killer Whale. Other possible sightings are Sei, Pilot whale plus dolphins and porpoises. This unique trip takes us into the waters where ocean giants swim in the shadow of the magnificent Sn\u00e6fellsj\u00f6kull Glacier, searching around the Sn\u00e6fellsnes peninsula. Nowhere else in Iceland is there a better change to see toothed-whales such as orcas, sperm whales and pilot whales than along this beautiful coastline. The orcas are more often seen in winter and early in the summer, during April and June, but there is a chance of seeing them all the way through the summer months. Male sperm whales can be seen especially in June in deeper water. Other whales that can be seen are humpback whales and minke whales as well as white-beaked dolphins. We get as close as we can without disturbing the whales while we enjoy the spectacle of them feeding and playing.NOTE: Subject of weather conditions.Meeting point: \u00d3lafsv\u00edk, Sn\u00e6fellsnes PeninsulaDuration: Approx 3 hoursBring with you: Warm clothingMin persons on the tour: 4Departure: 1st April to 14th June & 20th Aug to 15th Sept at 13:00. From 15th June to 19th Aug at 10:00 and 14:00.Please be at the meeting point 30 min before tour start. Please contact Laki Tours 24 hours BEFORE the scheduled departure so they can confirm departures of any tours.Contact Tel: +354 5466808",
-          "EventType": "TD",
-          "SegmentIdentifier": "LAT-T72940494",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "SNE",
-          "Address": "Nesvegur 5Grundarfj\u00f6r\u00f0ur,Iceland350",
-          "Phone": "+354 546 6808",
-          "Date": "2024-09-26",
-          "Pickup_Date": "2024-09-26",
-          "puTime": "10:00",
-          "puPlace": "\u00d3lafsv\u00edk Harbour, Nor\u00f0urtangi 9, \u00d3lafsv\u00edk 355, IcelandSn\u00e6fellsnes",
-          "Dropoff_Date": "2024-09-26",
-          "doTime": "13:00",
-          "doPlace": null,
-          "SCU": "ticket",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "SNETDLAK001TD001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "551653",
-          "SegmentProviderName": "Fosshotel Reykholt",
-          "Name": "Superior Double room including breakfast",
-          "Description": "BOOK VIA TRAVIAFosshotel Reykholt is a romantic country hotel in the legendary setting of Reykholt in Borgarfj\u00f6r\u00f0ur. Once the home of historian and poet Snorri Sturluson, Reykholt is one of Iceland's major historic sites. Bounteous in captivating scenery the area is full of lava fields, waterfalls, mountains, craters and caves. Offering 5 types of hotel rooms, Fosshotel Reykholt is everything you look for in a quiet country hotel. The hotel offers relaxing environment, full of historic remains and attractions for intriguing travelers. The rooms are well designed and equipped with facilities that will make your hotel stay even more enjoyable.Fosshotel Reykholt offers modern and well-designed rooms in a lifely, although relaxing environment in West Iceland. Rooms are equipped with a TV, fridge, hairdryer, coffee & tea maker, telephone, bathroom and free WiFi.",
-          "EventType": "AC",
-          "SegmentIdentifier": "77914696",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "REY",
-          "Address": "h\u00e1lsasveitavegur, 320 ReykholtReykholt,Iceland105",
-          "Phone": "+354 435 1260",
-          "Date": "2024-09-26",
-          "Pickup_Date": "2024-09-26",
-          "puTime": null,
-          "puPlace": "Reykholt",
-          "Dropoff_Date": "2024-09-28",
-          "doTime": null,
-          "doPlace": "Selfoss",
-          "SCU": "nights",
-          "SCUqty": "2",
-          "SequenceNumber": "40",
-          "Opt": "REYACFHRE02AC01B",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545927",
-          "SegmentProviderName": "Arctic Adventures, Iceland",
-          "Name": "Into The Glacier (Langjokull) from H\u00fasafell",
-          "Description": "PRIORITY, \u00a0AA0902 - Bokun - 4 hours, from HusafellNOTE: Due to changing weather conditions, please check the status of the activity at the Front Desk of your hotel the day before or in the morning.Your Into The Glacier Adventure is truly a unique experience. You will get the opportunity of a life time to enjoy one of the world\u2019s greatest wilderness; Iceland\u2019s second largest glacier \u2013 from the inside! Never before the Langjokull ice tunnels, has anyone been able to see the beautiful blue ice at the heart of an ice cap glacier. You\u2019ll get to drive in a specially modified snow truck on the glacier, explore the glacier environment, enjoy a view out of this world and go INTO the glacier to experience the glacier\u2019s beauty from the inside!An experienced guide will lead the way the whole time to make sure everyone is enjoying themselves to the fullest. It\u00b4s time to take ice cap glacier exploration to a whole new level. Trip details:\u2022 \u00a0Drive yourself from Reykjavik (or another starting point) to Husafell.\u2022 \u00a0During winter, always use road 1 towards Borgarnes and road 50 and 518 to H\u00fasafell.\u2022 \u00a0Specially modified glacier vehicles take you up to the ice tunnels and back, about 30 min. each way during summer and 75 min each way during winter.\u2022 \u00a0Guided ice tunnel tour, approximately an hour\u2022 \u00a0The total duration of the tour is around 4 hours from H\u00fasafell\u2022 \u00a0Please note that the duration of the tour may be longer than scheduled, due to conditions on the glacier.Included:\u2022 \u00a0Tour in a specially modified glacier vehicle on Langjokull glacier. Departure from H\u00fasafell Information Centre \u2022 \u00a0Entrance and English speaking guidance in the ice cave and tunnels.\u2022 \u00a0English speaking driver/ guide/audio guidance.\u2022 \u00a0Free WiFi in glacier vehicles.Bring with you: Warm and waterproof outdoor clothing, gloves, warm undergarment clothing (fleece/wool sweater and pants), warm socks and a change of clothing. Good hiking shoes are recommended.Duration: 4 Hours Minimum age: No Minimum age Please note: \u2022 \u00a0Itinerary is subject to change due to weather conditions or circumstances beyond the suppliers control.\u2022 \u00a0Please note that the duration of the tours may vary according to weather and road conditions.Summer season (1/6-15/10): Please note that the tour departs from Klaki base campPlease note that the mountain road F550 which connects both H\u00fasafell and \u00deingvellir national park to Klaki base camp is a rough gravel road ONLY suitable for 4\u00d74 vehicles during summer, mid June-mid October. Please take the shuttle from H\u00fasafell if you do not have a 4\u00d74 vehicle. Please note that the shuttle departs from Glacier office in Husafell. Please be ready at least 30 minutes before the shuttle departure.*Winter season (16.10-31.5): Please note that the meeting point is Glacier office in H\u00fasafellPlease be ready at least 30 minutes before the shuttle departure.GPS coordinates:Glacier office in H\u00fasafell \u2013 N64 41.950 W20 52.118Klaki base camp \u2013 N64 39.014 W20 34.962PLEASE NOTE: \u200bSince Arctic Adventures does not provide lunch on any of their trips, customers are recommended to bring their own lunch (for the longer trips), snacks and a bottle of water. Sometimes tours will also stop at some gas stations where snacks or coffee can be bought, however, this will mostly depend on the guide and timing (if guests would like to request such stops, there should be no problem to arrange if timings will allow).",
-          "EventType": "TD",
-          "SegmentIdentifier": "ARC-T72940032",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "HUF",
-          "Address": "Laugavegur 11Reykjavik,Iceland101",
-          "Phone": "+354 562 7000",
-          "Date": "2024-09-27",
-          "Pickup_Date": "2024-09-27",
-          "puTime": "10:00",
-          "puPlace": "H\u00fasafell Information CenterHusafell",
-          "Dropoff_Date": "2024-09-27",
-          "doTime": "14:00",
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "HUFTDARC001TD001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545928",
-          "SegmentProviderName": "Husafell Canyon Bath",
-          "Name": "Husafell Canyon Bath tour 2hrs",
-          "Description": "BOKUN - 50% discount for hotel guestHusafell Canyon BathsThere is no experience more authentically Icelandic than hiking through the surreal landscapes of the highlands followed by a relaxing soak in a geothermal pool.Choose from three geothermal pools of varying temperatures, 30-41\u00b0C (86-105\u00b0F), plus a cold-water spring at 10\u00b0C (50\u00b0F), each with a spectacular view of the surrounding canyon, mountains and glaciers.An authentic Icelandic SoakConstructed from locally sourced, natural materials like flagstone from the canyon floor, the baths are hot-spring fed pools designed to blend into the environment seamlessly using the age-old methods that created Snorralaug, a heritage site pool dating back to the 10th century. The on-site bathhouse is made from salvaged timbers from the area. Even the hooks in the changing room are repurposed horseshoes from a nearby family farm. The H\u00fasafell locals who undertook the Canyon Baths project went to great lengths to keep the entire structure as environmentally unobtrusive, sustainable and true to the area\u2019s heritage as possible.Hiking to the bathsLed by a knowledgeable local guide, this year-round tour begins with a short ride from the Hotel H\u00fasafell to the trailhead in the remote Icelandic Highlands. On this 2-hour tour we enjoy a relaxed walk among natural wonders not found in many guidebooks, including the spectacular two-tiered waterfall Langifoss. We\u2019ll also learn about Iceland\u2019s renewable energy practices, cross an icy stream of glacial meltwater and see the site to Okj\u00f6kull, Iceland\u2019s first glacier claimed by climate change.The highlight of our excursion is a serene soak in the recently completed H\u00fasafell Canyon Baths, a surreal hot spring paradise that has to be seen to be believed. Enjoy half an hour of relaxing, recharging and breathing in the pure Icelandic air before heading back to H\u00fasafell. Please bring: Warm, waterproof outdoor clothingHiking bootsSwimsuit and towelSwimsuits and towels can be rented from Hotel H\u00fasafell swimming pool if needed.PLEASE NOTEThis hike is rated as easy and is appropriate for all skill levels. There is a maximum of 20 participants per outing.",
-          "EventType": "TD",
-          "SegmentIdentifier": "HUS-T73118988",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "HUF",
-          "Address": "Husafell,Iceland311",
-          "Phone": "+354 866 5414",
-          "Date": "2024-09-27",
-          "Pickup_Date": "2024-09-27",
-          "puTime": "17:00",
-          "puPlace": "Husafell",
-          "Dropoff_Date": "2024-09-27",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "20",
-          "Opt": "HUFTDHCB001TD001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545929",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Self Drive Information",
-          "Description": "Final Driving and Sightseeing dayMake your way back South towards Reykjavik to relax at the Sky Lagoon and spend your last night in Reykjavik:Reykjavik Parking information - https://www.reykjavikrentacar.is/visit-iceland/parking-in-reykjavik---where-can-i-park-and-is-it-freehttps://maps.app.goo.gl/vBW3NEG9zEL6AnuU9NORWAY: Europeans love driving in Norway and during the summer months, the more popular tourist roads becomes crowded with European vans. This can slow the roads down, as it can be difficult to pass these vans. Norwegian country roads are often quite narrow. Having said this, these roads are incredibly scenic and have lots of picnic & photo spots. If you are going to be using ferries during your drive, depending on the size of the ferry, this might involve a wait to get on. The ferries are reliable and regular but you may need to arrive early to secure a spot in the line. On some of the ferries, consider catching a ferry outside of the peak times. Your accommodation hosts will have the most up to date local information on hand so ask them for suggestions for your following days travel.ICELAND: In regards to gravel roads; technically you\u2019re not recommended to take a hire car on gravel roads, but in Iceland you may not have a choice. Some guesthouses are located on gravel roads. Consider getting extra car insurance with gravel protection if it is something that might worry you.",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-28",
-          "Pickup_Date": "2024-09-28",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-28",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01SDRIVE",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "551934",
-          "SegmentProviderName": "Sky Lagoon",
-          "Name": "Sky Lagoon Pure Experience",
-          "Description": "Fosshotel Reykholt - Sky Lagoon: 1h30(Priority) Add city-transfers Iceland highlights if needed,Soak in the beauty of Iceland as you gaze across the infinity edge and watch the Icelandic Sky merge with the Atlantic ocean.Located in K\u00e1rsnes Harbour, K\u00f3pavogur, just minutes from Reykjavik\u2019s vibrant city centre and iconic urban landmarks, Sky Lagoon is a premium oceanfront geothermal lagoon, inspired by the magic of Iceland and showcasing expansive ocean vistas punctuated by awe-inspiring sunsets, Northern Lights and dark sky views.Approximately \u200b5 km from Reykjavik Centre. Add transfers if needed.Soak in the beauty of Iceland as you gaze across the infinity edge of the lagoon and watch the Icelandic sky merge with the Atlantic oceanThe un-obstructed 70-metre (260 ft) infinity-edge creates the visual effect of the lagoon blending into the Atlantic Ocean, offering you an awe-inspiring and endless vista punctuated with remarkable sunsets, auroras and dark sky views.Your Pure Experience includes:- ocean-side infinity lagoon- the ritual experience- swim up lagoon bar- indoor caf\u00e9 and unique retail experience\u201cThe Ritual\u201d - an experience inspired by Icelandic tradition:Your deluxe experience includes the seven-step rejuvenating experience ' The Ritual', including a cold pool plunge, ocean-front sauna, exclusive SKY scrub and more.\u2022 Step 1: Slow down (lagoon) Soak and relax in the lagoon, breathing in the refreshing air. Dipping in the hot geothermal waters of SKY LAGOON will help guests relax, reduce tension and increase sense of wellbeing\u2022 Step 2: Cool down (cold pool) After enjoying the hot water we recommend a cold therapy, either taking advantage of the fresh Icelandic air or if guests are feeling braver, dip into the cold pool. This will stimulate their immune system, decrease blood flow in the body and tighten skin.\u2022 Step 3: Relax with a view (sauna) After this cold awakening, guests visit the sauna for 5-10 minutes, allowing the heat to open pours to remove toxins and cleansing the skin. Guests can enjoy the breathtaking views while the heat works its magic.\u2022 Step 4: Refresh (cold fog-mist) Guests enter the cold fog-mist and refresh their senses.\u2022 Step 5: The SKY scrub (scrub area) Guests then apply our signature SKY body scrub. Exfoliating and applying healing ingredients.\u2022 Step 6: Steam (Steam room) The steam will once more open your skin, allowing it to absorb the key therapeutic ingredients and maximizing the hydrating benefits of the SKY scrub.\u2022 Step 7: Shower and relax (Shower and lagoon). Close your eyes, feel the results, enjoy the moment Included:\u2022 Sky Lagoon Experience including Sky Lagoon Ritual\u2022 Access to Public Change Rooms\u2022 Towels provided\u2022 Drinks for purchase&quot;Children under the age of 12 are not permitted at Sky Lagoon. Visitors ages 12 \u2013 14 must be accompanied by a guardian (18 years or older). Sky Lagoon team members may ask to confirm your child's date of birth using a valid ID card or passport and reserve the right to refuse access if one cannot be provided.&quot;\u200bhttps://maps.app.goo.gl/9KhBjMuoJUYb1WnZ7The recommended time is 1,5\u20132 hours. It\u2019s very important that you stay hydrated whilst enjoying the warm water. This will help ensure you get the most out of your experience and stay healthy.Please find your voucher with the travel documents.The Sky Lagoon Shuttle is available from central Reykjav\u00edk to Sky Lagoon. \u00a0Return: 2000 ISK paid locally.Please note - The transfer is operated by Reykjav\u00edk Excursions (www.re.is)Departure is from BS\u00cd bus station.There are also several pick up points in Reykjavik. Check with your Hotel Reception for the pick up point closest to your hotel. Pick-up starts 30 minutes before departure.Transfer times from Reykjav\u00edk to Sky Lagoon:From Reykjav\u00edk: 13:00, 15:00, 17:00 & 19:00From Sky Lagoon: 15:30, 17:30, 19:30 & 21:30",
-          "EventType": "TD",
-          "SegmentIdentifier": "SKY-T72940330",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "REK",
-          "Address": "Vesturvor, 200 KopavogurReykjavik,Iceland200",
-          "Phone": "+354 527 6800",
-          "Date": "2024-09-28",
-          "Pickup_Date": "2024-09-28",
-          "puTime": "14:00",
-          "puPlace": "Sky LagoonReykjavik",
-          "Dropoff_Date": "2024-09-28",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "ticket",
-          "SCUqty": "1",
-          "SequenceNumber": "25",
-          "Opt": "REKTDSKYL01TD001",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Double",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              },
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": "AnaCarter"
-                  }
-              }
-          ],
-          "ServiceLineId": "551933",
-          "SegmentProviderName": "Kvosin Downtown Hotel",
-          "Name": "Big Room (including breakfast)",
-          "Description": "BOOK VIA TRAVIA, Priority, 25% off BAR. Nett rates on TraviaKvosin Hotel is located in the historic Kirkjuvoll building at the center of Reykjavik. The neighbors are Parliament and the Old Downtown Church, so guests are truly part of history. Built in 1900 and refurbished in 2013 all 24 rooms have spacious living areas, cooking facilities, and warm but cool Scandinavian d\u00e9cor.The smallest suites at Kvosin, ironically, are big (26m2), hence the name 'Big Room'. Big on character, big on style, and big on experience. They are much bigger than the average hotel room in Reykjavik with luxury amenities. The Big Room is furnished with 1 queen bed (153x200 cm). Facilities include full kitchenette with refrigerator, Nespresso Coffee machine with complimentary coffee, Samsung Smart TV, Soley Organics Icelandic Toiletries and Icelandic Linens by Lin Designs.",
-          "EventType": "AC",
-          "SegmentIdentifier": "55519010",
-          "TourplanServiceStatus": "Confirmed",
-          "LocationCode": "REK",
-          "Address": "Kirkjutorg 4Reykjavik,Iceland101",
-          "Phone": null,
-          "Date": "2024-09-28",
-          "Pickup_Date": "2024-09-28",
-          "puTime": null,
-          "puPlace": "Reykjavik",
-          "Dropoff_Date": "2024-09-29",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "night",
-          "SCUqty": "1",
-          "SequenceNumber": "30",
-          "Opt": "REKACKVO001AC01A",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      },
-      {
-          "RoomConfigs": [
-              {
-                  "RoomType": "Single",
-                  "TravellerAssignment": {
-                      "FullName": [
-                          "AnaCarter",
-                          "LuzWhitehead",
-                          "RobertWhitehead"
-                      ]
-                  }
-              }
-          ],
-          "ServiceLineId": "545931",
-          "SegmentProviderName": "50 Degrees North",
-          "Name": "Departure day",
-          "Description": "Robert &amp; Luz: 29SEP- DL0237 departs KEF 08:50 Ana: 29SEP - DL0247 departs KEF 11:25Return your rental car at the Keflavik Airport and depart Iceland.\u200bRobert & Luz:29SEP- DL0237 departs KEF 08:50Ana:29SEP - DL0247 departs KEF 11:25",
-          "EventType": "OT",
-          "SegmentIdentifier": null,
-          "TourplanServiceStatus": "Pending",
-          "LocationCode": "AUS",
-          "Address": "Lillehammer,Norway",
-          "Phone": null,
-          "Date": "2024-09-29",
-          "Pickup_Date": "2024-09-29",
-          "puTime": null,
-          "puPlace": "Australia",
-          "Dropoff_Date": "2024-09-29",
-          "doTime": null,
-          "doPlace": null,
-          "SCU": "tour",
-          "SCUqty": "1",
-          "SequenceNumber": "10",
-          "Opt": "AUSOT50DN01ARK3",
-          "Included": [
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
-          ],
-          "TravellerAssignment": {
-              "FullName": [
-                  "AnaCarter",
-                  "LuzWhitehead",
-                  "RobertWhitehead"
-              ]
-          },
-          "Adults": "3",
-          "Children": "0",
-          "Infants": "0"
-      }
-  ],
-  "Name": "5USA123422- Whitehead x 3",
-  "Active": "true",
-  "IsChatDisabled": "false",
-  "IsPdfEnabled": "true",
-  "IsAppEnabled": "true",
-  "Status": "active",
-  "IsArchived": "false",
-  "Currency": "USD",
-  "SalesLocation": "US"
+    "Travellers": [
+        {
+            "Title": "Mr",
+            "FullName": "Stephen James&nbsp;Godfrey",
+            "Type": "Adult",
+            "Email": null,
+            "DietaryRequirements": null,
+            "MedicalConditions": "Diabetic"
+        },
+        {
+            "Title": "Mr",
+            "FullName": "Stuart Craig&nbsp;Hunt",
+            "Type": "Adult",
+            "Email": "craig@outhere.com.au",
+            "DietaryRequirements": null,
+            "MedicalConditions": null
+        },
+        {
+            "Title": "Ms",
+            "FullName": "Lena&nbsp;Nappa",
+            "Type": "Adult",
+            "Email": null,
+            "DietaryRequirements": null,
+            "MedicalConditions": null
+        },
+        {
+            "Title": "Dr",
+            "FullName": "Lidija&nbsp;Suntesic",
+            "Type": "Adult",
+            "Email": null,
+            "DietaryRequirements": null,
+            "MedicalConditions": null
+        }
+    ],
+    "RoomConfigs": [
+        {
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                }
+            ],
+            "RoomType": "Single"
+        },
+        {
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stuart CraigHunt"
+                }
+            ],
+            "RoomType": "Single"
+        },
+        {
+            "TravellerAssignments": [
+                {
+                    "FullName": "LenaNappa"
+                }
+            ],
+            "RoomType": "Single"
+        },
+        {
+            "TravellerAssignments": [
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomType": "Single"
+        }
+    ],
+    "TripDays": [
+        "2024-10-30",
+        "2024-10-30",
+        "2024-10-30",
+        "2024-10-31",
+        "2024-11-02",
+        "2024-11-02",
+        "2024-11-02",
+        "2024-11-03",
+        "2024-11-04",
+        "2024-11-05",
+        "2024-11-05"
+    ],
+    "TripEvents": [
+        {
+            "Inclusions": [
+                "1 x Toll road",
+                "1 x Airport parking",
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "LenaNappa"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        }
+                    ],
+                    "RoomType": "Single"
+                }
+            ],
+            "SegmentProviderName": "Bislet Limousine AS",
+            "Name": "Private transfer Oslo Gardermoen Airport to City",
+            "LocationCode": [
+                null,
+                "OSL"
+            ],
+            "Description": {
+                "ServiceRemarks": "SK804 arriving in OSL at 13:50",
+                "ServiceNote": null,
+                "InfoNote": null,
+                "ShortItineraryNote": "Transfers include one suitcase and one carry on per person. Any additional luggage must be pre-booked.",
+                "ItineraryNote": "Bislet Limousineservice Emergency number: + 47 900 29 085Your driver will meet you holding a name sign.",
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_OSLPTBIS001PT001",
+            "EventType": "PT",
+            "SegmentIdentifier": "404607",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "Ringnesveien 7Oslo,Norway0978",
+            "Phone": "+47 22 80 25 20",
+            "Date": "2024-10-30",
+            "StartDate": "2024-10-30",
+            "StartTime": "13:50",
+            "StartLocation": "&nbsp;Oslo",
+            "EndDate": "2024-10-30",
+            "EndTime": null,
+            "EndLocation": "Amerikalinjen&nbsp;Oslo",
+            "SCU": "car",
+            "SCUqty": "1",
+            "SequenceNumber": "9",
+            "Vessel": "Bislet Limousine ASSK804 arriving in OSL at 13:50",
+            "VehicleType": "PRIORITY",
+            "CabinType": "PRIORITY",
+            "RoomType": "Private transfer Oslo Gardermoen Airport to City",
+            "Adults": "2",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                "1 x Toll road",
+                "1 x Airport parking",
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Single"
+                }
+            ],
+            "SegmentProviderName": "Bislet Limousine AS",
+            "Name": "Private transfer Oslo Gardermoen Airport to City",
+            "LocationCode": [
+                null,
+                "OSL"
+            ],
+            "Description": {
+                "ServiceRemarks": "LH2454 arriving in OSL at 17:55",
+                "ServiceNote": null,
+                "InfoNote": null,
+                "ShortItineraryNote": "Transfers include one suitcase and one carry on per person. Any additional luggage must be pre-booked.",
+                "ItineraryNote": "Bislet Limousineservice Emergency number: + 47 900 29 085Your driver will meet you holding a name sign.",
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_OSLPTBIS001PT001",
+            "EventType": "PT",
+            "SegmentIdentifier": "404607",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "Ringnesveien 7Oslo,Norway0978",
+            "Phone": "+47 22 80 25 20",
+            "Date": "2024-10-30",
+            "StartDate": "2024-10-30",
+            "StartTime": "17:55",
+            "StartLocation": "&nbsp;Oslo",
+            "EndDate": "2024-10-30",
+            "EndTime": null,
+            "EndLocation": "Amerikalinjen&nbsp;Oslo",
+            "SCU": "car",
+            "SCUqty": "1",
+            "SequenceNumber": "10",
+            "Vessel": "Bislet Limousine ASLH2454 arriving in OSL at 17:55",
+            "VehicleType": "PRIORITY",
+            "CabinType": "PRIORITY",
+            "RoomType": "Private transfer Oslo Gardermoen Airport to City",
+            "Adults": "2",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Double"
+                },
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        }
+                    ],
+                    "RoomType": "Double"
+                }
+            ],
+            "SegmentProviderName": "Amerikalinjen",
+            "Name": "Superior room including breakfast",
+            "LocationCode": [
+                null,
+                "OSL"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": null,
+                "InfoNote": "Here the journey began for thousands of hopeful Norwegians. They were going to travel with Amerikalinjen to the land of opportunity. The Norwegian America Line\u2019s venerable headquarters opened their doors in 1919. 100 years later, these dreams are brought back to life . This iconic building has been reborn as a vibrant boutique hotel, designed for the modern explorer. Outside the doors, the city is at your feet. The Opera, shopping in Kvadraturen and the nightlife on Youngstorget are our closest neighbours. The airport express train (Flytoget), buses and trams are all in the immediate vicinity.",
+                "ShortItineraryNote": "The light filled Superior rooms have interior, city or fjord views and are furnished with king size beds. The rooms are designed with an eye for detail, with high ceilings, large windows, parquet floors, designer lamps and unique objects from Amerikalinjen\u2019s rich history.Room amenities include Nespresso coffee maker, minibar, bathrobe and work area. The ensuite has a walk-in shower, hair dryer and exclusive products from Sprekenhus.",
+                "ItineraryNote": null,
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_OSLACAMER01AC002",
+            "EventType": "AC",
+            "SegmentIdentifier": "NO147S0019417 / NO147S0019416",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "Jernbanetorget 2Oslo,Norway0154",
+            "Phone": "+47 21405900",
+            "Date": "2024-10-30",
+            "StartDate": "2024-10-30",
+            "StartTime": null,
+            "StartLocation": "&nbsp;Oslo",
+            "EndDate": "2024-11-02",
+            "EndTime": null,
+            "EndLocation": "&nbsp;",
+            "SCU": "nights",
+            "SCUqty": "3",
+            "SequenceNumber": "20",
+            "Vessel": "Amerikalinjen",
+            "VehicleType": "Priority, Avoid Fri-Sat. 15% off BAR also possible",
+            "CabinType": "Priority, Avoid Fri-Sat. 15% off BAR also possible",
+            "RoomType": "Superior room including breakfast",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                "1 x Public transport",
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Single"
+                }
+            ],
+            "SegmentProviderName": "Norditours",
+            "Name": "Discover Oslo - Private City Tour",
+            "LocationCode": [
+                null,
+                "OSL"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": null,
+                "InfoNote": null,
+                "ShortItineraryNote": "Discover the must-sees of beautiful Oslo including the Royal Palace and Vigeland Park \u00a0on a private walking tour.Enjoy all the landmarks of Oslo's city centre on a private 3-hour walking tour with a local guide. Get a taste of the life in this vibrant capital through its famous sights, and enjoy its architectural and cultural diversity. See the Royal Palace, the Norwegian Parliament, and the University of Oslo, and stroll the bustling Karl Johan pedestrian shopping area. Take the tram to the iconic Vigeland Park and explore the incredible and unique works of sculptor Gustav Vigeland. A perfect introduction to the Norwegian capital! Duration: 3 hours Inclusions: Private English speaking guide, visit to Vigeland Park, public transportationExclusions: Food and drinkActivity Level: ModerateAccessible: Yes",
+                "ItineraryNote": "Your guide, tel +47 95094363, will meet you in hotel reception. Please be ready in good time. \u200b",
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_OSLTDNORDITTD001",
+            "EventType": "TD",
+            "SegmentIdentifier": "5MFT122621 Victoria",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "c/o Ekonomernas HusStortingsgata 8Oslo,Norway0161",
+            "Phone": "+47 95094363",
+            "Date": "2024-10-31",
+            "StartDate": "2024-10-31",
+            "StartTime": "10:00",
+            "StartLocation": "Oslo - Amerikalinjen&nbsp;Oslo",
+            "EndDate": "2024-10-31",
+            "EndTime": "13:00",
+            "EndLocation": "&nbsp;Oslo",
+            "SCU": "tour",
+            "SCUqty": "1",
+            "SequenceNumber": "10",
+            "Vessel": "Norditours",
+            "VehicleType": "3 hours PRIORITY (max 10)",
+            "CabinType": "3 hours PRIORITY (max 10)",
+            "RoomType": "Discover Oslo - Private City Tour",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Single"
+                }
+            ],
+            "SegmentProviderName": "Porter Service AS",
+            "Name": "Luggage transport Oslo - Bergen",
+            "LocationCode": [
+                null,
+                "OSL"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": null,
+                "InfoNote": null,
+                "ShortItineraryNote": "Porter service offers a safe and secure transportation of your luggage, allowing you to travel through the fjords with just an overnight bag.Please pack your overnight bag according to the number of nights you will be away from your main luggage. Bring any medications and valuables with you.Please leave your luggage at the hotel reception before 6:30AM. - You will not be able to access your luggage until you arrive in Bergen. - Make sure you have a name tag on your luggage. - Porter Service will pick your luggage up and deliver it to your hotel in Bergen by 9:00pm tonight. It will be stored safely until you arrive in Bergen.- All bags must be prepaid for transport.",
+                "ItineraryNote": "Please note that you have paid for 1 piece of luggage per person unless otherwise specified.Your hotel receptionist may not know about your luggage transport booking as this service is not provided by your hotel.Luggage Tags:\u2022 \u00a0 \u00a0Each piece of luggage must have a name tag with its owner\u2019s name clearly \u00a0labelled.\u2022 \u00a0 \u00a0Luggage cannot be grouped together under one name.\u2022 \u00a0 \u00a0Failure to properly label your luggage may result in it not being taken \u00a0on your journey or being lost.\u2022 \u00a0 \u00a0You will receive a printable luggage tag with your travel documents that \u00a0you may like to use.",
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_OSLOTPOR002OT001",
+            "EventType": "OT",
+            "SegmentIdentifier": "38823",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "Oslo,Norway",
+            "Phone": "+47 906 10 009",
+            "Date": "2024-11-02",
+            "StartDate": "2024-11-02",
+            "StartTime": "06:30",
+            "StartLocation": "Amerikalinjen&nbsp;Oslo",
+            "EndDate": "2024-11-02",
+            "EndTime": "21:00",
+            "EndLocation": "Bergen B\u00f8rs Hotel&nbsp;Bergen",
+            "SCU": "bag",
+            "SCUqty": "1",
+            "SequenceNumber": "10",
+            "Vessel": "Porter Service AS",
+            "VehicleType": null,
+            "CabinType": null,
+            "RoomType": "Luggage transport Oslo - Bergen",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Single"
+                }
+            ],
+            "SegmentProviderName": "Fjord Tours",
+            "Name": "Norway in a Nutshell - Oslo to Bergen",
+            "LocationCode": [
+                null,
+                "OSL"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": "\u200b",
+                "InfoNote": null,
+                "ShortItineraryNote": "The Norway in a nutshell trip takes you through some of Norway's most beautiful fjord scenery. You can experience the scenic Bergen Railway, the breathtaking Fl\u00e5m Railway, the Aurlandsfjord and the narrow N\u00e6r\u00f8yfjord. The trip runs daily all year. All travel is included on the one ticket.INCLUDED:\u2022 \u00a0 Train Oslo-Myrdal (including seat reservation: Car 8, Seat 3, 4, 7, 8)\u2022 \u00a0 The Fla\u030am Railway Myrdal-Fla\u030am\u2022 \u00a0 Fjord cruise Fla\u030am-Gudvangen\u2022 \u00a0 Bus Gudvangen-Voss\u2022 \u00a0 Train Voss-BergenPlease note you will get access to the Fla\u030am railway museum when in Fla\u030am.No seat reservations are necessary.The exact timing is advised when you receive your travel documents. There is no guiding included. You have to make your own way from hotel to station and change mode of transport as you travel. The itinerary is probably the most \u2018well-trodden\u2019 in the whole of Norway, and it runs like clockwork, so there is no need to be concerned that you will miss a connection or not find your way.",
+                "ItineraryNote": "Please find your voucher with the travel documents.Kindly note that this is a scheduled service and will depart on time so please be at the station 30 min before departure. Please be ready at the pier 15 minutes before the departure. Seats on the train have been automatically assigned by Vy, seating map is not available. Please find Norway in a Nutshell practical information about transfer points with the travel documents.",
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_OSLRAFJT001NNUOB",
+            "EventType": "RA",
+            "SegmentIdentifier": "11KL88",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "Str\u00f8mgt. 4Bergen,Norway5015",
+            "Phone": "+47 55 55 76 60",
+            "Date": "2024-11-02",
+            "StartDate": "2024-11-02",
+            "StartTime": "08:25",
+            "StartLocation": "Central Station&nbsp;Oslo",
+            "EndDate": "2024-11-03",
+            "EndTime": "15:26",
+            "EndLocation": "Station&nbsp;Bergen",
+            "SCU": "ticket",
+            "SCUqty": "1",
+            "SequenceNumber": "20",
+            "Vessel": "Fjord Tours",
+            "VehicleType": null,
+            "CabinType": null,
+            "RoomType": "Norway in a Nutshell - Oslo to Bergen",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Double"
+                },
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        }
+                    ],
+                    "RoomType": "Double"
+                }
+            ],
+            "SegmentProviderName": "Fretheim Hotel",
+            "Name": "Historical room with double bed including breakfast",
+            "LocationCode": [
+                "Approximate distance from the train station:",
+                "FLA"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": null,
+                "InfoNote": "Fretheim Hotel is the largest hotel in Fl\u00e5m with 122 rooms, most of which face Aurlandsfjord. The history of the hotel goes back to the 1870\u2019s and Fretheim is today a proud member of the Norwegian Historic Hotels & Restaurants. The in-house Restaurant Arven aims to provide the very best of local produce and has menus following the seasons. \u00a0Hotel facilities include a luggage room, laundry service, internet and safe in the reception. The Hotel is surrounded by beautiful gardens.",
+                "ShortItineraryNote": "The Historical Rooms are the signature rooms of the Hotel. They stand out and with details that add that little extra to your stay. The rooms are in the oldest part of the hotel, overlooking the garden and the fjord. Each historic room is different, both in size and design and is furnished with beautiful antique furniture.Room amenities include a king-size double bed, espresso machine, free WIFI, hairdryer, bathrobes and slippers. The private bathrooms are equipped with gilded taps and bathtubs with lion's feet in some rooms. The Historical rooms do not have TV\u2019s.",
+                "ItineraryNote": null,
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_FLAACFRET01AC02F",
+            "EventType": "AC",
+            "SegmentIdentifier": "CQEG34",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "P.O. Box 83Fl\u00e5m,Norway5742",
+            "Phone": null,
+            "Date": "2024-11-02",
+            "StartDate": "2024-11-02",
+            "StartTime": null,
+            "StartLocation": "&nbsp;Fl\u00e5m",
+            "EndDate": "2024-11-03",
+            "EndTime": null,
+            "EndLocation": "&nbsp;",
+            "SCU": "night",
+            "SCUqty": "1",
+            "SequenceNumber": "30",
+            "Vessel": "Fretheim Hotel",
+            "VehicleType": "Book in Citybreak",
+            "CabinType": "Book in Citybreak",
+            "RoomType": "Historical room with double bed including breakfast",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Double"
+                },
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        }
+                    ],
+                    "RoomType": "Double"
+                }
+            ],
+            "SegmentProviderName": "Bergen B\u00f8rs Hotel",
+            "Name": "Superior room including breakfast",
+            "LocationCode": [
+                "Approximate distance to/from Bergen Railway Station:",
+                "BGO"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": null,
+                "InfoNote": "Bergen B\u00f8rs Hotel is located in the old stock exchange building dating from 1862. The hotel is near Bryggen and the Strandgaten shopping street. Hotel facilities include a Michelin-star restaurant, a bar serving cocktails and a variety of local beers, a fitness centre, a 24-hour front desk and free Wi-Fi throughout the property.",
+                "ShortItineraryNote": "The stylish Superior Rooms are 21-26 sqm. They are equipped with a double bed or two single beds. The room also has a desk, smart TV, Nespresso machine, minibar, telephone and free WiFI. The bathroom has a shower and hairdryer.",
+                "ItineraryNote": null,
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_BGOACBBH002AC01B",
+            "EventType": "AC",
+            "SegmentIdentifier": "MV36QO",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "V\u00e5gsalmenningen 1Bergen,Norway5014",
+            "Phone": "+47 55 33 64 00",
+            "Date": "2024-11-03",
+            "StartDate": "2024-11-03",
+            "StartTime": null,
+            "StartLocation": "&nbsp;Bergen",
+            "EndDate": "2024-11-05",
+            "EndTime": null,
+            "EndLocation": "&nbsp;",
+            "SCU": "nights",
+            "SCUqty": "2",
+            "SequenceNumber": "10",
+            "Vessel": "Bergen B\u00f8rs Hotel",
+            "VehicleType": "Priority",
+            "CabinType": "Priority",
+            "RoomType": "Superior room including breakfast",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                "1 x Funicular",
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Single"
+                }
+            ],
+            "SegmentProviderName": "Sue Lindelid - Bergen Guide",
+            "Name": "Discover Bergen - 3h Private City Tour",
+            "LocationCode": [
+                null,
+                "BGO"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": null,
+                "InfoNote": null,
+                "ShortItineraryNote": "Discover the sights of historic Bergen and enjoy a ride on the funicular to Mt. Fl\u00f8ien from where you can admire the panoramic views of the town from 1050 feet above sea level.Bergen's centre is very compact, with much to see and hear about within a very short walking distance. Stroll around Bryggen, a World Heritage Site, where you will hear of life in times gone by. Hear about life in this area from the founding of Bergen in 1070, through the Middle Ages and World War 2 to the present day. Learn about dried cod fish, Hanseatic merchants, fires, Norwegian resistance fighters and present-day life at the wharf. Pass by the lively waterside Fish Market and explore the Bergen Fortress area, where you will find H\u00e5kons Hall from 1261 and the Rosenkrantz Tower from 1560s, or wander down the old cobblestone alleyways in the heart of Bergen and see typical, quaint Bergen houses and chimney houses while hearing about life in Bergen past and present.Then take a short ride on the funicular railway up Mt Fl\u00f8ien. Enjoy great views, weather permitting, from the funicular and at the summit where you can also find a cafe and cashmere goats in summer. Duration: 3 hoursMeeting point: At your hotel lobby Inclusions: English speaking guide, entry to funicularActivity Level: Light-ModerateAccessible: Yes though some areas have cobblestones",
+                "ItineraryNote": "Your guide will meet you at your hotel in the reception area. Please be ready 10 minutes before the scheduled tour start time",
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_BGOTDSLBG01TD001",
+            "EventType": "TD",
+            "SegmentIdentifier": "5MFT122621 Sue",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "Bergen,Norway",
+            "Phone": "+47 90 78 59 52",
+            "Date": "2024-11-04",
+            "StartDate": "2024-11-04",
+            "StartTime": "10:00",
+            "StartLocation": "Bergen B\u00f8rs Hotel&nbsp;Bergen",
+            "EndDate": "2024-11-04",
+            "EndTime": "13:00",
+            "EndLocation": "&nbsp;Bergen",
+            "SCU": "tour",
+            "SCUqty": "1",
+            "SequenceNumber": "10",
+            "Vessel": "Sue Lindelid - Bergen Guide",
+            "VehicleType": "3 hours",
+            "CabinType": "3 hours",
+            "RoomType": "Discover Bergen - 3h Private City Tour",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Single"
+                }
+            ],
+            "SegmentProviderName": "Ring - Limousinservice",
+            "Name": "Private transfer hotel to Bergen station/pier",
+            "LocationCode": [
+                null,
+                "BGO"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": null,
+                "InfoNote": null,
+                "ShortItineraryNote": "Please be ready at the Hotel lobby 10 minutes before departure. Luggage: 1 suitcase and 1 carry on per person",
+                "ItineraryNote": "In case you need to call the transfer company ''Ring Limousineservice&quot; their Emergency number is \u00a0+47 411 606 30Driver will drop you off at the station, but will not accompany you into the train station.",
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_BGOPTRLS001PT004",
+            "EventType": "PT",
+            "SegmentIdentifier": "5MFT122621 Susanne",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": "Nattlandsfjellet 64Bergen,Norway5098",
+            "Phone": "+47 4116 0630",
+            "Date": "2024-11-05",
+            "StartDate": "2024-11-05",
+            "StartTime": "16:30",
+            "StartLocation": "Bergen B\u00f8rs Hotel&nbsp;Bergen",
+            "EndDate": "2024-11-05",
+            "EndTime": "17:00",
+            "EndLocation": "Havila terminal&nbsp;Bergen",
+            "SCU": "car",
+            "SCUqty": "1",
+            "SequenceNumber": "10",
+            "Vessel": "Ring - Limousinservice",
+            "VehicleType": "Max 16 pax, PRIORITY",
+            "CabinType": "Max 16 pax, PRIORITY",
+            "RoomType": "Private transfer hotel to Bergen station/pier",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        },
+        {
+            "Inclusions": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "TravellerAssignments": [
+                {
+                    "FullName": "Stephen JamesGodfrey"
+                },
+                {
+                    "FullName": "Stuart CraigHunt"
+                },
+                {
+                    "FullName": "LenaNappa"
+                },
+                {
+                    "FullName": "LidijaSuntesic"
+                }
+            ],
+            "RoomConfigs": [
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stuart CraigHunt"
+                        },
+                        {
+                            "FullName": "LidijaSuntesic"
+                        }
+                    ],
+                    "RoomType": "Double"
+                },
+                {
+                    "TravellerAssignments": [
+                        {
+                            "FullName": "Stephen JamesGodfrey"
+                        },
+                        {
+                            "FullName": "LenaNappa"
+                        }
+                    ],
+                    "RoomType": "Double"
+                }
+            ],
+            "SegmentProviderName": "Havila",
+            "Name": "Havila Pollux- Round Voyage (Bergen-Kirkenes-Bergen)",
+            "LocationCode": [
+                null,
+                "BGO"
+            ],
+            "Description": {
+                "ServiceRemarks": null,
+                "ServiceNote": "\u200bCabins 4305,4303",
+                "InfoNote": "The Norwegian coast, with all its fantastic mountains and fjords are in fact acclaimed as the world\u2019s most beautiful and most spectacular. Go to places where mountains stretch sky-high towards the clouds and small island communities clinging to the shoreline in sight of the open sea. You can choose whether you want to take the entire journey from Bergen to Kirkenes, or just parts of the voyage. You can have four seasons served to you in the same day and a local traditional dinner at a table laid with the finest view imaginable. You can also participate in some of our many excursions to historical towns and wonderful nature. Or, you can simply relax on the new, pleasant and environmentally friendly ships.",
+                "ShortItineraryNote": "Highlights includeExperience Norwegian nature - beautiful fjords, mountains, glaciers, islands and wildlife.Enjoy natural phenomena - Northern LightsLearn about Norway and its history by visiting museums, viewpoints and churches.Discover local Norwegian cuisine.Guided excursions as well as activities on your own.Itinerary onboardDay 1 \u00a0 Embarkation in BergenDay 2 \u00a0 \u00c5lesund and Hj\u00f8rundfjordDay 3 \u00a0 Be enlightened by the Medieval Spirit - The Royal City of TrondheimDay 4 \u00a0 Discover your inner explorer - Arctic Circle and Lofoten IslandsDay 5 \u00a0 Excitement in the ArcticDay 6 \u00a0 Explore the Northern Soul & Cape - Honningsv\u00e5g and the North CapeDay 7 \u00a0 Disembark in KirkenesDay 8 \u00a0 Explore the Northern Soul & Cape - Honningsv\u00e5g, the North Cape and Troms\u00f8Day 9 \u00a0 Discover your inner explorer - Arctic Circle and Lofoten IslandsDay 10 Bod\u00f8 and The Vega ArchipelagoDay 11 TrondheimDay 12 Disembark in Bergen Cabin Description :The Seaview cabin is 15 sqm and has a picture window. The cabin offers a choice of double or twin beds and sofa or sofa bed, private bathroom with shower, large wardrobe, writing desk, TV, fridge, hairdryer and Tea/coffee-making facilities. All cabins have wifi.",
+                "ItineraryNote": null,
+                "TravelInformation": null
+            },
+            "PartnerIdentifier": "itinerary_service_id_BGOCRHAVCASCRVSVC",
+            "EventType": "CR",
+            "SegmentIdentifier": "82602",
+            "TourplanServiceStatus": "Confirmed",
+            "Address": ",Norway",
+            "Phone": null,
+            "Date": "2024-11-05",
+            "StartDate": "2024-11-05",
+            "StartTime": "20:30",
+            "StartLocation": "&nbsp;Bergen",
+            "EndDate": "2024-11-16",
+            "EndTime": "14:45",
+            "EndLocation": "&nbsp;Bergen",
+            "SCU": "cruise",
+            "SCUqty": "1",
+            "SequenceNumber": "30",
+            "Vessel": "Havila",
+            "VehicleType": "Seaview \u00a0Superior cabin (Double or Twin)",
+            "CabinType": "Seaview \u00a0Superior cabin (Double or Twin)",
+            "RoomType": "Havila Pollux- Round Voyage (Bergen-Kirkenes-Bergen)",
+            "Adults": "4",
+            "Children": "0",
+            "Infants": "0"
+        }
+    ],
+    "BookingId": "23767",
+    "Ref": "5MFT122621",
+    "Name": "5MFT122621:Hunt x 4",
+    "Active": "true",
+    "IsChatDisabled": "false",
+    "IsPdfEnabled": "true",
+    "IsAppEnabled": "true",
+    "Status": "active",
+    "IsArchived": "false",
+    "Currency": "USD",
+    "SalesLocation": "US",
+    "TourplanConsultant": "Marcus Dunn",
+    "Consultant": "Julie",
+    "AgentID": "EXC001",
+    "AgentRef": null,
+    "Email": "technology@fiftydegreesnorth.com",
+    "TermsAndConditions": null
 }
