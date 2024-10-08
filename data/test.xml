@@ -1,0 +1,1125 @@
+<?xml version="1.0"?>
+<Trip xmlns:nts="notes" xmlns:start="start" xmlns:end="end" xmlns:ex="extra">
+<BookingId>23767</BookingId>
+<Reference> 5MFT122621 </Reference>
+<!--Itinerary Details-->
+<BookingName>5MFT122621:Hunt x 4</BookingName>
+<Active>true</Active>
+<IsChatDisabled>false</IsChatDisabled>
+<IsPdfEnabled>true</IsPdfEnabled>
+<IsAppEnabled>true</IsAppEnabled>
+<Status>active</Status>
+<IsArchived>false</IsArchived>
+<Currency>USD</Currency>
+<SalesLocation>US</SalesLocation>
+<TourplanConsultant>Marcus Dunn</TourplanConsultant>
+<Consultant>Julie</Consultant>
+<AgentID>EXC001</AgentID>
+<AgentRef></AgentRef>
+<Email>technology@fiftydegreesnorth.com</Email>
+<TermsAndConditions><nts:TC></TermsAndConditions>
+<!--BOOKING NOTES-->
+<!--Travellers -->
+<Travellers>
+<Traveller>
+<TravellerTitle>Mr</TravellerTitle>
+<FullName>Stephen James&nbsp;Godfrey</FullName>
+<Type>Adult</Type>
+<Email></Email>
+<DietaryRequirements>None</DietaryRequirements>
+<MedicalConditions>Diabetic</MedicalConditions>
+</Traveller>
+<Traveller>
+<TravellerTitle>Mr</TravellerTitle>
+<FullName>Stuart Craig&nbsp;Hunt</FullName>
+<Type>Adult</Type>
+<Email>craig@outhere.com.au</Email>
+<DietaryRequirements>None</DietaryRequirements>
+<MedicalConditions>None</MedicalConditions>
+</Traveller>
+<Traveller>
+<TravellerTitle>Ms</TravellerTitle>
+<FullName>Lena&nbsp;Nappa</FullName>
+<Type>Adult</Type>
+<Email></Email>
+<DietaryRequirements>None</DietaryRequirements>
+<MedicalConditions>None</MedicalConditions>
+</Traveller>
+<Traveller>
+<TravellerTitle>Dr</TravellerTitle>
+<FullName>Lidija&nbsp;Suntesic</FullName>
+<Type>Adult</Type>
+<Email></Email>
+<DietaryRequirements>None</DietaryRequirements>
+<MedicalConditions>None</MedicalConditions>
+</Traveller>
+</Travellers>
+<!--Rooms-->
+<RoomConfigs>
+<RoomConfig>
+SG4 Singles</RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+<RoomConfig>
+SG4 Singles</RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+<RoomConfig>
+SG4 Singles</RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+<RoomConfig>
+SG4 Singles</RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+<!--Days-->
+<TripDays>
+<TripDay>2024-10-30</TripDay>
+<TripDay>2024-10-30</TripDay>
+<TripDay>2024-10-30</TripDay>
+<TripDay>2024-10-31</TripDay>
+<TripDay>2024-11-02</TripDay>
+<TripDay>2024-11-02</TripDay>
+<TripDay>2024-11-02</TripDay>
+<TripDay>2024-11-03</TripDay>
+<TripDay>2024-11-04</TripDay>
+<TripDay>2024-11-05</TripDay>
+<TripDay>2024-11-05</TripDay>
+</TripDays>
+<!--TripEvents-->
+<TripEvents>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Bislet Limousine AS</SegmentProviderName>
+<EventName>Private transfer Oslo Gardermoen Airport to City</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks>SK804 arriving in OSL at 13:50</ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_OSLPTBIS001PT001</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>PT</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>404607</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>OSL</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>Ringnesveien 7  Oslo,  Norway 0978</Address>
+<SupplierPhone>+47 22 80 25 20</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-10-30</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-10-30</StartDate>
+<StartTime>13:50</StartTime>
+<StartLocation>&nbsp;Oslo</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-10-30</EndDate>
+<EndTime></EndTime>
+<EndLocation>Amerikalinjen&nbsp;Oslo</EndLocation>
+<!--Service Duration -->
+<DurationType>car</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>9</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Bislet Limousine AS SK804 arriving in OSL at 13:50</Vessel>
+<VehicleType>PRIORITY</VehicleType>
+<CabinType>PRIORITY</CabinType>
+Private transfer Oslo Gardermoen Airport to City1 Single</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included>1 x Toll road</Included>
+<Included>1 x Airport parking</Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>2</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+SGPrivate transfer Oslo Gardermoen Airport to City 1 Single      </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Bislet Limousine AS</SegmentProviderName>
+<EventName>Private transfer Oslo Gardermoen Airport to City</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks>LH2454 arriving in OSL at 17:55</ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_OSLPTBIS001PT001</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>PT</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>404607</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>OSL</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>Ringnesveien 7  Oslo,  Norway 0978</Address>
+<SupplierPhone>+47 22 80 25 20</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-10-30</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-10-30</StartDate>
+<StartTime>17:55</StartTime>
+<StartLocation>&nbsp;Oslo</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-10-30</EndDate>
+<EndTime></EndTime>
+<EndLocation>Amerikalinjen&nbsp;Oslo</EndLocation>
+<!--Service Duration -->
+<DurationType>car</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>10</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Bislet Limousine AS LH2454 arriving in OSL at 17:55</Vessel>
+<VehicleType>PRIORITY</VehicleType>
+<CabinType>PRIORITY</CabinType>
+Private transfer Oslo Gardermoen Airport to City1 Single</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included>1 x Toll road</Included>
+<Included>1 x Airport parking</Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>2</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+SGPrivate transfer Oslo Gardermoen Airport to City 1 Single      </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Amerikalinjen</SegmentProviderName>
+<EventName>Superior room including breakfast</EventName>
+<LocationCode></LocationCode>
+
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_OSLACAMER01AC002</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>AC</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>NO147S0019417 / NO147S0019416</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>OSL</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>Jernbanetorget 2  Oslo,  Norway 0154</Address>
+<SupplierPhone>+47 21405900</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-10-30</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-10-30</StartDate>
+<StartTime></StartTime>
+<StartLocation>&nbsp;Oslo</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-02</EndDate>
+<EndTime></EndTime>
+<EndLocation>&nbsp;</EndLocation>
+<!--Service Duration -->
+<DurationType>nights</DurationType>
+<Duration>3</Duration>
+<SequenceNumber>20</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Amerikalinjen </Vessel>
+<VehicleType>Priority, Avoid Fri-Sat. 15% off BAR also possible</VehicleType>
+<CabinType>Priority, Avoid Fri-Sat. 15% off BAR also possible</CabinType>
+Superior room including breakfast2 Doubles</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+DBSuperior room including breakfast   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+<RoomConfig>
+DBSuperior room including breakfast   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Norditours</SegmentProviderName>
+<EventName>Discover Oslo - Private City Tour</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_OSLTDNORDITTD001</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>TD</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>5MFT122621 Victoria</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>OSL</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>c/o Ekonomernas Hus Stortingsgata 8 Oslo,  Norway 0161</Address>
+<SupplierPhone>+47 95094363</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-10-31</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-10-31</StartDate>
+<StartTime>10:00</StartTime>
+<StartLocation>Oslo - Amerikalinjen&nbsp;Oslo</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-10-31</EndDate>
+<EndTime>13:00</EndTime>
+<EndLocation>&nbsp;Oslo</EndLocation>
+<!--Service Duration -->
+<DurationType>tour</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>10</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Norditours </Vessel>
+<VehicleType>3 hours PRIORITY (max 10)</VehicleType>
+<CabinType>3 hours PRIORITY (max 10)</CabinType>
+Discover Oslo - Private City Tour1 Single</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included>1 x Public transport</Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+SGDiscover Oslo - Private City Tour 1 Single      </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Porter Service AS</SegmentProviderName>
+<EventName>Luggage transport Oslo - Bergen</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_OSLOTPOR002OT001</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>OT</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>38823</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>OSL</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>  Oslo,  Norway </Address>
+<SupplierPhone>+47 906 10 009</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-11-02</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-11-02</StartDate>
+<StartTime>06:30</StartTime>
+<StartLocation>Amerikalinjen&nbsp;Oslo</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-02</EndDate>
+<EndTime>21:00</EndTime>
+<EndLocation>Bergen Børs Hotel&nbsp;Bergen</EndLocation>
+<!--Service Duration -->
+<DurationType>bag</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>10</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Porter Service AS </Vessel>
+<VehicleType></VehicleType>
+<CabinType></CabinType>
+Luggage transport Oslo - Bergen1 Single</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+SGLuggage transport Oslo - Bergen 1 Single      </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Fjord Tours</SegmentProviderName>
+<EventName>Norway in a Nutshell - Oslo to Bergen</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_OSLRAFJT001NNUOB</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>RA</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>11KL88</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>OSL</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>Strømgt. 4  Bergen,  Norway 5015</Address>
+<SupplierPhone>+47 55 55 76 60</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-11-02</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-11-02</StartDate>
+<StartTime>08:25</StartTime>
+<StartLocation>Central Station&nbsp;Oslo</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-03</EndDate>
+<EndTime>15:26</EndTime>
+<EndLocation>Station&nbsp;Bergen</EndLocation>
+<!--Service Duration -->
+<DurationType>ticket</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>20</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Fjord Tours </Vessel>
+<VehicleType></VehicleType>
+<CabinType></CabinType>
+Norway in a Nutshell - Oslo to Bergen1 Single</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+SGNorway in a Nutshell - Oslo to Bergen 1 Single      </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Fretheim Hotel</SegmentProviderName>
+<EventName>Historical room with double bed including breakfast</EventName>
+<LocationCode></LocationCode>
+Approximate distance from the train station:
+ 
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_FLAACFRET01AC02F</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>AC</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>CQEG34</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>FLA</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>P.O. Box 83  Flåm,  Norway 5742</Address>
+<SupplierPhone></SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-11-02</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-11-02</StartDate>
+<StartTime></StartTime>
+<StartLocation>&nbsp;Flåm</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-03</EndDate>
+<EndTime></EndTime>
+<EndLocation>&nbsp;</EndLocation>
+<!--Service Duration -->
+<DurationType>night</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>30</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Fretheim Hotel </Vessel>
+<VehicleType>Book in Citybreak</VehicleType>
+<CabinType>Book in Citybreak</CabinType>
+Historical room with double bed including breakfast2 Doubles</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+DBHistorical room with double bed including breakfast   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+<RoomConfig>
+DBHistorical room with double bed including breakfast   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Bergen Børs Hotel</SegmentProviderName>
+<EventName>Superior room including breakfast</EventName>
+<LocationCode></LocationCode>
+
+Approximate distance to/from Bergen Railway Station:
+ 
+ 
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_BGOACBBH002AC01B</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>AC</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>MV36QO</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>BGO</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>Vågsalmenningen 1  Bergen,  Norway 5014</Address>
+<SupplierPhone>+47 55 33 64 00</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-11-03</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-11-03</StartDate>
+<StartTime></StartTime>
+<StartLocation>&nbsp;Bergen</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-05</EndDate>
+<EndTime></EndTime>
+<EndLocation>&nbsp;</EndLocation>
+<!--Service Duration -->
+<DurationType>nights</DurationType>
+<Duration>2</Duration>
+<SequenceNumber>10</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Bergen Børs Hotel </Vessel>
+<VehicleType>Priority</VehicleType>
+<CabinType>Priority</CabinType>
+Superior room including breakfast2 Doubles</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+DBSuperior room including breakfast   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+<RoomConfig>
+DBSuperior room including breakfast   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Sue Lindelid - Bergen Guide</SegmentProviderName>
+<EventName>Discover Bergen - 3h Private City Tour</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_BGOTDSLBG01TD001</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>TD</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>5MFT122621 Sue</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>BGO</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>  Bergen,  Norway </Address>
+<SupplierPhone>+47 90 78 59 52</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-11-04</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-11-04</StartDate>
+<StartTime>10:00</StartTime>
+<StartLocation>Bergen Børs Hotel, Guide: Romain, mobile 94156948&nbsp;Bergen</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-04</EndDate>
+<EndTime>13:00</EndTime>
+<EndLocation>&nbsp;Bergen</EndLocation>
+<!--Service Duration -->
+<DurationType>tour</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>10</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Sue Lindelid - Bergen Guide </Vessel>
+<VehicleType>3 hours</VehicleType>
+<CabinType>3 hours</CabinType>
+Discover Bergen - 3h Private City Tour1 Single</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included>1 x Funicular</Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+SGDiscover Bergen - 3h Private City Tour 1 Single      </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Ring - Limousinservice</SegmentProviderName>
+<EventName>Private transfer hotel to Bergen station/pier</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_BGOPTRLS001PT004</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>PT</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>5MFT122621 Susanne</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>BGO</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address> Nattlandsfjellet 64 Bergen,  Norway 5098</Address>
+<SupplierPhone>+47 4116 0630</SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-11-05</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-11-05</StartDate>
+<StartTime>16:30</StartTime>
+<StartLocation>Bergen Børs Hotel&nbsp;Bergen</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-05</EndDate>
+<EndTime>17:00</EndTime>
+<EndLocation>Havila terminal&nbsp;Bergen</EndLocation>
+<!--Service Duration -->
+<DurationType>car</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>10</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Ring - Limousinservice </Vessel>
+<VehicleType>Max 16 pax, PRIORITY</VehicleType>
+<CabinType>Max 16 pax, PRIORITY</CabinType>
+Private transfer hotel to Bergen station/pier1 Single</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+SGPrivate transfer hotel to Bergen station/pier 1 Single      </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+<TripEvent>
+<!--TripEvent Details/Description-->
+<SegmentProviderName>Havila</SegmentProviderName>
+<EventName>Havila Pollux- Round Voyage (Bergen-Kirkenes-Bergen)</EventName>
+<LocationCode></LocationCode>
+<Description>
+<ServiceRemarks></ServiceRemarks>
+<ServiceNote><nts:nte/></ServiceNote>
+<InfoNote><nts:inf/></InfoNote>
+<ShortItineraryNote><nts:sit/></ShortItineraryNote>
+<ItineraryNote><nts:vou/></ItineraryNote>
+<TravelInformation><nts:tin/></TravelInformation>
+</Description>
+<!-- Service ID -->
+<PartnerIdentifier>itinerary_service_id_BGOCRHAVCASCRVSVC</PartnerIdentifier>
+<!-- Service Category -->
+<EventType>CR</EventType>
+<!-- Service Status -->
+<SegmentIdentifier>82602</SegmentIdentifier>
+<TourplanServiceStatus>Confirmed</TourplanServiceStatus>
+<!-- Service Location -->
+<LocationCode>BGO</LocationCode>
+<!-- Service Suppllier Contact Details -->
+<Address>  ,  Norway </Address>
+<SupplierPhone></SupplierPhone>
+<!--Service Date-->
+<ServiceDate>2024-11-05</ServiceDate>
+<!--Service Pickup Details -->
+<StartDate>2024-11-05</StartDate>
+<StartTime>20:30</StartTime>
+<StartLocation>&nbsp;Bergen</StartLocation>
+<!--Service DropOff Details -->
+<EndDate>2024-11-16</EndDate>
+<EndTime>14:45</EndTime>
+<EndLocation>&nbsp;Bergen</EndLocation>
+<!--Service Duration -->
+<DurationType>cruise</DurationType>
+<Duration>1</Duration>
+<SequenceNumber>30</SequenceNumber>
+<!--Vehicle Room Cabin Vessel -->
+<Vessel>Havila </Vessel>
+<VehicleType>Seaview  Superior cabin (Double or Twin)</VehicleType>
+<CabinType>Seaview  Superior cabin (Double or Twin)</CabinType>
+Havila Pollux- Round Voyage (Bergen-Kirkenes-Bergen)2 Doubles</RoomType>
+<!--Service Options-->
+<Inclusions>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included></Included>
+<Included><nts:RIN/></Included>
+</Inclusions>
+<!--Service Assignment -->
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+<Adults>4</Adults>
+<Children>0</Children>
+<Infants>0</Infants>
+<!--Service Rooms -->
+<RoomConfigs>
+<RoomConfig>
+DBHavila Pollux- Round Voyage (Bergen-Kirkenes-Bergen)   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stuart Craig Hunt</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lidija Suntesic</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+<RoomConfig>
+DBHavila Pollux- Round Voyage (Bergen-Kirkenes-Bergen)   2 Doubles    </RoomType>
+<TravellerAssignments>
+<TravellerAssignment>
+<FullName>Stephen James Godfrey</FullName>
+</TravellerAssignment>
+<TravellerAssignment>
+<FullName>Lena Nappa</FullName>
+</TravellerAssignment>
+</TravellerAssignments>
+</RoomConfig>
+</RoomConfigs>
+</TripEvent>
+</TripEvents>
+<!--Optionals (Copy Service Tags here)-->
+</Trip>

@@ -31,45 +31,13 @@ const decodeHTMLEntities = (text) => {
   return text.replace(/&[^;]+;/g, (entity) => entityMap[entity] || entity);
 };
 
-const extractAndEscapeDivContent = (description) => {
-  if (!description) {
-    return null; // If no input string, return null
-  }
+const replaceContentAfterFirstTable = (description, newContent) => {
+  if (!description) return null; // Return early if description is missing
 
-  const regex = /<div[^>]*>([\s\S]*?)<\/div>/; // Regex to capture content inside <div> tags
-  const match = regex.exec(description);
-
-  if (match) {
-    const content = match[1].trim(); // Trim whitespace and newline characters
-
-    // Return null if content is empty (only whitespace or newlines)
-    if (content === "") {
-      return null;
-    }
-
-    // Escape HTML content inside the <div>
-    const escapeHTML = (str) => {
-      return str
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    };
-
-    return escapeHTML(content); // Return the escaped content inside the <div>
-  }
-
-  return null; // Return null if no match is found
-};
-
-const replaceContentAfterLastUl = (description, newContent) => {
-  if (!description) return null; // Early return if no description
-
-  // Match everything after the last </ul> tag and replace it with the new content
+  // Match everything after the first </table> tag and replace it with the new content
   return description.replace(
-    /<\/ul>(?![\s\S]*<\/ul>)[\s\S]*/,
-    `<br> <div style=\"background-color: rgba(255, 254, 145, 1)\">${newContent}</div>`
+    /<\/table>[\s\S]*/,
+    `</table><br> <div>${newContent}</div>`
   );
 };
 
@@ -92,7 +60,7 @@ const tourPlanToTravefyMap = {
   FR: 3,
   HV: 3,
   BU: 4,
-  CH: 4,
+  CH: 4.1,
   PT: 4,
   ST: 4,
   AC: 6,
@@ -132,6 +100,56 @@ const formatDate = (date) => {
 // Function to map TourPlan code to Travefy product type
 const mapTourPlanCodeToProductType = (code) => tourPlanToTravefyMap[code] || 9;
 
+const getApproximateTransferTime = (startTime, endTime) => {
+  if(startTime && endTime) {
+  // Split the time strings into hours and minutes
+  const [startHours, startMinutes] = startTime.split(':').map(Number);
+  const [endHours, endMinutes] = endTime.split(':').map(Number);
+
+  // Create Date objects for the start and end times
+  const startDate = new Date();
+  startDate.setHours(startHours, startMinutes, 0); // Set the time for startDate
+
+  const endDate = new Date();
+  endDate.setHours(endHours, endMinutes, 0); // Set the time for endDate
+
+  // Calculate the difference in milliseconds
+  let durationInMs = endDate - startDate;
+
+  // If end time is earlier than start time, assume it's the next day
+  if (durationInMs < 0) {
+    endDate.setDate(endDate.getDate() + 1); // Move endDate to the next day
+    durationInMs = endDate - startDate;
+  }
+
+  // Convert milliseconds to hours and minutes
+  const hours = Math.floor(durationInMs / (1000 * 60 * 60));
+  const minutes = Math.floor((durationInMs % (1000 * 60 * 60)) / (1000 * 60));
+  return (hours > 0? `${hours} hours and ` :'') +  `${minutes} minutes`;
+} else {
+  return ``
+}
+}
+
+const formatRoomTypes = (roomTypes) => {
+  // Count occurrences of each room type
+  const roomCounts = roomTypes.reduce((acc, roomType) => {
+    acc[roomType] = (acc[roomType] || 0) + 1;
+    return acc;
+  }, {});
+
+  // Format the result as a human-readable sentence
+  const formattedRooms = Object.entries(roomCounts).map(([roomType, count]) => {
+    return `${count}x ${roomType} Room${count > 1 ? 's' : ''}`;
+  });
+
+  // Join the sentence with appropriate punctuation
+  return formattedRooms.length > 1
+    ? formattedRooms.slice(0, -1).join(', ') + ' and ' + formattedRooms.slice(-1)
+    : formattedRooms[0];
+}
+
+
 const createListItem = (
   label1,
   value1,
@@ -142,10 +160,10 @@ const createListItem = (
 ) => {
   if (note ? label1 && value1 : label1) {
     return `
-    <li style=\"background-color: ${backgroundColor || "transparent"}\">
-      <strong>${label1}:</strong> ${value1 || ""} 
-      ${label2 && value2 ? `<strong>${label2}</strong> ${value2 || ""}` : ""}
-    </li>`;
+    <span style=\"background-color: ${backgroundColor || "transparent"}\">
+        <strong>${label1}:</strong> ${value1 !== "null" && value1 !== "undefined" ? value1 || "" : ""} 
+        ${label2 && value2 ? `<strong>${label2}</strong> ${value2 !== "null" && value2 !== "undefined" ? value2 || "" : ""} ` : ""}
+    </span> <br>`;
   }
   return "";
 };
@@ -154,12 +172,13 @@ const createListItem = (
 const createInclusionsList = (inclusions) => {
   if (!inclusions || !inclusions.some((item) => item !== null)) return "";
   return `
-    <li><strong>Inclusions:</strong>
+    <span><strong>Inclusions:</strong>
     <ul>${inclusions
       .filter(Boolean)
       .map((item) => `<li> ${item} </li>`)
       .join("")}</ul>
-    </li>`;
+    </span>
+    `;
 };
 
 const generateOriginalNoteIdeas = (tourPlanEvent) => {
@@ -198,264 +217,154 @@ const generateOriginalNoteIdeas = (tourPlanEvent) => {
 const generateCommonDescription = (tourPlanEvent) => {
   const { Description } = tourPlanEvent;
   return `
+        ${
+          Description.ItineraryNote
+            ? `<p>${Description.ItineraryNote}</p><br/>`
+            : ""
+        }
+        ${
+          Description.TravelInformation
+            ? `<p>${Description.TravelInformation}</p><br/>`
+            : ""
+        }
+
+           ${
+             Description.ShortItineraryNote
+               ? `<p>${Description.ShortItineraryNote}</p><br/>`
+               : ""
+           }
+
         ${Description.InfoNote ? `<p>${Description.InfoNote}</p><br/>` : ""}
-      ${
-        Description.ShortItineraryNote
-          ? `<p>${Description.ShortItineraryNote}</p><br/>`
-          : ""
-      }
-      ${
-        Description.TravelInformation
-          ? `<p>${Description.TravelInformation}</p><br/>`
-          : ""
-      }
-      ${
-        Description.ItineraryNote
-          ? `<p>${Description.ItineraryNote}</p><br/>`
-          : ""
-      }
+ 
   `;
 };
 
 const mapTripEventsByType = (mappedEvent, tourPlanEvent) => {
   switch (mappedEvent.EventType) {
     case 0: // Flight
+      // prettier-ignore
       mappedEvent.Description = `
-        <ul>
-          ${createListItem(
-            "Departure Date",
-            formatDate(tourPlanEvent.StartDate),
-            "at",
-            tourPlanEvent.StartTime
-          )}
+        <!-- __v1.174fcf56:7206fe842e8e8b374ede4fb15390f8ab --><div class=\"travefy-table-container\"><table><tbody><tr><td>
+          ${createListItem("Departure Date",formatDate(tourPlanEvent.StartDate),"at",tourPlanEvent.StartTime)}
           ${createListItem("Departure Location", tourPlanEvent.StartLocation)}
-          ${createListItem(
-            "Arrival Date",
-            formatDate(tourPlanEvent.EndDate),
-            "at",
-            tourPlanEvent.EndTime
-          )}
+          ${createListItem("Arrival Date",formatDate(tourPlanEvent.EndDate),"at",tourPlanEvent.EndTime)}
           ${createListItem("Arrival Location", tourPlanEvent.EndLocation)}
-          ${createListItem(
-            "Note",
-            tourPlanEvent.Description.ServiceNote,
-            null,
-            null,
-            "rgba(255, 145, 255, 1)",
-            true
-          )}
+          ${createListItem("Note",tourPlanEvent.Description.ServiceNote,null,null,"rgba(255, 145, 255, 1)",true)}
           ${createInclusionsList(tourPlanEvent.Inclusions)}
-        </ul>
+          </tr></td></tbody></table></div>
         <br/><div>${mappedEvent.Description}</div>
       `;
       break;
 
     case 1: // Car Rental
+      // prettier-ignore
       mappedEvent.Description = `
-        <ul>
-          ${createListItem(
-            "Pick-up Date",
-            formatDate(tourPlanEvent.StartDate),
-            "at",
-            tourPlanEvent.StartTime
-          )}
+         <!-- __v1.174fcf56:7206fe842e8e8b374ede4fb15390f8ab --><div class=\"travefy-table-container\"><table><tbody><tr><td>
+          ${createListItem("Pick-up Date",formatDate(tourPlanEvent.StartDate), "at", tourPlanEvent.StartTime)}
           ${createListItem("Pick-up Location", tourPlanEvent.StartLocation)}
-          ${createListItem(
-            "Drop-off Date",
-            formatDate(tourPlanEvent.EndDate),
-            "at",
-            tourPlanEvent.EndTime
-          )}
+          ${createListItem("Drop-off Date", formatDate(tourPlanEvent.EndDate), "at",tourPlanEvent.EndTime )}
           ${createListItem("Drop-off Location", tourPlanEvent.EndLocation)}
-          ${createListItem(
-            "Rental Duration",
-            `${tourPlanEvent.SCUqty} ${tourPlanEvent.SCU}`
-          )}
+          ${createListItem("Rental Duration", `${tourPlanEvent.SCUqty} ${tourPlanEvent.SCU}`)}
           ${createListItem("Vehicle Type", tourPlanEvent.VehicleType)}
-          ${createListItem(
-            "Note",
-            tourPlanEvent.Description.ServiceNote,
-            null,
-            null,
-            "rgba(255, 145, 255, 1)",
-            true
-          )}
+          ${createListItem("Note", tourPlanEvent.Description.ServiceNote,null, null,  "rgba(255, 145, 255, 1)", true )}
           ${createInclusionsList(tourPlanEvent.Inclusions)}
-        </ul>
+          </tr></td></tbody></table></div>
         <br/><div>${mappedEvent.Description}</div>
       `;
       break;
 
-    case 2: // Train
+    case 2 || 4.1: // Train or Bus
+      // prettier-ignore
       mappedEvent.Description = `
-        <ul>
-          ${createListItem(
-            "Departure Date",
-            formatDate(tourPlanEvent.StartDate),
-            "at",
-            tourPlanEvent.StartTime
-          )}
+        <!-- __v1.174fcf56:7206fe842e8e8b374ede4fb15390f8ab --><div class=\"travefy-table-container\"><table><tbody><tr><td>
+          ${createListItem("Departure Date",formatDate(tourPlanEvent.StartDate), "at", tourPlanEvent.StartTime)}
           ${createListItem("Departure Location", tourPlanEvent.StartLocation)}
-          ${createListItem(
-            "Arrival Date",
-            formatDate(tourPlanEvent.EndDate),
-            "at",
-            tourPlanEvent.EndTime
-          )}
+          ${createListItem("Arrival Date",formatDate(tourPlanEvent.EndDate),"at",tourPlanEvent.EndTime)}
           ${createListItem("Arrival Location", tourPlanEvent.EndLocation)}
-          ${createListItem(
-            "Note",
-            tourPlanEvent.Description.ServiceNote,
-            null,
-            null,
-            "rgba(255, 145, 255, 1)",
-            true
-          )}
+          ${createListItem("Note",tourPlanEvent.Description.ServiceNote, null,null,"rgba(255, 145, 255, 1)",true)}
           ${createInclusionsList(tourPlanEvent.Inclusions)}
-        </ul>
+        </tr></td></tbody></table></div>
         <br/><div>${mappedEvent.Description}</div>
       `;
       break;
 
     case 3: // Cruise
-      mappedEvent.Name =
-        tourPlanEvent.SegmentProviderName + " " + tourPlanEvent.Name;
-      mappedEvent.ReservationDescription = tourPlanEvent.RoomConfigs.map(
-        (room) => room.RoomType
-      ).join(", ");
+      mappedEvent.Name = tourPlanEvent.SegmentProviderName + " " + tourPlanEvent.Name;
+      mappedEvent.ReservationDescription = formatRoomTypes(tourPlanEvent.RoomConfigs.map((room) => room.RoomType));
+      // prettier-ignore
       mappedEvent.Description = `
-        <ul>
-          ${createListItem(
-            "Departure Date",
-            formatDate(tourPlanEvent.StartDate),
-            "at",
-            tourPlanEvent.StartTime
-          )}
+        <!-- __v1.174fcf56:7206fe842e8e8b374ede4fb15390f8ab --><div class=\"travefy-table-container\"><table><tbody><tr><td>
+          ${createListItem("Rooms",formatRoomTypes(tourPlanEvent.RoomConfigs.map((room) => room.RoomType)))}
+          ${createListItem("Departure Date",formatDate(tourPlanEvent.StartDate),"at",tourPlanEvent.StartTime)}
           ${createListItem("Departure Location", tourPlanEvent.StartLocation)}
-          ${createListItem(
-            "Arrival Date",
-            formatDate(tourPlanEvent.EndDate),
-            "at",
-            tourPlanEvent.EndTime
-          )}
+          ${createListItem("Arrival Date",formatDate(tourPlanEvent.EndDate),"at",tourPlanEvent.EndTime)}
           ${createListItem("Arrival Location", tourPlanEvent.EndLocation)}
           ${createListItem("Vessel", tourPlanEvent.Vessel)}
           ${createListItem("Cabin Type", tourPlanEvent.CabinType)}
-          ${createListItem(
-            "Note",
-            tourPlanEvent.Description.ServiceNote,
+          ${createListItem("Note",tourPlanEvent.Description.ServiceNote,
             null,
             null,
             "rgba(255, 145, 255, 1)",
             true
           )}
           ${createInclusionsList(tourPlanEvent.Inclusions)}
-        </ul>
+         </tr></td></tbody></table></div>
         <br/><div>${mappedEvent.Description}</div>
       `;
       break;
 
-    case 4: // Transportation -> Other (Bus, Shuttle, etc.)
+    case 4: // Transportation -> Other (Shuttle, etc.)
+      // prettier-ignore
       mappedEvent.Description = `
-        <ul>
-          ${createListItem("Phone", tourPlanEvent.Phone || "Not Provided")}
-          ${createListItem(
-            "Pick-up Date",
-            formatDate(tourPlanEvent.StartDate),
-            "at",
-            tourPlanEvent.StartTime
-          )}
+        <!-- __v1.174fcf56:7206fe842e8e8b374ede4fb15390f8ab --><div class=\"travefy-table-container\"><table><tbody><tr><td>
+          ${createListItem("Phone",  `<a href="tel:${tourPlanEvent.Phone}"> ${tourPlanEvent.Phone} </a>` || "Not Provided")}
+          ${createListItem("Pick-up Date",formatDate(tourPlanEvent.StartDate),"at",tourPlanEvent.StartTime)}
           ${createListItem("Pick-up Location", tourPlanEvent.StartLocation)}
-          ${createListItem(
-            "Drop-off Date",
-            formatDate(tourPlanEvent.EndDate),
-            "at",
-            tourPlanEvent.EndTime
-          )}
+          ${ tourPlanEvent.StartDate !==  tourPlanEvent.EndDate? 
+            createListItem("Drop-off Date",formatDate(tourPlanEvent.EndDate),"at",tourPlanEvent.EndTime): 
+            createListItem("Approximate Transfer Time",getApproximateTransferTime(tourPlanEvent.StartTime, tourPlanEvent.EndTime))
+          }
           ${createListItem("Drop-off Location", tourPlanEvent.EndLocation)}
-          ${createListItem(
-            "Note",
-            tourPlanEvent.Description.ServiceNote,
-            null,
-            null,
-            "rgba(255, 145, 255, 1)",
-            true
-          )}
+          ${createListItem("Note",tourPlanEvent.Description.ServiceNote, null, null,"rgba(255, 145, 255, 1)",true)}
           ${createInclusionsList(tourPlanEvent.Inclusions)}
-        </ul>
+         </tr></td></tbody></table></div>
         <br/><div>${mappedEvent.Description}</div>
       `;
       break;
 
     case 6: // Hotel
-      mappedEvent.Name =
-        tourPlanEvent.SegmentProviderName + " " + tourPlanEvent.Name;
-      mappedEvent.ReservationDescription = tourPlanEvent.RoomConfigs.map(
-        (room) => room.RoomType
-      ).join(", ");
+      // prettier-ignore
+      mappedEvent.Name = tourPlanEvent.SegmentProviderName + " " + tourPlanEvent.Name;
+      // prettier-ignore
+      mappedEvent.ReservationDescription = formatRoomTypes(tourPlanEvent.RoomConfigs.map((room) => room.RoomType));
       mappedEvent.SegmentProviderName = "";
+      // prettier-ignore
       mappedEvent.Description = `
-        <ul>
-          ${createListItem(
-            "Room Types",
-            tourPlanEvent.RoomConfigs.map((room) => room.RoomType).join(", ")
-          )}
-          ${createListItem("Phone", tourPlanEvent.Phone)}
-          ${createListItem(
-            "Check-in Date",
-            formatDate(tourPlanEvent.StartDate),
-            "at",
-            tourPlanEvent.StartTime
-          )}
-          ${createListItem(
-            "Check-out Date",
-            formatDate(tourPlanEvent.EndDate),
-            "at",
-            tourPlanEvent.EndTime
-          )}
+    <!-- __v1.174fcf56:7206fe842e8e8b374ede4fb15390f8ab --><div class=\"travefy-table-container\"><table><tbody><tr><td>
+          ${createListItem("Rooms",formatRoomTypes(tourPlanEvent.RoomConfigs.map((room) => room.RoomType)))}
+          ${createListItem("Phone",  `<a href="tel:${tourPlanEvent.Phone}"> ${tourPlanEvent.Phone} </a>` || "Not Provided")}
+          ${createListItem("Check-in Date",formatDate(tourPlanEvent.StartDate),"at",tourPlanEvent.StartTime)}
+          ${createListItem("Check-out Date",formatDate(tourPlanEvent.EndDate), "at",tourPlanEvent.EndTime)}
           ${createListItem("Location", tourPlanEvent.Address)}
-          ${createListItem(
-            "Note",
-            tourPlanEvent.Description.ServiceNote,
-            null,
-            null,
-            "rgba(255, 145, 255, 1)",
-            true
-          )}
+          ${createListItem("Note",tourPlanEvent.Description.ServiceNote,null,null,"rgba(255, 145, 255, 1)",true)}
           ${createInclusionsList(tourPlanEvent.Inclusions)}
-        </ul>
+            </tr></td></tbody></table></div>
         <br/><div>${mappedEvent.Description}</div>
       `;
       break;
 
     case 9: // Activity
+      // prettier-ignore
       mappedEvent.Description = `
-        <ul>
-          ${createListItem("Phone", tourPlanEvent.Phone)}
-          ${createListItem(
-            "Start Date",
-            formatDate(tourPlanEvent.StartDate),
-            "at",
-            tourPlanEvent.StartTime
-          )}
+         <!-- __v1.174fcf56:7206fe842e8e8b374ede4fb15390f8ab --><div class=\"travefy-table-container\"><table><tbody><tr><td>
+          ${createListItem("Phone",  `<a href="tel:${tourPlanEvent.Phone}"> ${tourPlanEvent.Phone} </a>` || "Not Provided")}
+          ${createListItem("Start Date",formatDate(tourPlanEvent.StartDate),"at",tourPlanEvent.StartTime)}
           ${createListItem("Start Location", tourPlanEvent.StartLocation)}
-          ${createListItem(
-            "End Date",
-            formatDate(tourPlanEvent.EndDate),
-            "at",
-            tourPlanEvent.EndTime
-          )}
+          ${createListItem("End Date",formatDate(tourPlanEvent.EndDate),"at",tourPlanEvent.EndTime)}
           ${createListItem("End Location", tourPlanEvent.EndLocation)}
-          ${createListItem(
-            "Note",
-            tourPlanEvent.Description.ServiceNote,
-            null,
-            null,
-            "rgba(255, 145, 255, 1)",
-            true
-          )}
+          ${createListItem("Note",tourPlanEvent.Description.ServiceNote,null,null,"rgba(255, 145, 255, 1)",true)}
           ${createInclusionsList(tourPlanEvent.Inclusions)}
-        </ul>
+         </tr></td></tbody></table></div>
         <br/><div>${mappedEvent.Description}</div>
       `;
       break;
@@ -480,7 +389,8 @@ const mapTripEvent = (tourPlanEvent) => {
     }`,
     EventType: mapTourPlanCodeToProductType(tourPlanEvent.EventType),
     StartTimeInMinutes: timeToMinutes(tourPlanEvent.StartTime),
-    DurationInMinutes: tourPlanEvent.SCUqty * 1440,
+    DurationInMinutes:
+      tourPlanEvent.SCUqty > 1 ? tourPlanEvent.SCUqty * 1440 : null,
     PartnerIdentifier: tourPlanEvent.PartnerIdentifier,
     BookingProviderName: "50DN " + tourPlanEvent.PartnerIdentifier,
     TripIdeas: generateOriginalNoteIdeas(tourPlanEvent),
@@ -538,7 +448,7 @@ const prependInfoSections = () => {
                 : ""
             }
             <p><span><strong>E-mail:</strong> ${
-              tourPlanData.SalesLocation === "AU"
+              tourPlanData.Ref.startsWith("5M")
                 ? "info@fiftydegreesnorth.com"
                 : "nordic@fiftydegreesnorth.com"
             }</span></p>
@@ -675,13 +585,14 @@ const replaceTripEventContentWithLibraryContent = (
         (e) => e.PartnerIdentifier === event.PartnerIdentifier
       );
       if (matchingEvent) {
-        event.Description = replaceContentAfterLastUl(
+        event.Description = replaceContentAfterFirstTable(
           event.Description,
           matchingEvent.Description
         );
         event.PartnerIdentifier = matchingEvent.PartnerIdentifier;
         event.Images = matchingEvent.Images;
-        event.TripIdeas.Name = 'Replaced With Library Content - ' + event.TripIdeas.Name;
+        event.TripIdeas.Name =
+          "Replaced With Library Content - " + event.TripIdeas.Name;
       }
     });
   });
@@ -689,12 +600,29 @@ const replaceTripEventContentWithLibraryContent = (
   return tripData;
 };
 
-const getTripEventContentToRewriteAsChunkedGeminiRequests = (libraryEvents, travefyTrip) => {
+const getAfterTable = (htmlString) => {
+  // Use a regular expression to match everything after </table>
+  const tableEndTag = "</table>";
+  const index = htmlString.indexOf(tableEndTag);
+
+  // If the </table> tag is found, return everything after it
+  if (index !== -1) {
+    return htmlString.substring(index + tableEndTag.length);
+  }
+
+  // If no </table> tag is found, return an empty string or handle as needed
+  return "";
+};
+
+const getTripEventContentToRewriteAsChunkedGeminiRequests = (
+  libraryEvents,
+  travefyTrip
+) => {
   const eventContentToRewrite = travefyTrip.TripDays.flatMap((day) => {
     return day.TripEvents.map((event) => {
       const name = event.Name;
       const partnerIdentifier = event.PartnerIdentifier;
-      const description = extractAndEscapeDivContent(event.Description);
+      const description = getAfterTable(event.Description);
 
       // Only return an object if both partnerIdentifier and description are valid
       if (
@@ -718,7 +646,7 @@ const getTripEventContentToRewriteAsChunkedGeminiRequests = (libraryEvents, trav
 
   const chunks = chunkArray(eventContentToRewrite, 10);
   const chunkedGeminiRequests = chunks.map((chunk) => {
-    const prompt = `Rewrite the Description field of the following supplier notes by completing these tasks:Step 1: Summarize the content Use a friendly and approachable tone that's warm and welcoming. Keep the language clear and informative—avoid technical jargon. Maintain an engaging, enthusiastic attitude that instills positivity and reassures the reader with supportive language. The summary should be concise, focused, and written in the third-person perspective without including any promotional content. Limit the description to under 150 words and omit any headings also Reserve any content that would better serve the traveller as a list (like locations, days, phone numbers, itineraries) until step 2. Step 2: Create a page break <br> then Generate an bullet-point list of key information for the end of the description, (include locations, days, phone numbers, itineraries broken down into individual list items). Structure each bullet point in a html list like this: <ul> <li> <strong>Label: </strong>Value </li> </ul> Make sure all items are properly enclosed in a UL. Complete all steps without altering the Partner Identifier field.  List of notes as JSONData:`;
+    const prompt = `Rewrite the Description field of the following supplier notes by completing these tasks:Step 1: Summarize the content Use a friendly and approachable tone that's warm and welcoming. Keep the language clear and informative—avoid technical jargon. Maintain an engaging, enthusiastic attitude that instills positivity and reassures the reader with supportive language. The summary should be concise, focused, and written in the third-person perspective without including any promotional content. Limit the description to under 150 words and omit any headings also Reserve any content that would better serve the traveller as a list (like locations, days, phone numbers, itineraries) until step 2. Step 2: Create a page break <br> then Generate an bullet-point list of key information for the end of the description, (include locations, days, phone numbers, itinerarary Days (i.e. Day 1 - ) MUST broken down into individual list items). Structure each bullet point in a html list like this: <ul> <li> <strong>Label: </strong>Value </li> </ul> Make sure all items are properly enclosed in a UL and that the UL is placed at the end of the content. Complete all steps without altering the Partner Identifier field.  List of notes as JSONData:`;
     const requestBody = {
       contents: [
         {
@@ -770,15 +698,16 @@ const travefyTripWithLibraryContent = replaceTripEventContentWithLibraryContent(
   libraryEvents
 );
 
-const chunkedGeminiRequests = getTripEventContentToRewriteAsChunkedGeminiRequests(
-  libraryEvents,
-  travefyTripWithLibraryContent
-);
+const chunkedGeminiRequests =
+  getTripEventContentToRewriteAsChunkedGeminiRequests(
+    libraryEvents,
+    travefyTripWithLibraryContent
+  );
 
 // Export result as a JSON string for Zapier
 output = {
   travefyTrip: JSON.stringify(travefyTripWithLibraryContent),
   tripUsers: JSON.stringify({ tripUsers: travefyTrip.TripUsers }),
-  chunkedGeminiRequests:JSON.stringify(chunkedGeminiRequests),
+  chunkedGeminiRequests: JSON.stringify(chunkedGeminiRequests),
   numberOfChunks: chunkedGeminiRequests.length,
 };

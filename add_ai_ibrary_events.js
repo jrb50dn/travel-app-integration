@@ -42,11 +42,14 @@ const getMergedAIContent = async(store, totalChunks) => {
     }
 };
 
-const replaceContentAfterLastUl = (description, newContent) => {
-  if (!description) return null; // Early return if no description
+const replaceContentAfterFirstTable = (description, newContent) => {
+  if (!description) return null; // Return early if description is missing
 
-  // Match everything after the last </ul> tag and replace it with the new content
-  return description.replace(/<\/ul>(?![\s\S]*<\/ul>)[\s\S]*/, `<br> <div style=\"background-color: rgba(255, 254, 145, 1)\">${newContent}</div>`);
+  // Match everything after the first </table> tag and replace it with the new content
+  return description.replace(
+    /<\/table>[\s\S]*/,
+    `</table><br> <div>${newContent}</div>`
+  );
 };
 
 const replaceContent = (
@@ -62,7 +65,7 @@ const replaceContent = (
         (e) => e.PartnerIdentifier === event.PartnerIdentifier
       );
       if (matchingEvent) {
-        event.Description = replaceContentAfterLastUl(
+        event.Description = replaceContentAfterFirstTable(
             event.Description,
             matchingEvent.Description
         );
@@ -73,7 +76,6 @@ const replaceContent = (
         if (event.TripIdeas && event.TripIdeas.length > 0 && event.TripIdeas[0].Name && event.TripIdeas[0].Name.startsWith('Original')) {
             event.TripIdeas.shift();
         }
-        console.error(rewrittenEventContent.map((event) => event.PartnerIdentifier), event.PartnerIdentifier);
     }
     });
   });
@@ -101,7 +103,8 @@ const generateEnhancedItinerary = async () => {
 
 // Execute and return the result
 return (output = {
+  events: JSON.stringify(getMergedAIContent(store,Number(inputData.totalChunks))),
   travefyTrip: await generateEnhancedItinerary()
 });
 
-await store.clear();
+

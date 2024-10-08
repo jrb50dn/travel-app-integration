@@ -1,0 +1,34 @@
+
+{
+  "manifest_version": 3,
+  "name": "Tour Plan Travefy",
+  "version": "1.5",
+  "permissions": ["storage", "activeTab", "scripting", "webNavigation"],
+  "host_permissions": [
+    "https://pa-50degr.nx.tourplan.net/*" 
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://travefy.com/*"],
+      "js": ["travefy.js"],
+      "css": ["styles.css","travefy.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["travefy.html"], 
+      "matches": ["<all_urls>"]      
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; style-src 'self' https://maxst.icons8.com;"
+  }
+}
