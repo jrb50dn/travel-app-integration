@@ -1,171 +1,232 @@
-(function () {
-  const createTabs = () => {
-    const tabs = document.querySelectorAll(".sidebar .header button");
-    const panes = document.querySelectorAll(".sidebar .panes li");
+// Retrieve the access token from localStorage
+const retrieveAccessToken = () => {
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.startsWith("CognitoIdentityServiceProvider.") && key.endsWith(".accessToken")) {
+      const accessToken = localStorage.getItem(key);
+      return accessToken;
+    }
+  }
+  console.error("Access Token not found.");
+  return null;
+};
 
-    // Scroll to the selected pane
-    const scrollToPane = (index) => {
-      const pane = panes[index];
-      pane.scrollIntoView({ behavior: "smooth" });
-    };
+// Extract the trip number from the URL
+const getTripNumberFromUrl = () => {
+  const urlPattern = "https://travefy.com/b/trip/";
+  const currentUrl = window.location.href;
+  if (currentUrl.startsWith(urlPattern)) {
+    const tripNumber = currentUrl.split(urlPattern)[1]?.split("/")[0];
+    console.log("Trip Number:", tripNumber);
+    return tripNumber;
+  }
+  console.log("URL does not match the expected pattern.");
+  return null;
+};
 
-    // Set the active tab button
-    const setActiveTab = (tabs, index) => {
-      tabs.forEach((tab, i) => {
-        tab.classList.toggle("active", i === index);
-      });
-    };
+// Get the user ID with accountType = 2
+const getUserIdWithAccountType2 = (data) => {
+  const user = data?.users?.find(user => user.accountType === 2);
+  if (user) {
+    return user.id;
+  }
+  console.error("No user with account type 2 found.");
+  return null;
+};
 
-    console.log(tabs, panes); // This should now log the expected elements
+// Create an iframe for the trip summary and inject custom styles
+const createTripIframe = (tripId) => {
+  if (!tripId) {
+    console.error("Trip ID is required.");
+    return;
+  }
 
-    // Add click event listeners to each tab button
-    tabs.forEach((tab, index) => {
-      tab.addEventListener("click", () => {
-        scrollToPane(index);
-        setActiveTab(tabs, index);
-      });
-    });
-  };
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://travefy.com/a/trips/summary/${tripId}`;
+  iframe.width = "100%";
+  iframe.allowFullscreen = true;
 
-  const createTasks = () => {
-    const myHeaders = new Headers();
-    myHeaders.append("X-USER-TOKEN", "74c40c6b6d1b4afc8da395b49b9270fe");
-    myHeaders.append("X-API-PUBLIC-KEY", "edcef4e472e04d0fa656ff2de2d6f676");
+  iframe.onload = () => {
+    try {
+      const iframeDoc = iframe.contentWindow.document;
+      setTimeout(() => {
+        const tripSummaryContent = iframeDoc.querySelector("._trip-summary-content_19cjdh");
+        if (tripSummaryContent) {
+          const listItems = tripSummaryContent.querySelectorAll("li");
+          if (listItems.length >= 2) {
+            const secondListItemButton = listItems[1].querySelector("button");
+            if (secondListItemButton) {
+              secondListItemButton.click();
+              console.log("Clicked the button in the second list item.");
 
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow",
-    };
-
-    fetch(
-      "https://api.travefy.com/api/v1-20190212/trips/6915778",
-      requestOptions
-    )
-      .then((response) => console.log(response.json()))
-      .then((result) => console.log(result))
-      .catch((error) => console.error(error));
-  };
-  const injectHtmlFromFile = (filePath, id) => {
-    fetch(chrome.runtime.getURL(filePath))
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(
-            `Failed to fetch ${filePath}: ${response.statusText}`
-          );
+              setTimeout(() => {
+                const innerIframe = document.querySelector('.ex-tasks iframe');
+                const innerIframeDoc = innerIframe.contentWindow.document;
+                const style = innerIframeDoc.createElement("style");
+                const css = `
+                  ._details_19cjdh { border: none !important; }
+                  ._detail-header_dxh9r5 { display: none !important; }
+                  #intercom-container { display: none; }
+                `;
+                style.appendChild(innerIframeDoc.createTextNode(css));
+                innerIframeDoc.head.appendChild(style);
+              }, 500);
+            } else {
+              console.error("Button not found inside the second list item.");
+            }
+          } else {
+            console.error("There are not enough list items.");
+          }
+        } else {
+          console.error("Element with class ._trip-summary-content_19cjdh not found.");
         }
-        return response.text();
-      })
-      .then((html) => {
-        // Create a new div element
-        const wrapper = document.createElement("div");
-        wrapper.id = id;
-        wrapper.classList.add("extension");
-
-        // Set the inner HTML of the div to the fetched HTML
-        wrapper.innerHTML = html;
-
-        // Append the new div to the body of the current page
-        document.body.appendChild(wrapper);
-        createTabs();
-        getTasks();
-      })
-      .catch((error) => console.error("Error fetching the HTML:", error));
+      }, 1000);
+    } catch (error) {
+      console.error("Error accessing iframe content:", error);
+    }
   };
 
-  const completeTask = (task) => {
-    fetch("https://travefy.com/rest-api/tasks/408436", {
-      headers: {
-        accept: "application/json, text/javascript, */*; q=0.01",
-        "accept-language": "en-AU,en-GB;q=0.9,en;q=0.8,en-US;q=0.7",
-        authorization:
-          "Bearer eyJraWQiOiJoTDU3MkNXSGYxRDRjaDljcFZzeE5uSjNlV0Joand2R2tuN042TTF0U1wvWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhOTc4NjdhNC02ZmM3LTQ1N2EtOWE1NS1lNjYxODI1ZDA1NWUiLCJkZXZpY2Vfa2V5IjoidXMtZWFzdC0xX2EzMzA2OWQ1LWRkMzUtNGQxZS04NzIzLTZiZjJkZWI0MjU0MCIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2pwNm5sQnVobSIsImNsaWVudF9pZCI6Ijc3dTg1cm40YXAyZmtvdGNoYnRzdHNrNTkzIiwib3JpZ2luX2p0aSI6ImVkZGMyMWQxLTNhZDktNGQzNC1iOTdmLTEzNzdkM2YzMTYyMSIsImV2ZW50X2lkIjoiOWQ3ZGRhZTEtNjk4MS00ZWYxLTlmOTItMjkwN2Y1NTM1MmFlIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTcyODM1NDA5OCwiZXhwIjoxNzI4MzY5NDczLCJpYXQiOjE3MjgzNjU4NzMsImp0aSI6IjdmOWI4M2U3LTgwOTEtNDgxMy04MDZmLTJmZjVkMzI4YWRjZiIsInVzZXJuYW1lIjoiYTk3ODY3YTQtNmZjNy00NTdhLTlhNTUtZTY2MTgyNWQwNTVlIn0.WzsfPIEEKujvGotnIn5EwYBgvqF5taksSSVl6UeJ7h2hNKDqr136Aoe0HfYBhYr9erxzdVN0YC2BtyOU_7VPhKo2rOFOdaYSnYfUrdNuNMNepTvQDKqSgWgG9YM90PqiYxfj5VU5yBJKdtbX6muJvgvPaB6p3ECaXZ8fTMObs23ffZwPeKQkedabtLkyfIJrl_7yK6R0N8PZP54POAy02jWMpIBNtLmhl95Zmb3MxwtKGe8EpPCtgCKnhu4_ZfCRuUDr63MZ5F0jDNVULLzFS0hX5eYdpRr95FPzMBhEH_nY_c8aLgGeeaZa7GEdx_A3dc7Zwq34qE56hKhiD5y4YA",
-        "content-type": "application/json; charset=UTF-8",
-        priority: "u=1, i",
-        "sec-ch-ua":
-          '"Microsoft Edge";v="129", "Not=A?Brand";v="8", "Chromium";v="129"',
-        "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": '"macOS"',
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "same-origin",
-        timezoneoffsetinminutes: "660",
-        "x-connection-id-token": "null",
-        "x-requested-with": "XMLHttpRequest",
-      },
-      referrer: "https://travefy.com/",
-      referrerPolicy: "origin",
-      body: task,
-      method: "PUT",
-      mode: "cors",
-      credentials: "include",
+  document.querySelector('.ex-tasks').appendChild(iframe);
+};
+
+// Helper function for fetch requests with consistent headers
+const fetchWithHeaders = (url, method = "GET", body = null) => {
+  return fetch(url, {
+    headers: {
+      accept: "application/json, text/javascript, */*; q=0.01",
+      authorization: `Bearer ${accessToken}`,
+      "content-type": "application/json; charset=UTF-8",
+      priority: "u=1, i",
+      "x-trip-token": tripNumber,
+    },
+    referrer: "https://travefy.com/",
+    referrerPolicy: "origin",
+    body: body ? JSON.stringify(body) : null,
+    method,
+    mode: "cors",
+    credentials: "include",
+  }).then((response) => {
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.statusText}`);
+    }
+    return response.json();
+  });
+};
+
+// Create booking tasks if they don't already exist
+const createBookingTasks = (tripNumber, tasks) => {
+  fetchWithHeaders(`https://travefy.com/rest-api/trips/${tripNumber}`)
+    .then((data) => {
+      const userId = getUserIdWithAccountType2(data);
+      if (!userId) return;
+
+      // Fetch trip days and get event IDs
+      fetchWithHeaders("https://travefy.com/rest-api/tripDays")
+        .then((daysData) => {
+          const eventIds = daysData.tripDays.flatMap(trip => trip.tripEventIds);
+          const queryString = eventIds.map(id => `ids%5B%5D=${encodeURIComponent(id)}`).join("&");
+
+          // Fetch trip events
+          return fetchWithHeaders(`https://travefy.com/rest-api/tripEvents?${queryString}`);
+        })
+        .then((eventsData) => {
+          console.log("Trip Events:", eventsData.tripEvents, tasks);
+
+          // Create tasks for events that don't have tasks yet
+          eventsData.tripEvents.forEach((event) => {
+            if (!tasks.some(task => task.title.includes(event.id))) {
+              const taskWrapper = {
+                task: {
+                  title: `${event.name} (${event.id})`,
+                  description: null,
+                  dueDate: null,
+                  dueTimeInMinutes: null,
+                  isComplete: false,
+                  isActive: false,
+                  relativeOffsetDurationInDays: null,
+                  computedScheduleDescriptor: null,
+                  hasReminder: false,
+                  taskType: null,
+                  hadError: false,
+                  assignedToUserId: userId,
+                  associatedItemId: tripNumber,
+                  associatedItemType: "tripReport",
+                  taskOptions: null,
+                },
+              };
+
+              // Create task with a POST request
+              fetchWithHeaders("https://travefy.com/rest-api/tasks", "POST", taskWrapper);
+            } else {
+              console.log("Task already exists for event:", event.id);
+            }
+          });
+
+          // Create the trip iframe
+          createTripIframe(tripNumber);
+        })
+        .catch((error) => {
+          console.error("Error completing booking task:", error);
+        });
     })
-      .then((response) => response.json())
-      .then((data) => setTimeout(getTasks(), 2000));
-  };
+    .catch((error) => {
+      console.error("Error fetching trip data:", error);
+    });
+};
 
-  const getTasks = () => {
-    const taskList = document.querySelector(".tasks ul");
-    taskList.innerHTML = "";
-    fetch(
-      "https://travefy.com/rest-api/taskSearchResults?associatedItemId=6915778&associatedItemType=tripReportcompletionFilters%5B%5D=&dueDateFilters=&isAscending=true&isAssignedToMe=false&skip=0&sortOrder=1&take=10",
+// Fetch booking tasks
+const getBookingTasks = async (bookingId) => {
+  const taskWrapper = document.querySelector(".ex-tasks");
+  if (!taskWrapper) {
+    console.error("Task wrapper element not found.");
+    return;
+  }
+
+  taskWrapper.querySelector('iframe')?.remove();
+
+  try {
+    const response = await fetch(
+      `https://travefy.com/rest-api/taskSearchResults?associatedItemId=${bookingId}&associatedItemType=tripReport&completionFilters%5B%5D=&dueDateFilters=&isAscending=true&isAssignedToMe=false&skip=0&sortOrder=1&take=100`,
       {
         headers: {
-          accept: "application/json, text/javascript, */*; q=0.01",
-          "accept-language": "en-AU,en-GB;q=0.9,en;q=0.8,en-US;q=0.7",
-          authorization:
-            "Bearer eyJraWQiOiJoTDU3MkNXSGYxRDRjaDljcFZzeE5uSjNlV0Joand2R2tuN042TTF0U1wvWT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhOTc4NjdhNC02ZmM3LTQ1N2EtOWE1NS1lNjYxODI1ZDA1NWUiLCJkZXZpY2Vfa2V5IjoidXMtZWFzdC0xX2EzMzA2OWQ1LWRkMzUtNGQxZS04NzIzLTZiZjJkZWI0MjU0MCIsImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC51cy1lYXN0LTEuYW1hem9uYXdzLmNvbVwvdXMtZWFzdC0xX2pwNm5sQnVobSIsImNsaWVudF9pZCI6Ijc3dTg1cm40YXAyZmtvdGNoYnRzdHNrNTkzIiwib3JpZ2luX2p0aSI6ImVkZGMyMWQxLTNhZDktNGQzNC1iOTdmLTEzNzdkM2YzMTYyMSIsImV2ZW50X2lkIjoiOWQ3ZGRhZTEtNjk4MS00ZWYxLTlmOTItMjkwN2Y1NTM1MmFlIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTcyODM1NDA5OCwiZXhwIjoxNzI4MzY5NDczLCJpYXQiOjE3MjgzNjU4NzMsImp0aSI6IjdmOWI4M2U3LTgwOTEtNDgxMy04MDZmLTJmZjVkMzI4YWRjZiIsInVzZXJuYW1lIjoiYTk3ODY3YTQtNmZjNy00NTdhLTlhNTUtZTY2MTgyNWQwNTVlIn0.WzsfPIEEKujvGotnIn5EwYBgvqF5taksSSVl6UeJ7h2hNKDqr136Aoe0HfYBhYr9erxzdVN0YC2BtyOU_7VPhKo2rOFOdaYSnYfUrdNuNMNepTvQDKqSgWgG9YM90PqiYxfj5VU5yBJKdtbX6muJvgvPaB6p3ECaXZ8fTMObs23ffZwPeKQkedabtLkyfIJrl_7yK6R0N8PZP54POAy02jWMpIBNtLmhl95Zmb3MxwtKGe8EpPCtgCKnhu4_ZfCRuUDr63MZ5F0jDNVULLzFS0hX5eYdpRr95FPzMBhEH_nY_c8aLgGeeaZa7GEdx_A3dc7Zwq34qE56hKhiD5y4YA",
-          priority: "u=1, i",
-          "sec-ch-ua":
-            '"Microsoft Edge";v="129", "Not=A?Brand";v="8", "Chromium";v="129"',
-          "sec-ch-ua-mobile": "?0",
-          "sec-ch-ua-platform": '"macOS"',
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-origin",
-          timezoneoffsetinminutes: "660",
-          "x-connection-id-token": "null",
-          "x-requested-with": "XMLHttpRequest",
+          authorization: `Bearer ${accessToken}`,
         },
         referrer: "https://travefy.com/",
         referrerPolicy: "origin",
-        body: null,
         method: "GET",
         mode: "cors",
         credentials: "include",
       }
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        data.tasks.forEach((task) => {
-          console.log(task);
-          const listItem = document.createElement("li");
-          const checkbox = document.createElement("input");
+    );
 
-          checkbox.type = "checkbox";
-          checkbox.checked = task.isComplete === true;
-          checkbox.id = task.id;
-          checkbox.setAttribute("data-task", JSON.stringify(task));
-          checkbox.addEventListener("change", (event) => {
-            const task = JSON.parse(event.target.getAttribute("data-task"));
-            task.isComplete = event.target.checked;
-            completeTask(JSON.stringify({ task: { ...task } }));
-          });
+    const data = await response.json();
+    return data.tasks || [];
+  } catch (error) {
+    console.error("Error fetching tasks:", error);
+  }
+};
 
-          // Create a label with the task title
-          const label = document.createElement("label");
-          label.textContent = task.title;
+// Initialization
+const accessToken = retrieveAccessToken();
+const tripNumber = getTripNumberFromUrl();
 
-          // Append the checkbox and label to the list item
-          listItem.appendChild(checkbox);
-          listItem.appendChild(label);
+const init = async () => {
+  if (tripNumber) {
+    console.log("Getting booking tasks for trip:", tripNumber);
+    const tasks = await getBookingTasks(tripNumber);
+    createBookingTasks(tripNumber, tasks);
+  }
+};
 
-          // Append the list item to the task list
-          taskList.appendChild(listItem);
-        });
-      });
-  };
+document.addEventListener("extensionInit", init);
 
 
-  injectHtmlFromFile("travefy.html", "travefy-extension");
-})();
+/*
+
+    sendMessageToServiceWorker(
+      { type: "travefy", message: "Create Tasks From Services" },
+      (response) => {
+        console.log("Response from service worker:", response);
+      }
+    );
+ */

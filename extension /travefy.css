@@ -1,6 +1,18 @@
+.ex-panes > li:has(.ex-tasks ) {
+padding-inline:0px;
+}
+    
+    
+    .ex-tasks  {
 
-    .tasks li {
-      display:flex;
-      justify-content: flex-start;
-      align-items: center;
+      p {
+        display:none;
+      }
+      p:only-child {
+        display:block;
+      }
+
+      iframe {
+        height: calc(-231px + 100vh);
+      }
     }

@@ -1,11 +1,17 @@
-
 {
   "manifest_version": 3,
   "name": "Tour Plan Travefy",
   "version": "1.5",
-  "permissions": ["storage", "activeTab", "scripting", "webNavigation"],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "webNavigation",
+    "storage"
+  ],
   "host_permissions": [
-    "https://pa-50degr.nx.tourplan.net/*" 
+    "https://pa-50degr.nx.tourplan.net/*",
+    "https://travefy.com/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -18,17 +24,20 @@
   "content_scripts": [
     {
       "matches": ["https://travefy.com/*"],
-      "js": ["travefy.js"],
-      "css": ["styles.css","travefy.css"]
+      "js": ["init.js","travefy.js"],
+      "css": ["normalise.css","styles.css", "travefy.css"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["travefy.html"], 
-      "matches": ["<all_urls>"]      
+      "resources": ["travefy.html"],
+      "matches": ["<all_urls>"]
     }
   ],
-  "content_security_policy": {
-    "extension_pages": "default-src 'self'; style-src 'self' https://maxst.icons8.com;"
-  }
+  
+    "content_security_policy": {
+      "extension_pages": "default-src 'self'; style-src 'self' https://maxst.icons8.com; script-src 'self'; object-src 'self'; connect-src 'self' https://api.travefy.com"
+    }
+  
+  
 }
